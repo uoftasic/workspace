@@ -34,6 +34,6 @@ done
 echo ""
 echo "=== Open in your browser ==="
 echo "  EDA desktop (XSchem, Magic):  http://localhost:${HOST_PORT}/  (password: ${VNC_PW})"
-echo "  Course manuals:               https://uoftasic.com/"
+echo "  Course manuals:               https://edu.uoftasic.com/"
 echo "  Copy/paste: use the clipboard icon in the noVNC sidebar, or Ctrl+Shift+V to paste into the VM."
 echo ""

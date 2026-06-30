@@ -1,10 +1,10 @@
 # asic-edu-workbench
 
 The **shared open-source EDA workbench** for the
-[UofT ASIC Internal Education Initiative](https://uoftasic.com/). Clone it once during
-[IC101](https://uoftasic.com/ic101-docs/) and reuse it for every tool-heavy course.
+[UofT ASIC Internal Education Initiative](https://edu.uoftasic.com/). Clone it once during
+[IC101](https://edu.uoftasic.com/ic101/) and reuse it for every tool-heavy course.
 
-> 📖 **All course manuals and the full setup guide are online:** **https://uoftasic.com/**
+> 📖 **All course manuals and the full setup guide are online:** **https://edu.uoftasic.com/**
 
 ## Quick start
 

@@ -1,7 +1,7 @@
 # IC101 — setup module
 
 This folder is your scratch space for **IC101 — Onboarding onto Tools**. The full manual is online
-at **https://uoftasic.com/ic101-docs/**.
+at **https://edu.uoftasic.com/ic101/**.
 
 Once the environment is running, open the in-container terminal and verify your tools:
 

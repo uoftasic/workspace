@@ -16,7 +16,7 @@ echo Mount:    %REPO_ROOT% -^> /foss/designs
 echo.
 echo After start, open in your browser:
 echo   EDA desktop:        http://localhost:%HOST_PORT%/  (password: %VNC_PW%, %VNC_RESOLUTION%)
-echo   Course manuals are online: https://uoftasic.com/
+echo   Course manuals are online: https://edu.uoftasic.com/
 
 docker pull %IMAGE%
 docker rm -f %CONTAINER_NAME% 2>nul
