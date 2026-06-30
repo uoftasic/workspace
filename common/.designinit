@@ -1,0 +1,26 @@
+# ASIC-EDU shared workbench environment.
+# Source it from the container shell or via the devcontainer postCreateCommand:
+#   . /foss/designs/common/.designinit
+
+export PDK=sky130A
+if command -v sak-pdk >/dev/null 2>&1; then
+  sak-pdk sky130A 2>/dev/null || true
+fi
+
+export DESIGNS=/foss/designs
+export XSCHEMRC="${DESIGNS}/common/xschemrc"
+
+# Jump into any course module: `mod ad103_nonlinear`
+mod() {
+  if [ -z "${1:-}" ]; then
+    echo "Available modules:"; ls -1 "${DESIGNS}/modules" 2>/dev/null
+    return 0
+  fi
+  cd "${DESIGNS}/modules/$1" 2>/dev/null || { echo "no such module: $1"; return 1; }
+}
+
+# Magic: X11 driver is reliable in the noVNC container (XR/Cairo can BadAlloc on pixmap create).
+alias magic130='magic -d X11 -T sky130A'
+
+echo "ASIC-EDU: PDK=${PDK:-unset}  PDK_ROOT=${PDK_ROOT:-unset}  designs=${DESIGNS}"
+echo "          run 'mod' to list course modules, or 'mod <name>' to enter one."

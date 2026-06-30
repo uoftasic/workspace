@@ -1,0 +1,22 @@
+# Simulation / tool outputs
+*.raw
+*.log
+*.ext
+*.sim
+*.ext2spice
+__pycache__/
+*.pyc
+
+# ngspice / xschem run artifacts (keep committed spice/ decks)
+modules/*/spice/*.txt
+!modules/*/spice/*.spice
+
+# Generated netlists from xschem
+*.sch.spice
+*.spice.out
+.xschem/
+
+# OS / editor
+.DS_Store
+*.swp
+*~
