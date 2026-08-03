@@ -6,14 +6,14 @@ The **shared open-source EDA workspace** for the
 
 > 📖 **Course manuals:** **https://edu.uoftasic.com/** · **IC101 setup:** **https://uoftasic.github.io/ic101/**
 
-> Local folder name: **`workspace`**. GitHub repo is still [`uoftasic/asic-edu-workbench`](https://github.com/uoftasic/asic-edu-workbench) until renamed on GitHub.
+> Local folder name: **`workspace`**. GitHub: [`uoftasic/workspace`](https://github.com/uoftasic/workspace).
 
 ## Quick start
 
 1. Install **Docker Desktop** (see the [IC101 Docker guide](https://uoftasic.github.io/ic101/#/guide/install-docker)).
 2. Clone into a folder named `workspace`:
    ```bash
-   git clone https://github.com/uoftasic/asic-edu-workbench.git workspace
+   git clone https://github.com/uoftasic/workspace.git workspace
    cd workspace
    ```
 3. Start the environment:

@@ -26,4 +26,4 @@ You can also clone on the host (same result, bind-mounted into the container):
 Inside the container: `mod ad101` → `/foss/designs/modules/ad101`.
 
 Planned (added as each course reaches its lab content): `ad103_nonlinear/`, `ad104_layout/`,
-`dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/catalog/).
+`dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).
