@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Post-start setup inside the running workbench container (clipboard sync, line endings).
+# Post-start setup inside the running workspace container (clipboard sync, line endings).
 set -euo pipefail
 
 CONTAINER_NAME="${CONTAINER_NAME:-asic-edu-osic}"

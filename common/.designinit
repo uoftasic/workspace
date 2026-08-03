@@ -1,5 +1,5 @@
 # ASIC-EDU shared workbench environment.
-# Source it from the container shell or via the devcontainer postCreateCommand:
+# Source it from the container shell:
 #   . /foss/designs/common/.designinit
 
 export PDK=sky130A
@@ -7,16 +7,81 @@ if command -v sak-pdk >/dev/null 2>&1; then
   sak-pdk sky130A 2>/dev/null || true
 fi
 
-export DESIGNS=/foss/designs
+# Default in-container mount; allow override for host-side tests/scripts.
+export DESIGNS="${DESIGNS:-/foss/designs}"
 export XSCHEMRC="${DESIGNS}/common/xschemrc"
 
-# Jump into any course module: `mod ad103_nonlinear`
+# Course modules under $DESIGNS/modules
+#   mod              list modules
+#   mod <name>       cd into a module
+#   mod add <name>   clone github.com/uoftasic/<name> into modules/<name>
 mod() {
-  if [ -z "${1:-}" ]; then
-    echo "Available modules:"; ls -1 "${DESIGNS}/modules" 2>/dev/null
-    return 0
-  fi
-  cd "${DESIGNS}/modules/$1" 2>/dev/null || { echo "no such module: $1"; return 1; }
+  local modules_dir="${DESIGNS}/modules"
+  local add_script="${DESIGNS}/scripts/add_module.sh"
+
+  _mod_list() {
+    if [ ! -d "${modules_dir}" ]; then
+      echo "No modules directory at ${modules_dir}"
+      echo "  create course folders under modules/, or run: mod add <course>"
+      return 0
+    fi
+    local found=0
+    local d
+    for d in "${modules_dir}"/*/; do
+      [ -d "${d}" ] || continue
+      found=1
+      basename "${d}"
+    done
+    if [ "${found}" -eq 0 ]; then
+      echo "(no course modules yet — try: mod add ad101)"
+    fi
+  }
+
+  _mod_usage() {
+    echo "Usage: mod [<name> | add <name> | help]"
+    echo "  mod              list course modules under ${modules_dir}"
+    echo "  mod <name>       cd into ${modules_dir}/<name>"
+    echo "  mod add <name>   clone https://github.com/uoftasic/<name>.git"
+    echo "  mod help         show this help"
+  }
+
+  case "${1:-}" in
+    "" )
+      echo "Available modules:"
+      _mod_list
+      ;;
+    help | -h | --help )
+      _mod_usage
+      ;;
+    add )
+      if [ -z "${2:-}" ] || [ -n "${3:-}" ]; then
+        echo "Usage: mod add <name>" >&2
+        return 1
+      fi
+      if [ ! -x "${add_script}" ] && [ ! -f "${add_script}" ]; then
+        echo "mod: missing ${add_script}" >&2
+        return 1
+      fi
+      bash "${add_script}" "$2" || return 1
+      cd "${modules_dir}/$2" || return 1
+      echo "cwd: $(pwd)"
+      ;;
+    * )
+      if [ -n "${2:-}" ]; then
+        echo "mod: unexpected arguments" >&2
+        _mod_usage >&2
+        return 1
+      fi
+      if [ ! -d "${modules_dir}/$1" ]; then
+        echo "mod: no such module: $1" >&2
+        echo "Available modules:" >&2
+        _mod_list >&2
+        return 1
+      fi
+      cd "${modules_dir}/$1" || return 1
+      echo "cwd: $(pwd)"
+      ;;
+  esac
 }
 
 # Magic: X11 driver is reliable in the noVNC container (XR/Cairo can BadAlloc on pixmap create).

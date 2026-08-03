@@ -1,5 +1,5 @@
 @echo off
-REM Post-start setup inside the workbench container (Windows): clipboard sync, line endings.
+REM Post-start setup inside the workspace container (Windows): clipboard sync, line endings.
 setlocal
 if not defined CONTAINER_NAME set CONTAINER_NAME=asic-edu-osic
 if not defined HOST_PORT set HOST_PORT=80
