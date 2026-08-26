@@ -2,15 +2,38 @@
 # Source it from the container shell:
 #   . /foss/designs/common/.designinit
 
+# Switch the WHOLE environment to SKY130, not just the PDK name.
+#
+# Exporting PDK on its own is not enough. The image derives PDKPATH,
+# SPICE_USERINIT_DIR and KLAYOUT_PATH from the PDK that was selected when the
+# image was built (ihp-sg13g2), and nothing recomputes them when PDK changes.
+# Measured on 2026.04 with only the exports below and no switcher:
+#
+#   PDK                sky130A
+#   PDKPATH            /foss/pdks/ihp-sg13g2          <- wrong
+#   SPICE_USERINIT_DIR /foss/pdks/ihp-sg13g2/...      <- wrong: ngspice user init
+#   KLAYOUT_PATH       /foss/pdks/ihp-sg13g2/...      <- wrong: KLayout tech + layers
+#
+# So ngspice and KLayout would load IHP setup while everything else said SKY130.
+# The image ships a switcher that recomputes all of them, and it must be
+# SOURCED: run as a plain command it prints the exports and changes nothing in
+# your shell, which looks convincingly like success.
+#
+# Its name is a trap. The script's own usage line calls it "sak-pdk", and there
+# is no sak-pdk on PATH in this image - the file is sak-pdk-script.sh.
+if command -v sak-pdk-script.sh >/dev/null 2>&1; then
+  # shellcheck source=/dev/null
+  . sak-pdk-script.sh sky130A >/dev/null 2>&1 || true
+fi
+
+# Pin the two the courses depend on directly, after the switcher, so the
+# environment is still coherent if it is ever renamed or absent.
 export PDK=sky130A
 # The image default for STD_CELL_LIBRARY is the IHP library (sg13g2_stdcell).
 # Leaving it set alongside PDK=sky130A is a combination that does not exist, and
 # LibreLane dies on it in about a second with a glob error naming a path under
-# sky130A/libs.ref/sg13g2_stdcell/. Pin it here so the environment is coherent.
+# sky130A/libs.ref/sg13g2_stdcell/.
 export STD_CELL_LIBRARY=sky130_fd_sc_hd
-if command -v sak-pdk >/dev/null 2>&1; then
-  sak-pdk sky130A 2>/dev/null || true
-fi
 
 # Default in-container mount; allow override for host-side tests/scripts.
 export DESIGNS="${DESIGNS:-/foss/designs}"
