@@ -3,6 +3,11 @@
 #   . /foss/designs/common/.designinit
 
 export PDK=sky130A
+# The image default for STD_CELL_LIBRARY is the IHP library (sg13g2_stdcell).
+# Leaving it set alongside PDK=sky130A is a combination that does not exist, and
+# LibreLane dies on it in about a second with a glob error naming a path under
+# sky130A/libs.ref/sg13g2_stdcell/. Pin it here so the environment is coherent.
+export STD_CELL_LIBRARY=sky130_fd_sc_hd
 if command -v sak-pdk >/dev/null 2>&1; then
   sak-pdk sky130A 2>/dev/null || true
 fi
