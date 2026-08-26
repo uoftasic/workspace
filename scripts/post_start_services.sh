@@ -23,6 +23,7 @@ if [ "${ready}" -ne 1 ]; then
 fi
 
 CONTAINER_NAME="${CONTAINER_NAME}" "${SCRIPT_DIR}/configure_vnc_desktop.sh"
+CONTAINER_NAME="${CONTAINER_NAME}" "${SCRIPT_DIR}/desktop/install_desktop.sh"
 
 docker exec "${CONTAINER_NAME}" bash -lc "
 set -e
