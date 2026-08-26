@@ -1,0 +1,18 @@
+# Picked up automatically by IIC-OSIC-TOOLS.
+#
+# The image sources "$DESIGNS/.designinit" from /etc/profile.d/iic-osic-tools-setup.sh
+# and ~/.bashrc on every login shell. Our real environment lives one directory
+# deeper, in common/.designinit, so without this file the hook finds nothing and
+# every new terminal starts on the image's default PDK (ihp-sg13g2) with the IHP
+# standard-cell library — which is not the technology any of our courses use.
+#
+# Symptoms when this file is missing: XSchem opens the IHP start page with
+# "---MISSING SYMBOL---" boxes instead of the SKY130 device gallery, and LibreLane
+# fails on a config that does not pin its own PDK.
+#
+# Keep the real content in common/.designinit. This file only chains to it.
+
+if [ -f "${DESIGNS:-/foss/designs}/common/.designinit" ]; then
+    # shellcheck source=/dev/null
+    . "${DESIGNS:-/foss/designs}/common/.designinit"
+fi
