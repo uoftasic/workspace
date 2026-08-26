@@ -30,6 +30,7 @@ docker rm -f "${CONTAINER_NAME}" 2>/dev/null || true
 
 docker run -d --name "${CONTAINER_NAME}" \
   --shm-size=1g \
+  --user "$(id -u):$(id -g)" \
   --security-opt seccomp=unconfined \
   -p "${HOST_PORT}:80" \
   -e VNC_PW="${VNC_PW}" \
