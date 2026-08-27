@@ -76,8 +76,12 @@ else
   fi
 fi
 
+# ngspice's banner opens with a row of asterisks and puts the version on the
+# SECOND line, so "head -1" printed a bare ****** - which, in the first command
+# a student ever runs, reads like something went wrong.
 if ngspice -v >/dev/null 2>&1; then
-  ngspice -v | head -1
+  ver=$(ngspice -v 2>/dev/null | grep -m1 -oE 'ngspice-[0-9][0-9.]*' || true)
+  echo "    ${ver:-ngspice (version not reported)}"
 fi
 
 echo "--- module helpers ---"
