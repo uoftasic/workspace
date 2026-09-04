@@ -7,7 +7,8 @@
 # Exporting PDK on its own is not enough. The image derives PDKPATH,
 # SPICE_USERINIT_DIR and KLAYOUT_PATH from the PDK that was selected when the
 # image was built (ihp-sg13g2), and nothing recomputes them when PDK changes.
-# Measured on 2026.04 with only the exports below and no switcher:
+# Measured on 2026.04 AND re-confirmed on 2026.08, with only the exports below
+# and no switcher:
 #
 #   PDK                sky130A
 #   PDKPATH            /foss/pdks/ihp-sg13g2          <- wrong
@@ -21,9 +22,29 @@
 #
 # Its name is a trap. The script's own usage line calls it "sak-pdk", and there
 # is no sak-pdk on PATH in this image - the file is sak-pdk-script.sh.
+#
+# Sourcing it must not be allowed to kill the caller. On 2026.08 the switcher
+# ends with:
+#
+#     [ -n "$KLAYOUT_PYTHONPATH" ] && echo ...
+#     [ -n "$GF_PDK_OPTION" ] && echo ...
+#
+# and it sets neither of those for sky130A. Sourced from a script running
+# `set -u` that is an immediate exit; under `set -e` the falsy test makes the
+# source return non-zero and takes the caller down with it. That is not
+# hypothetical - it silently killed smoke_test.sh, which runs
+# `set -euo pipefail`, and the script produced no output at all.
+#
+# So save the caller's shell flags, clear -e and -u across the source, and put
+# them back exactly as they were.
 if command -v sak-pdk-script.sh >/dev/null 2>&1; then
+  _asicedu_flags=$-
+  set +eu
   # shellcheck source=/dev/null
   . sak-pdk-script.sh sky130A >/dev/null 2>&1 || true
+  case "$_asicedu_flags" in *e*) set -e ;; esac
+  case "$_asicedu_flags" in *u*) set -u ;; esac
+  unset _asicedu_flags
 fi
 
 # Pin the two the courses depend on directly, after the switcher, so the
