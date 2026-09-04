@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Render the workbench wallpaper. Run inside the shot rig (needs ImageMagick).
 #
-#   docker run --rm -v "$PWD:/out" asic-edu/shot-rig:2026.04 --skip bash /out/make_wallpaper.sh
+#   docker run --rm -v "$PWD:/out" asic-edu/shot-rig:2026.08 --skip bash /out/make_wallpaper.sh
 #
 # The stock image ships a Johannes Kepler University wallpaper that is cropped at
 # 1280x800 and says nothing about this course. This replaces it with something

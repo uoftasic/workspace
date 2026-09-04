@@ -1,7 +1,7 @@
 @echo off
 REM Launch IIC-OSIC-TOOLS with noVNC on Windows (Docker Desktop required)
 setlocal
-if not defined DOCKER_TAG set DOCKER_TAG=2026.04
+if not defined DOCKER_TAG set DOCKER_TAG=2026.08
 if not defined CONTAINER_NAME set CONTAINER_NAME=asic-edu-osic
 if not defined VNC_PW set VNC_PW=abc123
 if not defined VNC_RESOLUTION set VNC_RESOLUTION=1280x800
