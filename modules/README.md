@@ -1,10 +1,9 @@
 # Course modules
 
-Each tool-using course drops its starter files in a folder here, mounted inside the container at
-`/foss/designs/modules/<name>`. Source the environment, then use `mod` to list, enter, or add modules.
+Each course that uses the tools keeps its files in a folder here. Inside the container the folder is at `/foss/designs/modules/<name>`. Load the environment (`.designinit`), then use `mod` to list modules, enter one, or add one.
 
 ```bash
-. /foss/designs/common/.designinit   # required once per shell
+. /foss/designs/common/.designinit   # load the environment: SKY130 PDK and the mod command
 mod                                  # list course modules
 mod ic101_setup                      # enter a module
 mod add ad101                        # clone github.com/uoftasic/ad101 into modules/ad101
@@ -13,9 +12,9 @@ mod add ad101                        # clone github.com/uoftasic/ad101 into modu
 | Module | Course |
 |--------|--------|
 | `ic101_setup/` | [IC101 — Onboarding onto Tools](https://uoftasic.com/ic101/) |
-| `ad101/` | [AD101 — Signals](https://uoftasic.com/ad101/) — clone with `mod add ad101` (not committed in workspace) |
+| `ad101/` | [AD101 — Signals](https://uoftasic.com/ad101/). Not committed in this repo; clone it with `mod add ad101`. |
 
-You can also clone on the host (same result, bind-mounted into the container):
+You can also clone a course on your own machine (the host) instead of in the container. The result is the same, because the workspace is bind-mounted into the container:
 
 ```bash
 # from the workspace root on the host
@@ -23,7 +22,6 @@ You can also clone on the host (same result, bind-mounted into the container):
 # or: cd modules && git clone https://github.com/uoftasic/ad101.git
 ```
 
-Inside the container: `mod ad101` → `/foss/designs/modules/ad101`.
+Either way, `mod ad101` inside the container takes you to `/foss/designs/modules/ad101`.
 
-Planned (added as each course reaches its lab content): `ad103_nonlinear/`, `ad104_layout/`,
-`dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).
+More folders are planned, added as each course's lab content is ready: `ad103_nonlinear/`, `ad104_layout/`, `dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).
