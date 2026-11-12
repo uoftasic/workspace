@@ -11,4 +11,6 @@ mod                                    # list course modules
 mod ic101_setup                        # go to this folder
 ```
 
+A passing smoke test ends with `=== All checks passed ===`.
+
 Later courses go in folders next to this one. From a terminal with the environment loaded, `mod add <course>` (for example `mod add ad101`) clones that course's repo into `modules/`. Keep this workspace: you reuse it for the other courses in the [catalog](https://edu.uoftasic.com/).

@@ -12,7 +12,7 @@ Every course's manual, with its troubleshooting and labs, is linked from https:/
    git clone https://github.com/uoftasic/workspace.git workspace
    cd workspace
    ```
-3. With Docker Desktop running, start the environment. On macOS or Linux, run `./scripts/start_vnc.sh`. On Windows, double-click `scripts/start_vnc.bat`. The script pulls the IIC-OSIC-TOOLS image (`hpretl/iic-osic-tools:2026.08`) and starts a container named `asic-edu-osic`, with this repo mounted at `/foss/designs`. Running it again replaces the container with a fresh one.
+3. With Docker Desktop running, start the environment. On macOS or Linux, run `./scripts/start_vnc.sh`. On Windows, double-click `scripts/start_vnc.bat`. The script pulls the IIC-OSIC-TOOLS image (`hpretl/iic-osic-tools:2026.08`) and starts a container named `asic-edu-osic`, with this repo mounted at `/foss/designs`. Running it again replaces the container with a fresh one. Your files under `/foss/designs` are kept, because they are the files in this folder on your computer; anything you saved elsewhere in the container is lost.
 4. Open http://localhost/ in your browser. You get the EDA desktop, a Linux desktop running in the browser through noVNC. If it asks for a password, it's `abc123`.
 5. In a terminal on the desktop, check your tools:
    ```bash
