@@ -6,7 +6,7 @@ Every course's manual, with its troubleshooting and labs, is linked from https:/
 
 ## Quick start
 
-1. Install Docker Desktop. The [IC101 Docker guide](https://uoftasic.com/ic101/#/guide/install-docker) walks you through it.
+1. Install Docker Desktop. The [IC101 Docker guide](https://uoftasic.com/ic101/guide/install-docker.html) walks you through it.
 2. Clone this repo into a folder named `workspace`:
    ```bash
    git clone https://github.com/uoftasic/workspace.git workspace
