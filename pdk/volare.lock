@@ -1,14 +1,20 @@
 # SKY130 PDK pin for reproducibility (term-long lock)
 #
-# Before opening the workbench to students:
-#   1. In the container:  . sak-pdk-script.sh sky130A
-#      (there is no 'sak-pdk' on PATH, and it must be sourced)
-#   2. Record the installed open_pdks / volare build, e.g.:
-#        volare ls --pdk sky130  (if volare is installed)
-#   3. Replace the placeholder below with the pinned hash/tag.
+# The PDK ships inside the image, so the image tag (DOCKER_TAG in
+# scripts/start_vnc.sh) is what selects it. This file records which build
+# that tag ships, so a new tag can be checked against it.
+#
+# Read from hpretl/iic-osic-tools:2026.08 on 2026-11-15. That image has no
+# volare; it ships ciel 2.6.1, which names a PDK build by its open_pdks
+# commit, the same hash volare uses:
+#   ciel output --pdk-family sky130   ->  026824c7969ce6f4fc9678e6ca04b0a06a596c4b
+#   cat /foss/pdks/sky130A/SOURCES    ->  open_pdks 026824c7969ce6f4fc9678e6ca04b0a06a596c4b
+#
+# When IMAGE_TAG changes, run those two in the new image, update
+# VOLARE_BUILD, and run scripts/smoke_test.sh again.
 #
 # See: https://github.com/fossi-foundation/volare
 
 PDK=sky130A
-VOLARE_BUILD=REPLACE_WITH_PINNED_HASH_AFTER_PILOT
+VOLARE_BUILD=026824c7969ce6f4fc9678e6ca04b0a06a596c4b
 IMAGE_TAG=2026.08
