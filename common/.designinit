@@ -166,5 +166,26 @@ mod() {
 # Magic: X11 driver is reliable in the noVNC container (XR/Cairo can BadAlloc on pixmap create).
 alias magic130='magic -d X11 -T sky130A'
 
+# A matplotlib plot window (Qt 6.11, through PySide6) started from a desktop
+# terminal prints these two lines as it opens:
+#
+#   qt.qpa.theme.gnome: dbus reply error: [ "org.freedesktop.DBus.Error.UnknownMethod" ]
+#   "No such interface "org.freedesktop.portal.Settings" on object at path
+#   /org/freedesktop/portal/desktop"
+#
+# Qt's GNOME theme code asks the desktop portal (xdg-desktop-portal) for its
+# Settings over D-Bus. In this XFCE session the portal object at
+# /org/freedesktop/portal/desktop has no Settings interface (checked by
+# introspecting it on 2026.08), so the call fails, Qt logs it, and the window
+# opens as usual. The rule below turns off that one logging category. Checked
+# on 2026.08: a matplotlib window still opens with nothing on stderr, other Qt
+# warnings still print, and KLayout opens the same with and without the rule.
+# The case statement keeps a second source of this file from adding the rule
+# twice.
+case ";${QT_LOGGING_RULES:-};" in
+  *";qt.qpa.theme.gnome=false;"*) ;;
+  *) export QT_LOGGING_RULES="${QT_LOGGING_RULES:+${QT_LOGGING_RULES};}qt.qpa.theme.gnome=false" ;;
+esac
+
 echo "ASIC-EDU: PDK=${PDK:-unset}  PDK_ROOT=${PDK_ROOT:-unset}  designs=${DESIGNS}"
 echo "          run 'mod' to list course modules, or 'mod <name>' to enter one."
