@@ -14,20 +14,23 @@
 set -euo pipefail
 
 CONTAINER_NAME="${CONTAINER_NAME:-asic-edu-osic}"
+# docker (default) or container (Apple's runtime; see start_vnc_apple.sh). Both take
+# the same exec/cp arguments.
+CTR="${CONTAINER_CLI:-docker}"
 DISPLAY_NUM="${VNC_DISPLAY:-:1}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 WALLPAPER="${HERE}/asic-edu-wallpaper.png"
 
-if ! docker exec "${CONTAINER_NAME}" true 2>/dev/null; then
+if ! "${CTR}" exec "${CONTAINER_NAME}" true 2>/dev/null; then
   echo "WARNING: container ${CONTAINER_NAME} not running — skipping desktop setup."
   exit 0
 fi
 
 [ -f "${WALLPAPER}" ] || { echo "WARNING: ${WALLPAPER} missing — skipping."; exit 0; }
 
-docker cp "${WALLPAPER}" "${CONTAINER_NAME}:/tmp/asic-edu-wallpaper.png"
+"${CTR}" cp "${WALLPAPER}" "${CONTAINER_NAME}:/tmp/asic-edu-wallpaper.png"
 
-docker exec "${CONTAINER_NAME}" bash -c '
+"${CTR}" exec "${CONTAINER_NAME}" bash -c '
 set -e
 export DISPLAY="'"${DISPLAY_NUM}"'"
 mkdir -p "$HOME/.local/share/asic-edu" "$HOME/Desktop"
@@ -69,7 +72,7 @@ mk docs.desktop      "Course manuals" "edu.uoftasic.com" \
    "xdg-open https://edu.uoftasic.com/" "text-html" false
 
 # --- wallpaper ------------------------------------------------------------
-# xfconf needs a session bus; docker exec does not inherit one, so borrow the
+# xfconf needs a session bus; docker/container exec does not inherit one, so borrow the
 # running xfce session bus if we can, then fall back to a fresh one.
 set_wallpaper() {
   local bus
