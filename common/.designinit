@@ -60,6 +60,36 @@ export STD_CELL_LIBRARY=sky130_fd_sc_hd
 export DESIGNS="${DESIGNS:-/foss/designs}"
 export XSCHEMRC="${DESIGNS}/common/xschemrc"
 
+# KLayout and the klayout-magic-pcells plugin, which the workspace keeps in
+# klayout/salt/klayout-magic-pcells (the version is in klayout/PLUGIN_VERSION).
+#
+# KLayout loads the packages in the salt/ folder of each directory on
+# KLAYOUT_PATH, so the workspace's klayout/ folder goes on that path. It is
+# appended after the PDK switch, because sak-pdk-script.sh replaces
+# KLAYOUT_PATH with ~/.klayout and the PDK's KLayout folder. Setting
+# KLAYOUT_PATH here instead of appending to it would lose the PDK's folder,
+# where KLayout finds the sky130A technology and the skywater130 library. The
+# case statement skips the append when the folder is already on the path, as
+# it is when this file is sourced a second time.
+case ":${KLAYOUT_PATH:-}:" in
+  *":${DESIGNS}/klayout:"*) ;;
+  *) export KLAYOUT_PATH="${KLAYOUT_PATH:+${KLAYOUT_PATH}:}${DESIGNS}/klayout" ;;
+esac
+# Register only the sky130A library, sky130_magic. With KMP_PDKS unset, the
+# plugin starts a Magic process for each of the image's four PDKs, and KLayout
+# takes longer to start.
+export KMP_PDKS=sky130A
+# The plugin's cache of generated cells. Its default folder is under
+# /headless, so each new container starts with an empty cache; under $DESIGNS
+# the cache survives a new container.
+export KMP_CACHE_DIR="${DESIGNS}/.cache/klayout-magic-pcells"
+# AD104-K's pages run Magic > Run Magic DRC... in Flat mode. With this set, the
+# dialog opens in Flat mode until the student picks another mode, and saves
+# that choice in ~/.config/klayout-magic-pcells, which is lost when the
+# container is replaced. The plugin's command-line drc also uses KMP_DRC_MODE
+# when --mode is not given.
+export KMP_DRC_MODE=flat
+
 # Course modules under $DESIGNS/modules
 #   mod              list modules
 #   mod <name>       cd into a module

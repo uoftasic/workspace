@@ -14,6 +14,13 @@ export DESIGNS="${DESIGNS:-${REPO_ROOT}}"
 # students actually hit: the smoke test passes, then XSchem opens on the wrong
 # PDK in the very next command, because their shell never sourced anything.
 INHERITED_PDK="${PDK:-unset}"
+# The same for KLayout. A KLayout started from the caller's terminal loads the
+# klayout-magic-pcells plugin only if that terminal's KLAYOUT_PATH includes
+# $DESIGNS/klayout, and it gets .designinit's KMP_PDKS and KMP_DRC_MODE only if
+# that terminal has them set.
+INHERITED_KLAYOUT_PATH="${KLAYOUT_PATH:-}"
+INHERITED_KMP_PDKS="${KMP_PDKS:-unset}"
+INHERITED_KMP_DRC_MODE="${KMP_DRC_MODE:-unset}"
 
 # shellcheck source=/dev/null
 [ -f "${REPO_ROOT}/common/.designinit" ] && . "${REPO_ROOT}/common/.designinit"
@@ -34,6 +41,7 @@ check xschem
 check magic
 check netgen
 check yosys
+check klayout
 
 # Check the PDK the tools are actually USING, not just that a directory exists.
 #
@@ -82,6 +90,86 @@ fi
 if ngspice -v >/dev/null 2>&1; then
   ver=$(ngspice -v 2>/dev/null | grep -m1 -oE 'ngspice-[0-9][0-9.]*' || true)
   echo "    ${ver:-ngspice (version not reported)}"
+fi
+
+# KLayout with the klayout-magic-pcells plugin, which common/.designinit puts
+# on KLAYOUT_PATH. A hidden KLayout runs scripts/klayout_check.py, which prints
+# what KLayout loaded and builds one PCell. Then the plugin's own doctor starts
+# Magic for sky130A and checks the running Magic against the device list the
+# plugin ships. The two take 5 to 10 s, most of it KLayout starting.
+echo "--- KLayout ---"
+plugin_dir="${REPO_ROOT}/klayout/salt/klayout-magic-pcells"
+plugin_tag="$(awk '$1 == "tag" { print $2 }' "${REPO_ROOT}/klayout/PLUGIN_VERSION" 2>/dev/null || true)"
+if command -v klayout >/dev/null 2>&1; then
+  kl_out="$(QT_QPA_PLATFORM=offscreen klayout -z -nc -r "${REPO_ROOT}/scripts/klayout_check.py" 2>&1 || true)"
+  if grep -qx 'TECH sky130A' <<<"${kl_out}"; then
+    echo "OK  KLayout technology sky130A"
+  else
+    echo "FAIL  KLayout has no sky130A technology (KLAYOUT_PATH is '${KLAYOUT_PATH:-unset}')"
+    echo "      run: . ${DESIGNS}/.designinit"
+    grep -v -e '^TECH' -e '^LIB' -e '^Loaded sky130' <<<"${kl_out}" | tail -5 | sed 's/^/      /' || true
+    fail=1
+  fi
+  if ! grep -qx 'LIB sky130_magic' <<<"${kl_out}"; then
+    echo "FAIL  KLayout has no sky130_magic library (klayout-magic-pcells)"
+    if [ ! -f "${plugin_dir}/grain.xml" ]; then
+      echo "      ${plugin_dir} is missing: run git pull in the workspace"
+    else
+      case ":${KLAYOUT_PATH:-}:" in
+        *":${DESIGNS}/klayout:"*)
+          # Show KLayout's own messages. The doctor check below covers Magic and the PDK.
+          grep -v -e '^TECH' -e '^LIB' -e '^MENU' -e '^Loaded sky130' <<<"${kl_out}" | tail -5 | sed 's/^/      /' || true ;;
+        *) echo "      run: . ${DESIGNS}/.designinit" ;;
+      esac
+    fi
+    fail=1
+  else
+    echo "OK  KLayout library sky130_magic (klayout-magic-pcells ${plugin_tag:-of unknown version})"
+    if grep -q '^MENUITEM Run Magic DRC' <<<"${kl_out}"; then
+      echo "OK  KLayout Magic menu ($(grep -c '^MENUITEM ' <<<"${kl_out}") entries)"
+    else
+      echo "FAIL  KLayout has no Magic menu (KMP_MENU is '${KMP_MENU:-unset}'; KMP_MENU=0 leaves the menu out)"
+      fail=1
+    fi
+    if grep -q '^PCELL sky130_fd_pr__nfet_01v8 ' <<<"${kl_out}"; then
+      echo "OK  Magic built a sky130_fd_pr__nfet_01v8 for KLayout"
+    else
+      echo "FAIL  sky130_magic could not build sky130_fd_pr__nfet_01v8"
+      grep -v -e '^TECH' -e '^LIB' -e '^MENU' -e '^Loaded sky130' <<<"${kl_out}" | tail -5 | sed 's/^/      /' || true
+      fail=1
+    fi
+  fi
+
+  if doctor_out="$(PYTHONPATH="${plugin_dir}/python${PYTHONPATH:+:${PYTHONPATH}}" \
+      python3 -m klayout_magic_pcells doctor 2>&1)"; then
+    echo "OK  klayout-magic-pcells doctor"
+  else
+    echo "FAIL  klayout-magic-pcells doctor. Its findings:"
+    grep -E 'PROBLEM|MISMATCH|MISSING|ERROR|error' <<<"${doctor_out}" | sed 's/^/      /' ||
+      tail -5 <<<"${doctor_out}" | sed 's/^/      /'
+    echo "      For the whole report, run: PYTHONPATH=${plugin_dir}/python python3 -m klayout_magic_pcells doctor"
+    fail=1
+  fi
+
+  # Check the caller's own terminal too, but only when its PDK is sky130A. If
+  # it is not, the PDK block above has already warned, and the same fix covers
+  # KLayout.
+  if [ "${INHERITED_PDK}" = "sky130A" ]; then
+    case ":${INHERITED_KLAYOUT_PATH}:" in
+      *":${DESIGNS}/klayout:"*) ;;
+      *) echo "WARN  your shell's KLAYOUT_PATH does not include ${DESIGNS}/klayout, so a"
+         echo "      KLayout started from it has no sky130_magic library and no Magic menu."
+         echo "      Running sak-pdk-script.sh resets KLAYOUT_PATH. Open a new terminal, or run:"
+         echo "        . ${DESIGNS}/.designinit" ;;
+    esac
+    if [ "${INHERITED_KMP_PDKS}" != "sky130A" ]; then
+      echo "WARN  KMP_PDKS is '${INHERITED_KMP_PDKS}' in your shell, not sky130A; .designinit sets it"
+    fi
+    if [ "${INHERITED_KMP_DRC_MODE}" != "flat" ]; then
+      echo "WARN  KMP_DRC_MODE is '${INHERITED_KMP_DRC_MODE}' in your shell, not flat. AD104-K's"
+      echo "      pages expect Magic > Run Magic DRC... to open in Flat mode; .designinit sets it"
+    fi
+  fi
 fi
 
 echo "--- module helpers ---"

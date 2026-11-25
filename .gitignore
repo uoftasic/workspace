@@ -20,3 +20,6 @@ modules/*/spice/*.txt
 .DS_Store
 *.swp
 *~
+
+# klayout-magic-pcells cache (KMP_CACHE_DIR in common/.designinit)
+.cache/
