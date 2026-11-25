@@ -24,4 +24,4 @@ You can also clone a course on your own machine (the host) instead of in the con
 
 Either way, `mod ad101` inside the container takes you to `/foss/designs/modules/ad101`.
 
-More folders are planned, added as each course's lab content is ready: `ad103_nonlinear/`, `ad104_layout/`, `dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).
+More folders are planned, added as each course's lab content is ready: `ad103_nonlinear/`, `ad104-m/`, `ad104-k/`, `dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).

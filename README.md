@@ -53,6 +53,32 @@ container system stop                      # stop Apple's container services (st
 
 For later courses, `mod add <course>` clones `github.com/uoftasic/<course>` into `modules/<course>`, for example `mod add ad101`. See [`modules/README.md`](modules/README.md).
 
+## KLayout and the Magic menu
+
+KLayout in the workspace loads the [klayout-magic-pcells](https://github.com/uoftasic/klayout-magic-pcells) plugin, which the AD104-K course uses. The plugin adds two things to KLayout:
+
+- the `sky130_magic` library in the Libraries panel. Magic draws the devices in this library, so a transistor you place from it in KLayout is the one Magic's Devices menu would draw.
+- a Magic menu, between Macros and Help, which runs Magic's design rule check (DRC), Magic's extraction, and a layout-versus-schematic check (LVS) with netgen on the layout you have open.
+
+The plugin is part of this repo, in `klayout/salt/klayout-magic-pcells/`, at the release named in `klayout/PLUGIN_VERSION`. `git pull` updates it with the rest of the workspace, and the container doesn't need GitHub to load it. `common/.designinit` adds the `klayout/` folder to `KLAYOUT_PATH`, the list of folders where KLayout looks for technologies and packages. The plugin keeps the cells it generates in `.cache/klayout-magic-pcells/` at the top of the repo. Git ignores that folder, and it survives a new container, like the rest of your files under `/foss/designs`.
+
+If you start KLayout with the KLayout icon on the desktop, a file you open with File > Open shows the sky130A layer names. From a terminal, name the technology and the file: `klayout -e -n sky130A my_cell.gds` (`-e` opens KLayout in edit mode, and `-n sky130A` applies the sky130A technology to the file you name). In a KLayout started from a terminal, a file opened later with File > Open can show bare layer numbers instead; open it from a KLayout started with the icon, or name it on the command line.
+
+The smoke test checks the plugin. Its last KLayout check is `doctor`, the plugin's self-check, which starts Magic. On a working setup the KLayout lines are these, with the version from `klayout/PLUGIN_VERSION`:
+
+```
+--- KLayout ---
+OK  KLayout technology sky130A
+OK  KLayout library sky130_magic (klayout-magic-pcells v0.6.2)
+OK  KLayout Magic menu (8 entries)
+OK  Magic built a sky130_fd_pr__nfet_01v8 for KLayout
+OK  klayout-magic-pcells doctor
+```
+
+If KLayout has no Magic menu, the terminal you started it from didn't load `.designinit`, or you ran `sak-pdk-script.sh` (the image's script for switching PDKs) in that terminal afterwards; that script resets `KLAYOUT_PATH`. Open a new terminal, or run `. /foss/designs/common/.designinit` in that one, then start KLayout again from it.
+
+To move the workspace to a later release of the plugin, a maintainer runs `scripts/update_klayout_plugin.sh <tag>` on the host (your own machine, outside the container), runs the smoke test in the container, and commits.
+
 ## What's in this repo
 
 | Path | Purpose |
@@ -63,6 +89,7 @@ For later courses, `mod add <course>` clones `github.com/uoftasic/<course>` into
 | `common/` | Shared environment: `.designinit` with `mod`, and `xschemrc` |
 | `pdk/` | `volare.lock`, which records the SKY130 PDK and image tag |
 | `modules/` | One folder per course (`mod`, `mod add <name>`, `mod <name>`) |
+| `klayout/` | KLayout packages: the klayout-magic-pcells plugin, at the release named in `klayout/PLUGIN_VERSION` |
 | `docker/` | noVNC landing page |
 
 Every course that uses the workspace runs the same image and the same PDK. The toolchain is the IIC-OSIC-TOOLS image, maintained by IIC-JKU.
