@@ -1,0 +1,4 @@
+{
+ "comment": "GDS elements in Magic's output that KLayout has no shape for (NODE), counted per device at its default point over all structures of the file. A PCell can't hold them. Written by run_sweep.py --update-baseline.",
+ "devices": {}
+}

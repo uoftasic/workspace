@@ -1,0 +1,8 @@
+{
+ "schema": 1,
+ "pdk": "ihp-sg13g2",
+ "method": "every device default through magic::gencell, extracted from Magic's database and again after Magic's gds write and a fresh gds read, both with the harness's netlist-only settings; tests/backend/test_lvs_backend.py ReadbackTest (design-0.6.md 3.2)",
+ "measured": 39,
+ "unmeasured": [],
+ "devices": []
+}

@@ -1,0 +1,59 @@
+{
+ "_comment": "Hand-typed rows for tools/build_pdk_data.py. generated: per cifoutput layer, the device shapes the F1 enclosure check measures (types: the Magic type or alias named in the gdsii style's statement that grows the layer from that shape); the builder takes the distance and the tech-file line from the parser. A row may add grow_um, file and line by hand where the parser gives none. rule_ids name the foundry rule for that enclosure, from the GAPS documents or, where _source cites them, the foundry's published rules. layers: corrections to a layer row, keyed by GDS layer/datatype, each with the tech-file line in _line.",
+ "sky130A": {
+  "generated": {
+   "NSDM": [{"from": "n-diffusion", "types": ["allnactivenontap"], "rule_ids": ["n/psdm.5a"],
+             "_source": "GAPS-sky130A 3.2 a_nsdm_flush; design-0.6.md 3.3 F1"},
+            {"from": "n-tap", "types": ["allnactivetap"], "rule_ids": ["n/psdm.5b"],
+             "_source": "SkyWater periphery rules (google/skywater-pdk 7198cf6), n/ psd.5b: enclosure of tap by nsdm(psdm), 0.125"}],
+   "PSDM": [{"from": "p-diffusion", "types": ["allpactivenontap"], "rule_ids": ["n/psdm.5a"]},
+            {"from": "p-tap", "types": ["allpactivetap"], "rule_ids": ["n/psdm.5b"]}],
+   "NPC": [{"from": "poly contact cut", "types": ["pc"], "rule_ids": ["licon.15"],
+            "_source": "GAPS-sky130A 3.2 a_no_npc, c_npc_narrow; SkyWater periphery rules (google/skywater-pdk 7198cf6), licon.15: poly_licon must be enclosed by npc by 0.100"}],
+   "HVTP": [{"from": "pfet gate (hvt)", "types": ["pfethvt"], "rule_ids": ["hvtp.3"],
+             "_source": "GAPS-sky130A 3.2 i_hvtp_w030; SkyWater periphery rules (google/skywater-pdk 7198cf6), hvtp.3: min enclosure of pfet by hvtp, 0.180 (hvtp.4 is the spacing between pfet and hvtp)"}],
+   "LVTN": [{"from": "fet gate (lvt)", "types": ["nfetlvt"], "rule_ids": ["lvtn.4b"],
+             "_source": "SkyWater periphery rules (google/skywater-pdk 7198cf6), lvtn.4b: min enclosure of gate by lvtn, 0.180"}]
+  }
+ },
+ "gf180mcuD": {
+  "generated": {
+   "NPLUS": [{"from": "n-diffusion", "types": ["*ndif"], "rule_ids": ["NP.5a"],
+              "_source": "GAPS-gf180mcuD 2 NP_flush, NP5a_ov010"},
+             {"from": "n-tap", "types": ["*nsd"], "rule_ids": []},
+             {"from": "nfet gate", "types": ["allnfets"], "rule_ids": []}],
+   "PPLUS": [{"from": "p-diffusion", "types": ["*pdif"], "rule_ids": []},
+             {"from": "p-tap", "types": ["*psd"], "rule_ids": ["PP.5di"],
+              "_source": "GAPS-gf180mcuD 3 PP5_ov0 (PPLUS 0.02 around the tap)"},
+             {"from": "pfet gate", "types": ["allpfets"], "rule_ids": []}],
+   "DUALGATE": [{"from": "5 V / 6 V n-diffusion", "types": ["allndiffmv"], "rule_ids": ["DV.6"],
+                 "_source": "GAPS-gf180mcuD 1 DV.6 + DV.3; 2 DG_small"},
+                {"from": "5 V / 6 V p-diffusion", "types": ["allpdiffmv"], "rule_ids": ["DV.6"]}]
+  }
+ },
+ "ihp-sg13g2": {
+  "generated": {
+   "PSD": [{"from": "p-diffusion", "types": ["allpactivenontap"], "rule_ids": ["pSD.c"],
+            "_source": "GAPS-ihp-sg13cmos5l 2.2 u_pSD.c (pSD 0.18 past the Activ); GAPS-ihp-sg13g2 4 H_pmos_psdflush"},
+           {"from": "PMOS gate", "types": ["pmos"], "rule_ids": ["pSD.i"],
+            "_source": "GAPS-ihp-sg13cmos5l 2.2 u_pSD.i (pSD 0.30 past the gate)"},
+           {"from": "p-tap", "types": ["allpactivetap"], "rule_ids": ["pSD.c1"]}],
+   "THKOX": [{"from": "HV diffusion", "types": ["alldiffhv"], "rule_ids": ["TGO.a"],
+              "_source": "GAPS-ihp-sg13cmos5l 3 g_hv_tgo_small (ThickGateOx 0.27 past the Activ)"}]
+  }
+ },
+ "ihp-sg13cmos5l": {
+  "generated": {
+   "PSD": [{"from": "p-diffusion", "types": ["allpactivenontap"], "rule_ids": ["pSD.c"],
+            "_source": "GAPS-ihp-sg13cmos5l 2.2 u_pSD.c (pSD 0.18 past the Activ)"},
+           {"from": "PMOS gate", "types": ["pmos"], "rule_ids": ["pSD.i"],
+            "_source": "GAPS-ihp-sg13cmos5l 2.2 u_pSD.i (pSD 0.30 past the gate)"},
+           {"from": "p-tap", "types": ["allpactivetap"], "rule_ids": ["pSD.c1"]}],
+   "THKOX": [{"from": "HV diffusion", "types": ["alldiffhv"], "rule_ids": ["TGO.a"],
+              "_source": "GAPS-ihp-sg13cmos5l 3 g_hv_tgo_small (ThickGateOx 0.27 past the Activ)"}]
+  },
+  "layers": {
+   "16/0": {"read": "reads-as:digisub", "_line": "ihp-sg13cmos5l-cifin.tech:1127 (calma DIGITALID 16 0); as ihp-sg13g2 (GAPS-ihp-sg13g2 8), whose .lyp has DigiSub on 60/0; this PDK's .lyp has no DigiSub"}
+  }
+ }
+}

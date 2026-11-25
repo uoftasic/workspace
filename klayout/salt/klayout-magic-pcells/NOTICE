@@ -1,0 +1,98 @@
+klayout-magic-pcells
+Copyright 2026 The klayout-magic-pcells authors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The device manifests in python/klayout_magic_pcells/data/ hold data that
+tools/build_manifest.py reads out of each PDK's Magic device generator code
+by running it in Magic: device and parameter names, default values, the
+labels, order and callbacks of Magic's parameter dialogs, what each _check
+proc does to some probe values, and a summary of what Magic draws for the
+defaults. The generator code is not included. It comes from:
+
+  sky130A        sky130A.tcl, installed by open_pdks; written by
+                 Tim Edwards. The file states no licence.
+  gf180mcuD      gf180mcuD.tcl, installed by open_pdks; written by
+                 Tim Edwards. The file states no licence.
+  ihp-sg13g2     ihp-sg13g2.tcl and the ihp-sg13g2-*.tcl files it sources,
+                 Copyright 2025 IHP PDK Authors, Apache License 2.0.
+  ihp-sg13cmos5l ihp-sg13cmos5l.tcl and the ihp-sg13cmos5l-*.tcl files it
+                 sources, Copyright 2026 IHP PDK Authors, Apache License 2.0.
+
+Since version 0.6 the same folder also holds four data files per PDK, and
+docs/gaps/ holds the gap tables. They are generated or measured from the
+installed PDKs and ship under the Apache License, Version 2.0, as the
+manifests do; the project lead decided this.
+
+  pdk-<pdk>.json       Made by tools/build_pdk_data.py from the PDK's Magic
+                       tech file: Magic's DRC rules with their messages,
+                       the layers Magic reads and writes, the implants it
+                       grows, and its label and pin layers. It adds the
+                       layer names of the PDK's KLayout layer properties
+                       file, and the layers that the PDK's KLayout LVS
+                       deck reads labels from (layer numbers and line
+                       numbers only).
+  devices-<pdk>.json   Rules for how Magic reads each device from GDS,
+                       written by hand; each rule cites the lines of the
+                       Magic tech file's GDS input and output styles that
+                       it follows.
+  readback-<pdk>.json  Measured with Magic: each device's defaults
+                       extracted from Magic's database and again after a
+                       GDS write and read.
+  gaps-<pdk>.json and  Made by tools/build_gaps.py: rule names, values,
+  docs/gaps/           line numbers and switch conditions from the PDK's
+                       Magic tech file and KLayout DRC decks, and what both
+                       tools reported on the case suite in tests/cases/.
+                       A switch condition is the text of the condition
+                       around a rule in the deck, cut to 60 characters;
+                       the rules' own code is not copied.
+
+The files these are read from, with the licence statements that their
+headers give in the installed PDKs:
+
+  sky130A (open_pdks 026824c7)
+    libs.tech/magic/sky130A.tech: Copyright (c) 2020 R. Timothy Edwards;
+      "The file may be distributed under the terms of the Apache 2.0
+      license agreement."
+    libs.tech/klayout/tech/sky130A.lyp: Copyright 2022 Mabrains LLC,
+      Apache License, Version 2.0.
+    libs.tech/klayout/lvs/sky130.lvs: Copyright 2022 Efabless
+      Corporation, Apache License, Version 2.0.
+    libs.tech/klayout/drc/sky130A_mr.drc and sky130A.lydrc: "Distributed
+      under GNU GPLv3".
+  gf180mcuD (open_pdks 026824c7)
+    libs.tech/magic/gf180mcuD.tech: Copyright (c) 2022 Efabless, Inc.;
+      states no licence.
+    libs.tech/klayout/tech/gf180mcu.lyp: Copyright 2022 GlobalFoundries
+      PDK Authors, Apache License, Version 2.0.
+    libs.tech/klayout/tech/lvs/gf180mcu.lvs and lvs/rule_decks/*.lvs:
+      Copyright 2023 GlobalFoundries PDK Authors, Apache License,
+      Version 2.0.
+    libs.tech/klayout/tech/drc/gf180mcu.drc and drc/rule_decks/*.rb:
+      Copyright 2022 to 2026 GlobalFoundries PDK Authors, Apache License,
+      Version 2.0.
+  ihp-sg13g2 (commit 7e53c777)
+    libs.tech/magic/ihp-sg13g2.tech and the ihp-sg13g2-cifout, -cifin,
+      -drc and -extract tech files it includes: Copyright 2025 IHP PDK
+      Authors, Apache License, Version 2.0.
+    libs.tech/klayout/tech/sg13g2.lyp: Copyright 2024 IHP PDK Authors,
+      Apache License, Version 2.0.
+    libs.tech/klayout/tech/lvs/: sg13g2.lvs and every .lvs file in that
+      folder and below it: Copyright 2024 and 2026 IHP PDK Authors,
+      Apache License, Version 2.0.
+    libs.tech/klayout/tech/drc/: run_drc.py and every .drc file in that
+      folder and below it: Copyright 2025 and 2026 IHP PDK Authors,
+      Apache License, Version 2.0.
+  ihp-sg13cmos5l (commit ff32f48c)
+    libs.tech/magic/ihp-sg13cmos5l.tech and the ihp-sg13cmos5l-cifout,
+      -cifin, -drc and -extract tech files it includes: Copyright 2026
+      IHP PDK Authors (2025 on ihp-sg13cmos5l-drc.tech), Apache License,
+      Version 2.0.
+    libs.tech/klayout/tech/sg13cmos5l.lyp: Copyright 2024 IHP PDK
+      Authors, Apache License, Version 2.0.
+    libs.tech/klayout/tech/lvs/: sg13cmos5l.lvs and every .lvs file in
+      that folder and below it: Copyright 2024 to 2026 IHP PDK Authors,
+      Apache License, Version 2.0.
+    libs.tech/klayout/tech/drc/: run_drc.py and every .drc file in that
+      folder and below it: Copyright 2025 and 2026 IHP PDK Authors,
+      Apache License, Version 2.0.

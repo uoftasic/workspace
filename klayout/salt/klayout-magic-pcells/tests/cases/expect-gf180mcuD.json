@@ -1,0 +1,1123 @@
+{
+ "BUTT_ok": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "BUTT_straddle": {
+  "klayout": {
+   "kl_alone": {
+    "CO.2a": null,
+    "CO.9": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.1 + 2 * CO.6": 1,
+    "CO.2a - 2 * CO.6": 3,
+    "CO.4": 7
+   },
+   "drc(full)": {
+    "CO.1 + 2 * CO.6": 1,
+    "CO.2a - 2 * CO.6": 3,
+    "CO.4": 7
+   },
+   "drc(routing)": {
+    "CO.1 + 2 * CO.6": 1,
+    "CO.2a - 2 * CO.6": 3,
+    "CO.4": 7
+   }
+  }
+ },
+ "CO10_cont_on_gate": {
+  "klayout": {
+   "kl_alone": {
+    "CO.10": null,
+    "M1.2a": null,
+    "PL.4_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.4": 8,
+    "CO.7 - 2 * CO.6": 3,
+    "M1.2a": 6,
+    "PL.1": 1,
+    "PL.2": 2,
+    "PL.4": 2
+   },
+   "drc(full)": {
+    "CO.4": 8,
+    "CO.7 - 2 * CO.6": 3,
+    "M1.2a": 6,
+    "PL.1": 1,
+    "PL.2": 2,
+    "PL.4": 2
+   },
+   "drc(routing)": {
+    "CO.4": 8,
+    "CO.7 - 2 * CO.6": 3,
+    "M1.2a": 6,
+    "PL.1": 1,
+    "PL.2": 2,
+    "PL.4": 2
+   }
+  }
+ },
+ "CO11_cont_field": {
+  "klayout": {
+   "kl_alone": {
+    "CO.11": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CO1_big030": {
+  "klayout": {
+   "kl_alone": {
+    "CO.1": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CO1_small020": {
+  "klayout": {
+   "kl_alone": {
+    "CO.1": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.1 + 2 * CO.6": 2
+   },
+   "drc(full)": {
+    "CO.1 + 2 * CO.6": 2
+   },
+   "drc(routing)": {
+    "CO.1 + 2 * CO.6": 2
+   }
+  }
+ },
+ "CO2a_s022": {
+  "klayout": {
+   "kl_alone": {
+    "CO.2a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CO2b_4x4_s010": {
+  "klayout": {
+   "kl_alone": {
+    "CO.2a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CO2b_4x4_s026": {
+  "klayout": {
+   "kl_alone": {
+    "CO.2b": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CO3_pov004": {
+  "klayout": {
+   "kl_alone": {
+    "CO.3": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.3": 7
+   },
+   "drc(full)": {
+    "CO.3": 7
+   },
+   "drc(routing)": {
+    "CO.3": 7
+   }
+  }
+ },
+ "CO4_cov004": {
+  "klayout": {
+   "kl_alone": {
+    "CO.4": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.4": 2
+   },
+   "drc(full)": {
+    "CO.4": 2
+   },
+   "drc(routing)": {
+    "CO.4": 2
+   }
+  }
+ },
+ "CO6_m1ov0": {
+  "klayout": {
+   "kl_alone": {
+    "CO.6": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.6": 4
+   },
+   "drc(full)": {
+    "CO.6": 4
+   },
+   "drc(routing)": {
+    "CO.6": 4
+   }
+  }
+ },
+ "CO6_m1ov002": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CO7_c2g012": {
+  "klayout": {
+   "kl_alone": {
+    "CO.7": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.7 - 2 * CO.6": 5
+   },
+   "drc(full)": {
+    "CO.7 - 2 * CO.6": 5
+   },
+   "drc(routing)": {
+    "CO.7 - 2 * CO.6": 5
+   }
+  }
+ },
+ "CO8_pc2c014": {
+  "klayout": {
+   "kl_alone": {
+    "CO.8": null,
+    "M1.2a": null,
+    "PL.5a_LV": null,
+    "PL.5b_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.8 - 2 * CO.6": 1,
+    "M1.2a": 2,
+    "PL.5a": 4
+   },
+   "drc(full)": {
+    "CO.8 - 2 * CO.6": 1,
+    "M1.2a": 2,
+    "PL.5a": 4
+   },
+   "drc(routing)": {
+    "CO.8 - 2 * CO.6": 1,
+    "M1.2a": 2,
+    "PL.5a": 4
+   }
+  }
+ },
+ "C_NMOS": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "C_NMOS6": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "C_PMOS": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "C_PMOS6": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "C_PTAP": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF12_noimp": {
+  "klayout": {
+   "kl_alone": {
+    "DF.12": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF13_nwnotap": {
+  "klayout": {
+   "kl_alone": {
+    "DF.13_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF14_notap": {
+  "klayout": {
+   "kl_alone": {
+    "DF.14_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF14_tap25": {
+  "klayout": {
+   "kl_alone": {
+    "DF.14_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF1a_w020": {
+  "klayout": {
+   "kl_alone": {
+    "DF.1a_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.1a": 1
+   },
+   "drc(full)": {
+    "DF.1a": 1
+   },
+   "drc(routing)": {
+    "DF.1a": 1
+   }
+  }
+ },
+ "DF3a_s025": {
+  "klayout": {
+   "kl_alone": {
+    "DF.3a_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.3a": 3
+   },
+   "drc(full)": {
+    "DF.3a": 3
+   },
+   "drc(routing)": {
+    "DF.3a": 3
+   }
+  }
+ },
+ "DF4a_ntap_nw008": {
+  "klayout": {
+   "kl_alone": {
+    "DF.4d_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.4a": 3
+   },
+   "drc(full)": {
+    "DF.4a": 3
+   },
+   "drc(routing)": {
+    "DF.4a": 3
+   }
+  }
+ },
+ "DF5_ptap_nw008": {
+  "klayout": {
+   "kl_alone": {
+    "DF.17_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.5": 3
+   },
+   "drc(full)": {
+    "DF.5": 3
+   },
+   "drc(routing)": {
+    "DF.5": 3
+   }
+  }
+ },
+ "DF6_lv_020": {
+  "klayout": {
+   "kl_alone": {
+    "DF.6_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.6": 1
+   },
+   "drc(full)": {
+    "DF.6": 1
+   },
+   "drc(routing)": {
+    "DF.6": 1
+   }
+  }
+ },
+ "DF6_lv_0235": {
+  "klayout": {
+   "kl_alone": {
+    "DF.6_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF6_mv_030": {
+  "klayout": {
+   "kl_alone": {
+    "DF.6_MV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DF7_pdiff_nw038": {
+  "klayout": {
+   "kl_alone": {
+    "DF.4c_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.7": 3
+   },
+   "drc(full)": {
+    "DF.7": 3
+   },
+   "drc(routing)": {
+    "DF.7": 3
+   }
+  }
+ },
+ "DF8_ndiff_nw038": {
+  "klayout": {
+   "kl_alone": {
+    "DF.16_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.8": 3
+   },
+   "drc(full)": {
+    "DF.8": 3
+   },
+   "drc(routing)": {
+    "DF.8": 3
+   }
+  }
+ },
+ "DF9_a018": {
+  "klayout": {
+   "kl_alone": {
+    "DF.9": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.9": 1
+   },
+   "drc(full)": {
+    "DF.9": 1,
+    "PP.8a": 1
+   },
+   "drc(routing)": {
+    "DF.9": 1
+   }
+  }
+ },
+ "DG_missing": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DG_partial": {
+  "klayout": {
+   "kl_alone": {
+    "DV.6": null,
+    "DV.7": null,
+    "DV.8": null,
+    "PL.2_MV": null,
+    "PL.9": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.2": 3
+   },
+   "drc(full)": {
+    "PL.2": 3
+   },
+   "drc(routing)": {
+    "PL.2": 3
+   }
+  }
+ },
+ "DG_small": {
+  "klayout": {
+   "kl_alone": {
+    "DV.6": null,
+    "DV.8": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "DV9_lvmv_nwell": {
+  "klayout": {
+   "kl_alone": {
+    "DV.9": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "DV.9": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "GRID_m1_2p5nm": {
+  "klayout": {
+   "kl_alone": {
+    "metal1_OFFGRID": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_1_w020": {
+  "klayout": {
+   "kl_alone": {
+    "M1.1": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.1": 1
+   },
+   "drc(full)": {
+    "M1.1": 1
+   },
+   "drc(routing)": {
+    "M1.1": 1
+   }
+  }
+ },
+ "M1_2a_s020": {
+  "klayout": {
+   "kl_alone": {
+    "M1.2a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.2a": 1
+   },
+   "drc(full)": {
+    "M1.2a": 1
+   },
+   "drc(routing)": {
+    "M1.2a": 1
+   }
+  }
+ },
+ "M1_2b_wide": {
+  "klayout": {
+   "kl_alone": {
+    "M1.2b": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.2b": 1
+   },
+   "drc(full)": {
+    "M1.2b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "M1_3_a012": {
+  "klayout": {
+   "kl_alone": {
+    "M1.3": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.3": 1
+   },
+   "drc(full)": {
+    "M1.3": 1
+   },
+   "drc(routing)": {
+    "M1.3": 1
+   }
+  }
+ },
+ "NP3_s006": {
+  "klayout": {
+   "kl_alone": {
+    "NP.3ci": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NP5a_ov010": {
+  "klayout": {
+   "kl_alone": {
+    "NP.5a": null,
+    "NP.5b": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NPPP_both": {
+  "klayout": {
+   "kl_alone": {
+    "DF.3b": null,
+    "NP.3d": null,
+    "NP.3e": null,
+    "PP.12": null,
+    "PP.2": null,
+    "PP.3d": null,
+    "PP.3e": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.4": 8,
+    "DF.1c": 10,
+    "DF.3a": 1,
+    "DF.9": 1,
+    "FIXME": 6,
+    "PL.4": 12
+   },
+   "drc(full)": {
+    "CO.4": 8,
+    "DF.1c": 10,
+    "DF.3a": 1,
+    "DF.9": 1,
+    "FIXME": 6,
+    "PL.4": 12,
+    "PP.8a": 2
+   },
+   "drc(routing)": {
+    "CO.4": 8,
+    "DF.1c": 10,
+    "DF.3a": 1,
+    "DF.9": 1,
+    "FIXME": 6,
+    "PL.4": 12
+   }
+  }
+ },
+ "NP_flush": {
+  "klayout": {
+   "kl_alone": {
+    "NP.5a": null,
+    "NP.5b": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NP_missing": {
+  "klayout": {
+   "kl_alone": {
+    "DF.12": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "DF.1a": 1,
+    "DF.6": 2,
+    "DF.7": 4,
+    "DF.9": 2,
+    "PL.4": 6
+   },
+   "drc(full)": {
+    "DF.1a": 1,
+    "DF.6": 2,
+    "DF.7": 4,
+    "DF.9": 2,
+    "PL.4": 6
+   },
+   "drc(routing)": {
+    "DF.1a": 1,
+    "DF.6": 2,
+    "DF.7": 4,
+    "DF.9": 2,
+    "PL.4": 6
+   }
+  }
+ },
+ "NW1a_w080": {
+  "klayout": {
+   "kl_alone": {
+    "NW.1a_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.1a": 1
+   },
+   "drc(full)": {
+    "NW.1a": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "NW2a_s050": {
+  "klayout": {
+   "kl_alone": {
+    "NW.2a_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.2a": 1
+   },
+   "drc(full)": {
+    "NW.2a": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "NWmiss_pfet": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "CO.4": 8,
+    "DF.1a": 6,
+    "DF.1c": 16,
+    "DF.3a": 2,
+    "DF.7": 2,
+    "DF.9": 3,
+    "FIXME": 8,
+    "PL.4": 14
+   },
+   "drc(full)": {
+    "CO.4": 8,
+    "DF.1a": 6,
+    "DF.1c": 16,
+    "DF.3a": 2,
+    "DF.7": 2,
+    "DF.9": 3,
+    "FIXME": 8,
+    "P-diffusion and N-ohmic must be over N-well or deep N-well": 2,
+    "PL.4": 14
+   },
+   "drc(routing)": {
+    "CO.4": 8,
+    "DF.1a": 6,
+    "DF.1c": 16,
+    "DF.3a": 2,
+    "DF.7": 2,
+    "DF.9": 3,
+    "FIXME": 8,
+    "PL.4": 14
+   }
+  }
+ },
+ "PL1_mv_w019": {
+  "klayout": {
+   "kl_alone": {
+    "PL.1_MV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "PL1_w016": {
+  "klayout": {
+   "kl_alone": {
+    "PL.1_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.1": 3
+   },
+   "drc(full)": {
+    "PL.1": 3
+   },
+   "drc(routing)": {
+    "PL.1": 3
+   }
+  }
+ },
+ "PL2_lv_L025": {
+  "klayout": {
+   "kl_alone": {
+    "PL.2_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.2": 6
+   },
+   "drc(full)": {
+    "PL.2": 6
+   },
+   "drc(routing)": {
+    "PL.2": 6
+   }
+  }
+ },
+ "PL2_mv_L060": {
+  "klayout": {
+   "kl_alone": {
+    "PL.2_MV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.2": 6
+   },
+   "drc(full)": {
+    "PL.2": 6
+   },
+   "drc(routing)": {
+    "PL.2": 6
+   }
+  }
+ },
+ "PL3a_s020": {
+  "klayout": {
+   "kl_alone": {
+    "PL.3a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.3a": 1
+   },
+   "drc(full)": {
+    "PL.3a": 1
+   },
+   "drc(routing)": {
+    "PL.3a": 1
+   }
+  }
+ },
+ "PL4_e015": {
+  "klayout": {
+   "kl_alone": {
+    "PL.4_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.4": 1
+   },
+   "drc(full)": {
+    "PL.4": 1
+   },
+   "drc(routing)": {
+    "PL.4": 1
+   }
+  }
+ },
+ "PL5a_s008": {
+  "klayout": {
+   "kl_alone": {
+    "PL.5a_LV": null,
+    "PL.5b_LV": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PL.5a": 3
+   },
+   "drc(full)": {
+    "PL.5a": 3
+   },
+   "drc(routing)": {
+    "PL.5a": 3
+   }
+  }
+ },
+ "PP1_w034": {
+  "klayout": {
+   "kl_alone": {
+    "PP.1": null,
+    "PP.8a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "PP.8a": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "PP2_s028": {
+  "klayout": {
+   "kl_alone": {
+    "PP.2": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "PP5_ov0": {
+  "klayout": {
+   "kl_alone": {
+    "PP.5di": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_1_b032": {
+  "klayout": {
+   "kl_alone": {
+    "V1.1": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_1_s024": {
+  "klayout": {
+   "kl_alone": {
+    "V1.1": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "V1.1": 2
+   },
+   "drc(full)": {
+    "V1.1": 2
+   },
+   "drc(routing)": {
+    "V1.1": 2
+   }
+  }
+ },
+ "V1_2a_s022": {
+  "klayout": {
+   "kl_alone": {
+    "V1.2a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_2b_4x4_s026": {
+  "klayout": {
+   "kl_alone": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_2b_4x4_s030": {
+  "klayout": {
+   "kl_alone": {
+    "V1.2b": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_3_m1ov0": {
+  "klayout": {
+   "kl_alone": {
+    "V1.3d": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "V1.3": 2
+   },
+   "drc(full)": {
+    "V1.3": 2
+   },
+   "drc(routing)": {
+    "V1.3": 2
+   }
+  }
+ },
+ "V1_3_m1ov002": {
+  "klayout": {
+   "kl_alone": {
+    "V1.3d": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "V1.3": 2
+   },
+   "drc(full)": {
+    "V1.3": 2
+   },
+   "drc(routing)": {
+    "V1.3": 2
+   }
+  }
+ },
+ "V1_4_m2ov0": {
+  "klayout": {
+   "kl_alone": {
+    "V1.4a": null
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "V1.4": 1
+   },
+   "drc(full)": {
+    "V1.4": 1
+   },
+   "drc(routing)": {
+    "V1.4": 1
+   }
+  }
+ }
+}

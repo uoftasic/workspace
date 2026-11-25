@@ -1,0 +1,130 @@
+{
+ "comment": [
+  "Test data for gen_sweep.py, not limits the plugin applies. Magic's _check is the only validation.",
+  "A parameter's sweep range comes from the device's own internal keys (wmin, lmin, wmax, lmax) first,",
+  "then from the manifest's check_min/check_max probes when those are plain numbers, then from here;",
+  "a cap from here that is below the parameter's default is not used.",
+  "'large_nf' is the finger count (nf, or ng on the IHP PDKs) that makes a MOSFET, MOS capacitor or",
+  "varactor with w=31 wider than 30 um, from bounding boxes measured with Magic 8.3.681 at 1 and 30",
+  "fingers (w=31). Device names are unique across the four PDKs' MOS devices; ihp-sg13g2 and",
+  "ihp-sg13cmos5l share theirs and measured the same."
+ ],
+ "by_name": {
+  "w": {
+   "max": 20
+  },
+  "l": {
+   "max": 20
+  },
+  "diffcov": {
+   "min": 20,
+   "max": 100
+  },
+  "polycov": {
+   "min": 20,
+   "max": 100
+  },
+  "tbcov": {
+   "min": 0,
+   "max": 100
+  },
+  "rlcov": {
+   "min": 0,
+   "max": 100
+  },
+  "endcov": {
+   "min": 0,
+   "max": 100
+  },
+  "val": {
+   "min": 0.1,
+   "max": 10000
+  },
+  "area": {
+   "min": 0.2,
+   "max": 100
+  },
+  "peri": {
+   "min": 1.8,
+   "max": 40
+  },
+  "deltax": {
+   "min": 0,
+   "max": 5
+  },
+  "deltay": {
+   "min": 0,
+   "max": 5
+  },
+  "signed": {
+   "min": 0,
+   "max": 100
+  }
+ },
+ "by_family": {
+  "mim_cap": {
+   "w": {
+    "max": 30
+   },
+   "l": {
+    "max": 30
+   }
+  },
+  "fixed": {
+   "deltax": {
+    "min": 0,
+    "max": 5
+   },
+   "deltay": {
+    "min": 0,
+    "max": 5
+   }
+  }
+ },
+ "large_nf": {
+  "sky130_fd_bs_flash__special_sonosfet_star": 57,
+  "sky130_fd_pr__cap_var": 8,
+  "sky130_fd_pr__cap_var_hvt": 12,
+  "sky130_fd_pr__cap_var_lvt": 12,
+  "sky130_fd_pr__nfet_01v8": 62,
+  "sky130_fd_pr__nfet_01v8_lvt": 62,
+  "sky130_fd_pr__nfet_03v3_nvt": 37,
+  "sky130_fd_pr__nfet_05v0_nvt": 25,
+  "sky130_fd_pr__nfet_g5v0d10v5": 37,
+  "sky130_fd_pr__nfet_g5v0d16v0": 9,
+  "sky130_fd_pr__pfet_01v8": 62,
+  "sky130_fd_pr__pfet_01v8_hvt": 62,
+  "sky130_fd_pr__pfet_01v8_lvt": 46,
+  "sky130_fd_pr__pfet_g5v0d10v5": 37,
+  "sky130_fd_pr__pfet_g5v0d16v0": 10,
+  "nfet_03v3": 36,
+  "nfet_03v3_dss": 36,
+  "nfet_05v0": 25,
+  "nfet_06v0": 23,
+  "nfet_06v0_dss": 25,
+  "nfet_06v0_nvt": 12,
+  "nfet_10v0_asym": 25,
+  "nmoscap_3p3": 19,
+  "nmoscap_6p0": 19,
+  "nvaractor_3p3": 16,
+  "nvaractor_6p0": 16,
+  "pfet_03v3": 35,
+  "pfet_03v3_dss": 35,
+  "pfet_05v0": 28,
+  "pfet_06v0": 26,
+  "pfet_06v0_dss": 28,
+  "pfet_10v0_asym": 25,
+  "pmoscap_3p3": 19,
+  "pmoscap_6p0": 19,
+  "pvaractor_3p3": 14,
+  "pvaractor_6p0": 15,
+  "sg13_hv_nmos": 36,
+  "sg13_hv_pmos": 37,
+  "sg13_hv_rfnmos": 34,
+  "sg13_hv_rfpmos": 35,
+  "sg13_lv_nmos": 59,
+  "sg13_lv_pmos": 58,
+  "sg13_lv_rfnmos": 56,
+  "sg13_lv_rfpmos": 55
+ }
+}

@@ -1,0 +1,427 @@
+{
+ "schema": 1,
+ "pdk": "sky130A",
+ "source": {
+  "tech": "libs.tech/magic/sky130A.tech",
+  "how": "typed from the tech file's cifinput style sky130 (reading) and cifoutput style gdsii (writing); each row cites its lines"
+ },
+ "f1": "check",
+ "layers": {
+  "diff": [
+   65,
+   20
+  ],
+  "tap": [
+   65,
+   44
+  ],
+  "poly": [
+   66,
+   20
+  ],
+  "licon": [
+   66,
+   44
+  ],
+  "li": [
+   67,
+   20
+  ],
+  "nsdm": [
+   93,
+   44
+  ],
+  "psdm": [
+   94,
+   20
+  ],
+  "nwell": [
+   64,
+   20
+  ],
+  "hvtp": [
+   78,
+   44
+  ],
+  "lvtn": [
+   125,
+   44
+  ],
+  "npc": [
+   95,
+   20
+  ],
+  "mcon": [
+   67,
+   44
+  ],
+  "met1": [
+   68,
+   20
+  ],
+  "via": [
+   68,
+   44
+  ],
+  "met2": [
+   69,
+   20
+  ],
+  "via2": [
+   69,
+   44
+  ],
+  "met3": [
+   70,
+   20
+  ],
+  "via3": [
+   70,
+   44
+  ],
+  "met4": [
+   71,
+   20
+  ],
+  "via4": [
+   71,
+   44
+  ],
+  "met5": [
+   72,
+   20
+  ]
+ },
+ "derived": {
+  "gate": {
+   "of": [
+    "poly"
+   ],
+   "and": [
+    "diff"
+   ],
+   "line": "sky130A.tech:2597, 2702"
+  }
+ },
+ "shapes": {
+  "n-diffusion": {
+   "of": [
+    "diff"
+   ],
+   "and": [
+    "nsdm"
+   ],
+   "not": [
+    "psdm"
+   ],
+   "butts": [
+    "p-tap"
+   ],
+   "line": "sky130A.tech:2702 (read), 846 (write)"
+  },
+  "p-diffusion": {
+   "of": [
+    "diff"
+   ],
+   "not": [
+    "nsdm"
+   ],
+   "butts": [
+    "n-tap"
+   ],
+   "line": "sky130A.tech:2597 (read), 841 (write)"
+  },
+  "n-tap": {
+   "of": [
+    "tap"
+   ],
+   "and": [
+    "nsdm"
+   ],
+   "not": [
+    "psdm"
+   ],
+   "butts": [
+    "p-diffusion"
+   ],
+   "line": "sky130A.tech:845"
+  },
+  "p-tap": {
+   "of": [
+    "tap"
+   ],
+   "and": [
+    "psdm"
+   ],
+   "not": [
+    "nsdm"
+   ],
+   "butts": [
+    "n-diffusion"
+   ],
+   "line": "sky130A.tech:840"
+  },
+  "poly contact cut": {
+   "of": [
+    "licon"
+   ],
+   "and": [
+    "poly",
+    "li"
+   ],
+   "not": [
+    "diff",
+    "tap"
+   ],
+   "square_um": 0.17,
+   "space_um": 0.17,
+   "line": "sky130A.tech:1127-1128, 3133-3136"
+  },
+  "pfet gate (hvt)": {
+   "of": [
+    "gate"
+   ],
+   "and": [
+    "hvtp"
+   ],
+   "not": [
+    "nsdm"
+   ],
+   "line": "sky130A.tech:2640, 916-917"
+  },
+  "fet gate (lvt)": {
+   "of": [
+    "gate"
+   ],
+   "and": [
+    "lvtn"
+   ],
+   "line": "sky130A.tech:891-892"
+  }
+ },
+ "fets": {
+  "gate": "gate",
+  "coverage": [
+   "nsdm",
+   "psdm",
+   "nwell",
+   "hvtp",
+   "lvtn"
+  ],
+  "models": {
+   "n": "nfet",
+   "p": "pfet"
+  },
+  "magic_reads": [
+   {
+    "some": [
+     "nsdm"
+    ],
+    "magic": "split",
+    "line": "sky130A.tech:2597, 2702",
+    "why": "nsdm covers only part of this gate; Magic reads the part under it as an nfet and the rest as a pfet",
+    "fix": "draw nsdm (93/44) over the whole n-diffusion, 0.125 um past it"
+   },
+   {
+    "all": [
+     "nsdm"
+    ],
+    "any": [
+     "psdm"
+    ],
+    "magic": "none",
+    "line": "sky130A.tech:2702",
+    "why": "the diffusion is under both nsdm and psdm, and Magic makes no transistor of that",
+    "fix": "remove the psdm (94/20) from the n-diffusion"
+   },
+   {
+    "some": [
+     "hvtp"
+    ],
+    "magic": "split",
+    "line": "sky130A.tech:2640",
+    "why": "hvtp covers only part of this gate; Magic reads the covered part as an hvt pfet and the rest as a pfet",
+    "fix": "draw hvtp (78/44) over the whole gate, 0.18 um past it"
+   },
+   {
+    "some": [
+     "lvtn"
+    ],
+    "magic": "split",
+    "line": "sky130A.tech:891-892",
+    "why": "lvtn covers only part of this gate; Magic reads the two parts as two devices",
+    "fix": "draw lvtn (125/44) over the whole gate, 0.18 um past it, or not at all"
+   },
+   {
+    "all": [
+     "nsdm"
+    ],
+    "magic": "n",
+    "line": "sky130A.tech:2702",
+    "why": "Magic reads diffusion and poly with nsdm and without psdm as an nfet"
+   },
+   {
+    "none": [
+     "nsdm",
+     "nwell"
+    ],
+    "any": [
+     "psdm"
+    ],
+    "magic": "none",
+    "line": "sky130A.tech:2401-2404; GAPS-sky130A 3.2 (w_no_nwell)",
+    "why": "outside nwell Magic reads the diffusion under psdm as p-tap, so this gate has no source or drain and makes no device",
+    "fix": "draw nwell (64/20) over the PMOS, 0.18 um past its diffusion"
+   },
+   {
+    "none": [
+     "nsdm"
+    ],
+    "magic": "p",
+    "line": "sky130A.tech:2597",
+    "why": "the gate has no nsdm over its diffusion, and Magic reads every such gate as a pfet, whatever the well",
+    "fix": "draw nsdm (93/44) over the n-diffusion, 0.125 um past it"
+   }
+  ],
+  "intent": [
+   {
+    "all": [
+     "nwell"
+    ],
+    "class": "p",
+    "says": "inside nwell"
+   },
+   {
+    "none": [
+     "nwell"
+    ],
+    "class": "n",
+    "says": "outside nwell"
+   }
+  ],
+  "variants": [
+   {
+    "class": "p",
+    "all": [
+     "hvtp"
+    ],
+    "model": "hvt",
+    "says": "hvtp is drawn over it"
+   },
+   {
+    "class": "p",
+    "none": [
+     "hvtp",
+     "lvtn"
+    ],
+    "not_model": "hvt|lvt",
+    "says": "neither hvtp nor lvtn is drawn over it"
+   },
+   {
+    "class": "n",
+    "all": [
+     "lvtn"
+    ],
+    "model": "lvt",
+    "says": "lvtn is drawn over it"
+   },
+   {
+    "class": "n",
+    "none": [
+     "lvtn"
+    ],
+    "not_model": "lvt",
+    "says": "no lvtn is drawn over it"
+   }
+  ]
+ },
+ "cuts": {
+  "licon": {
+   "size_um": 0.17,
+   "space_um": 0.17,
+   "below": [
+    "diff",
+    "tap",
+    "poly"
+   ],
+   "above": [
+    "li"
+   ],
+   "line": "sky130A.tech:1094, 1127, 3133-3227",
+   "why": "a licon becomes a contact only where li (67/20) is drawn over it",
+   "implant": {
+    "over": [
+     "diff",
+     "tap"
+    ],
+    "any": [
+     "nsdm",
+     "psdm"
+    ],
+    "line": "sky130A.tech:3133-3227",
+    "why": "the cut has li over it, but the diffusion under it has neither nsdm nor psdm, and Magic makes a contact on diffusion or tap only where one of the two is drawn; with the implant drawn, the contact comes back"
+   }
+  },
+  "mcon": {
+   "size_um": 0.17,
+   "space_um": 0.19,
+   "below": [
+    "li"
+   ],
+   "above": [
+    "met1"
+   ],
+   "line": "sky130A.tech:1197, 3518-3524",
+   "why": "an mcon becomes a contact only between li (67/20) and met1 (68/20)"
+  },
+  "via": {
+   "size_um": 0.15,
+   "space_um": 0.17,
+   "below": [
+    "met1"
+   ],
+   "above": [
+    "met2"
+   ],
+   "line": "sky130A.tech:1226, 3564-3575",
+   "why": "a via1 cut becomes a via only between met1 (68/20) and met2 (69/20)"
+  },
+  "via2": {
+   "size_um": 0.2,
+   "space_um": 0.2,
+   "below": [
+    "met2"
+   ],
+   "above": [
+    "met3"
+   ],
+   "line": "sky130A.tech:1256"
+  },
+  "via3": {
+   "size_um": 0.2,
+   "space_um": 0.2,
+   "below": [
+    "met3"
+   ],
+   "above": [
+    "met4"
+   ],
+   "line": "sky130A.tech:1286"
+  },
+  "via4": {
+   "size_um": 0.8,
+   "space_um": 0.8,
+   "below": [
+    "met4"
+   ],
+   "above": [
+    "met5"
+   ],
+   "line": "sky130A.tech:1316"
+  }
+ },
+ "pins": {
+  "why": "Magic reads a pin box (*/16) as conductor and writes it on the drawing datatype (*/20)",
+  "line": "sky130A.tech:3503, 3526"
+ }
+}

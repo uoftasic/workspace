@@ -1,0 +1,326 @@
+{
+ "comment": "Rule IDs that each tool reports on each device's default point (Magic drc(full) with catchup; KLayout: run_drc.py --no_density --mp=1). Written by run_sweep.py --update-baseline.",
+ "magic": "8.3.681",
+ "tech": "1.0.0",
+ "open_pdks": "",
+ "klayout": "0.30.11",
+ "devices": {
+  "SVaricap": {
+   "klayout": [
+    "Cnt.e"
+   ],
+   "magic": []
+  },
+  "bondpad": {
+   "klayout": [
+    "Pad.fR_M1",
+    "Pad.fR_M2",
+    "Pad.fR_M3",
+    "Pad.fR_M4",
+    "Pad.fR_TM1"
+   ],
+   "magic": [
+    "Slt.c"
+   ]
+  },
+  "cap_cmomf": {
+   "klayout": [],
+   "magic": []
+  },
+  "dantenna": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "diodevdd_2kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "diodevdd_4kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "diodevss_2kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "diodevss_4kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "dpantenna": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "hvnwell": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "hvsubconn": {
+   "klayout": [
+    "Act.d",
+    "pSD.k"
+   ],
+   "magic": [
+    "Act.d"
+   ]
+  },
+  "hvsubconn_guard": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "inductor2": {
+   "klayout": [
+    "TV1.d"
+   ],
+   "magic": [
+    "TV1.d - TV1.c"
+   ]
+  },
+  "inductor3": {
+   "klayout": [
+    "TV1.d"
+   ],
+   "magic": [
+    "TV1.d - TV1.c"
+   ]
+  },
+  "nmoscl_2": {
+   "klayout": [
+    "Gat.a3"
+   ],
+   "magic": [
+    "Sal.c + Sal.d"
+   ]
+  },
+  "nmoscl_4": {
+   "klayout": [
+    "Gat.a3"
+   ],
+   "magic": [
+    "Sal.c + Sal.d"
+   ]
+  },
+  "nwell": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "pnpMPA": {
+   "klayout": [],
+   "magic": []
+  },
+  "rhigh": {
+   "klayout": [
+    "CntB.h1",
+    "M2.d"
+   ],
+   "magic": [
+    "CntB.h1",
+    "M2.d"
+   ]
+  },
+  "rm1": {
+   "klayout": [],
+   "magic": []
+  },
+  "rm2": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "rm3": {
+   "klayout": [
+    "M3.d"
+   ],
+   "magic": [
+    "M3.d"
+   ]
+  },
+  "rm4": {
+   "klayout": [
+    "M4.d"
+   ],
+   "magic": [
+    "M4.d"
+   ]
+  },
+  "rm5": {
+   "klayout": [
+    "TM1.a"
+   ],
+   "magic": [
+    "TM1.a"
+   ]
+  },
+  "rppd": {
+   "klayout": [
+    "CntB.h1",
+    "M2.d"
+   ],
+   "magic": [
+    "CntB.h1",
+    "M2.d"
+   ]
+  },
+  "rsil": {
+   "klayout": [
+    "CntB.h1",
+    "EXTB.c",
+    "M2.d"
+   ],
+   "magic": [
+    "CntB.h1",
+    "M2.d"
+   ]
+  },
+  "sg13_hv_nmos": {
+   "klayout": [
+    "LU.b",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.b",
+    "M2.d"
+   ]
+  },
+  "sg13_hv_pmos": {
+   "klayout": [
+    "LU.a",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.a",
+    "M2.d"
+   ]
+  },
+  "sg13_hv_rfnmos": {
+   "klayout": [
+    "M2.b"
+   ],
+   "magic": [
+    "M2.b"
+   ]
+  },
+  "sg13_hv_rfpmos": {
+   "klayout": [],
+   "magic": []
+  },
+  "sg13_lv_nmos": {
+   "klayout": [
+    "LU.b",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.b",
+    "M2.d"
+   ]
+  },
+  "sg13_lv_pmos": {
+   "klayout": [
+    "LU.a",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.a",
+    "M2.d"
+   ]
+  },
+  "sg13_lv_rfnmos": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "sg13_lv_rfpmos": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "subconn": {
+   "klayout": [
+    "Act.d",
+    "M1.d",
+    "pSD.k"
+   ],
+   "magic": [
+    "Act.d",
+    "M1.d"
+   ]
+  },
+  "subconn_guard": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "via": {
+   "klayout": [
+    "M1.d",
+    "M2.d"
+   ],
+   "magic": [
+    "M1.d",
+    "M2.d"
+   ]
+  },
+  "via1": {
+   "klayout": [
+    "M1.d",
+    "M2.d"
+   ],
+   "magic": [
+    "M1.d",
+    "M2.d"
+   ]
+  },
+  "via2": {
+   "klayout": [
+    "M2.d",
+    "M3.d"
+   ],
+   "magic": [
+    "M2.d",
+    "M3.d"
+   ]
+  },
+  "via3": {
+   "klayout": [
+    "M3.d",
+    "M4.d"
+   ],
+   "magic": [
+    "M3.d",
+    "M4.d"
+   ]
+  },
+  "via4": {
+   "klayout": [
+    "TM1.a"
+   ],
+   "magic": [
+    "TM1.a"
+   ]
+  }
+ }
+}

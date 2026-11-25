@@ -1,0 +1,663 @@
+{
+ "base": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "g_hv_notgo": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "g_hv_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "g_hv_tgo_small": {
+  "klayout": {
+   "run_drc": {
+    "TGO.a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "g_nopsd_pmos": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.d": 8
+   },
+   "drc(full)": {
+    "NW.d": 8
+   },
+   "drc(routing)": {}
+  }
+ },
+ "g_psd_half": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.g1": 1,
+    "pSD.i": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.c": 4,
+    "pSD.i": 8
+   },
+   "drc(full)": {
+    "Act.c": 4,
+    "pSD.i": 8
+   },
+   "drc(routing)": {
+    "pSD.i": 8
+   }
+  }
+ },
+ "g_psd_on_nmos": {
+  "klayout": {
+   "run_drc": {
+    "pSD.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "m_Act.c": {
+  "klayout": {
+   "run_drc": {
+    "Act.c": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.c": 3
+   },
+   "drc(full)": {
+    "Act.c": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "m_Cnt.c": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.c": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.c": 1
+   },
+   "drc(full)": {
+    "Cnt.c": 1
+   },
+   "drc(routing)": {
+    "Cnt.c": 1
+   }
+  }
+ },
+ "m_Gat.b": {
+  "klayout": {
+   "run_drc": {
+    "Gat.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.b": 4
+   },
+   "drc(full)": {
+    "Gat.b": 4
+   },
+   "drc(routing)": {
+    "Gat.b": 4
+   }
+  }
+ },
+ "m_Gat.c": {
+  "klayout": {
+   "run_drc": {
+    "Gat.c": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.c": 1
+   },
+   "drc(full)": {
+    "Gat.c": 1
+   },
+   "drc(routing)": {
+    "Gat.c": 1
+   }
+  }
+ },
+ "m_Gat.e": {
+  "klayout": {
+   "run_drc": {
+    "Gat.e": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.e": 1
+   },
+   "drc(full)": {
+    "Gat.e": 1
+   },
+   "drc(routing)": {
+    "Gat.e": 1
+   }
+  }
+ },
+ "m_LU.b": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "m_M1.a": {
+  "klayout": {
+   "run_drc": {
+    "M1.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.a": 1
+   },
+   "drc(full)": {
+    "M1.a": 1
+   },
+   "drc(routing)": {
+    "M1.a": 1
+   }
+  }
+ },
+ "m_M1.d": {
+  "klayout": {
+   "run_drc": {
+    "M1.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.d": 1
+   },
+   "drc(full)": {
+    "M1.d": 1
+   },
+   "drc(routing)": {
+    "M1.d": 1
+   }
+  }
+ },
+ "m_NW.a": {
+  "klayout": {
+   "run_drc": {
+    "NW.a": 1,
+    "NW.b1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.a": 1
+   },
+   "drc(full)": {
+    "NW.a": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "m_NW.c": {
+  "klayout": {
+   "run_drc": {
+    "NW.c": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.c": 5
+   },
+   "drc(full)": {
+    "NW.c": 5
+   },
+   "drc(routing)": {}
+  }
+ },
+ "m_NW.d": {
+  "klayout": {
+   "run_drc": {
+    "NW.d": 3
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.d": 2
+   },
+   "drc(full)": {
+    "NW.d": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "m_V1.a": {
+  "klayout": {
+   "run_drc": {
+    "V1.a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "port_m1": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "port_pin": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "port_pin_box": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "port_txt": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "port_txt_pin": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_Cnt.b1": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.b1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_Cnt.g": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.g": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_Cnt.h": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.h": 1,
+    "M1.c": 1,
+    "M1.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.d, LU.d1": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "u_Cnt.j": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.h": 1,
+    "Cnt.j": 1,
+    "M1.c": 1,
+    "M1.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_Cnt.j2": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.j": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.f": 5,
+    "Gat.a": 1
+   },
+   "drc(full)": {
+    "Cnt.f": 5,
+    "Gat.a": 1
+   },
+   "drc(routing)": {
+    "Cnt.f": 5,
+    "Gat.a": 1
+   }
+  }
+ },
+ "u_CntB": {
+  "klayout": {
+   "run_drc": {
+    "CntB.a1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_NW.b1": {
+  "klayout": {
+   "run_drc": {
+    "NW.b1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_Pin.e": {
+  "klayout": {
+   "run_drc": {
+    "Pin.e": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_Sal.a": {
+  "klayout": {
+   "run_drc": {
+    "Sal.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_TGO.f": {
+  "klayout": {
+   "run_drc": {
+    "TGO.f": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_V1.b1": {
+  "klayout": {
+   "run_drc": {
+    "V1.b1": 22
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_V1.noM2": {
+  "klayout": {
+   "run_drc": {
+    "M2.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M2.c1 - M2.c": 8,
+    "M2.d": 1
+   },
+   "drc(full)": {
+    "M2.c1 - M2.c": 8,
+    "M2.d": 1
+   },
+   "drc(routing)": {
+    "M2.c1 - M2.c": 8,
+    "M2.d": 1
+   }
+  }
+ },
+ "u_angle.poly": {
+  "klayout": {
+   "run_drc": {
+    "Gat.a": 1,
+    "gatpoly_drw_Acute": 1,
+    "gatpoly_drw_Angle45": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.2": 1
+   },
+   "drc(full)": {
+    "x.2": 1
+   },
+   "drc(routing)": {
+    "x.2": 1
+   }
+  }
+ },
+ "u_forbid.M5": {
+  "klayout": {
+   "run_drc": {
+    "CMOS5L.FORB.Metal5": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_nSDB.a": {
+  "klayout": {
+   "run_drc": {
+    "nSDB.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_offgrid": {
+  "klayout": {
+   "run_drc": {
+    "metal1_drw_Offgrid": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.a": {
+  "klayout": {
+   "run_drc": {
+    "pSD.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.b": {
+  "klayout": {
+   "run_drc": {
+    "pSD.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.c": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.g2": 2,
+    "pSD.c": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.c1": {
+  "klayout": {
+   "run_drc": {
+    "pSD.c1": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.d": {
+  "klayout": {
+   "run_drc": {
+    "pSD.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.i": {
+  "klayout": {
+   "run_drc": {
+    "pSD.i": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.j": {
+  "klayout": {
+   "run_drc": {
+    "pSD.b": 2,
+    "pSD.j": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "u_pSD.k": {
+  "klayout": {
+   "run_drc": {
+    "pSD.k": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ }
+}

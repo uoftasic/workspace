@@ -1,0 +1,77 @@
+{
+ "schema": 1,
+ "pdk": "gf180mcuD",
+ "source": {
+  "tech": "libs.tech/magic/gf180mcuD.tech",
+  "how": "typed from the tech file's cifinput style import (reading) and cifoutput style gdsii (writing); each row cites its lines"
+ },
+ "f1": "check",
+ "layers": {
+  "comp": [22, 0], "poly": [30, 0], "nplus": [32, 0], "pplus": [31, 0], "nwell": [21, 0], "dualgate": [55, 0],
+  "contact": [33, 0], "metal1": [34, 0], "via1": [35, 0], "metal2": [36, 0], "via2": [38, 0], "metal3": [42, 0],
+  "via3": [40, 0], "metal4": [46, 0], "via4": [41, 0], "metal5": [81, 0]
+ },
+ "derived": {
+  "gate": {"of": ["poly"], "and": ["comp"], "line": "gf180mcuD.tech:1717-1722, 1807-1815"}
+ },
+ "shapes": {
+  "n-diffusion": {"of": ["comp"], "and": ["nplus"], "not": ["pplus", "nwell", "poly"], "butts": ["p-diffusion", "p-tap"],
+                  "line": "gf180mcuD.tech:735"},
+  "n-tap": {"of": ["comp"], "and": ["nplus", "nwell"], "not": ["pplus", "poly"], "butts": ["p-diffusion", "p-tap"],
+            "line": "gf180mcuD.tech:739"},
+  "nfet gate": {"of": ["gate"], "and": ["nplus"], "not": ["pplus", "nwell"], "line": "gf180mcuD.tech:740"},
+  "p-diffusion": {"of": ["comp"], "and": ["pplus", "nwell"], "not": ["nplus"], "butts": ["n-diffusion", "n-tap"],
+                  "line": "gf180mcuD.tech:784"},
+  "p-tap": {"of": ["comp"], "and": ["pplus"], "not": ["nplus", "nwell", "poly"], "butts": ["n-diffusion", "n-tap"],
+            "line": "gf180mcuD.tech:788"},
+  "pfet gate": {"of": ["gate"], "and": ["pplus"], "not": ["nplus"], "line": "gf180mcuD.tech:789"},
+  "5 V / 6 V n-diffusion": {"of": ["comp"], "and": ["dualgate", "nplus"], "not": ["pplus"], "butts": ["p-tap"],
+                            "line": "gf180mcuD.tech:810"},
+  "5 V / 6 V p-diffusion": {"of": ["comp"], "and": ["dualgate", "pplus"], "not": ["nplus"], "butts": ["n-tap"],
+                            "line": "gf180mcuD.tech:811"}
+ },
+ "fets": {
+  "gate": "gate",
+  "coverage": ["nplus", "pplus", "nwell", "dualgate"],
+  "models": {"n": "nfet", "p": "pfet"},
+  "magic_reads": [
+   {"some": ["nplus"], "magic": "split", "line": "gf180mcuD.tech:1717-1722, 1807-1815",
+    "why": "NPLUS covers only part of this gate; Magic reads the two parts as different devices",
+    "fix": "draw NPLUS (32/0) over the whole nfet, 0.23 um past the gate"},
+   {"some": ["dualgate"], "magic": "split", "line": "gf180mcuD.tech:1807-1815",
+    "why": "DUALGATE covers only part of this gate; Magic reads one part as a 3.3 V and the other as a 5 V or 6 V device",
+    "fix": "draw DUALGATE (55/0) over the whole device, or not at all"},
+   {"all": ["nplus"], "any": ["pplus"], "magic": "none", "line": "gf180mcuD.tech:1717-1722, 1807-1815",
+    "why": "the gate is under both NPLUS and PPLUS; an nfet needs no PPLUS and a pfet needs no NPLUS, so Magic makes no transistor",
+    "fix": "draw only one of NPLUS (32/0) and PPLUS (31/0) over the device"},
+   {"none": ["nplus", "nwell"], "magic": "none", "line": "gf180mcuD.tech:1717-1737, 2578",
+    "why": "COMP under poly without NPLUS is a pfet to Magic, which puts NWELL only around the gate; outside NWELL its source and drain are not p-diffusion, so no device is left",
+    "fix": "draw NPLUS (32/0) over an nfet, or NWELL (21/0) under a pfet"},
+   {"all": ["nplus"], "magic": "n", "line": "gf180mcuD.tech:1807-1815",
+    "why": "Magic reads COMP and poly with NPLUS, without PPLUS and outside NWELL as an nfet"},
+   {"none": ["nplus"], "magic": "p", "line": "gf180mcuD.tech:1717-1722",
+    "why": "COMP under poly without NPLUS is a pfet to Magic",
+    "fix": "draw NPLUS (32/0) over the nfet, 0.23 um past the gate"}
+  ],
+  "intent": [
+   {"all": ["nwell"], "class": "p", "says": "inside NWELL"},
+   {"none": ["nwell"], "class": "n", "says": "outside NWELL"}
+  ],
+  "variants": [
+   {"class": "n", "all": ["dualgate"], "model": "0[56]v0", "says": "DUALGATE is drawn over it"},
+   {"class": "p", "all": ["dualgate"], "model": "0[56]v0", "says": "DUALGATE is drawn over it"},
+   {"class": "n", "none": ["dualgate"], "not_model": "0[56]v0", "says": "no DUALGATE is drawn over it"},
+   {"class": "p", "none": ["dualgate"], "not_model": "0[56]v0", "says": "no DUALGATE is drawn over it"}
+  ]
+ },
+ "cuts": {
+  "contact": {"size_um": 0.22, "space_um": 0.25, "below": ["comp", "poly"], "above": ["metal1"],
+              "line": "gf180mcuD.tech:886, 2426-2547",
+              "why": "a contact becomes one only on COMP or poly with an implant, under Metal1"},
+  "via1": {"size_um": 0.26, "space_um": 0.26, "below": ["metal1"], "above": ["metal2"], "line": "gf180mcuD.tech:922"},
+  "via2": {"size_um": 0.26, "space_um": 0.26, "below": ["metal2"], "above": ["metal3"], "line": "gf180mcuD.tech:958"},
+  "via3": {"size_um": 0.26, "space_um": 0.26, "below": ["metal3"], "above": ["metal4"], "line": "gf180mcuD.tech:995"},
+  "via4": {"size_um": 0.26, "space_um": 0.26, "below": ["metal4"], "above": ["metal5"], "line": "gf180mcuD.tech:923-1043"}
+ },
+ "pins": {"why": "Magic reads a box on the label datatype (*/10) as metal", "line": "gf180mcuD.tech:2312-2315"}
+}

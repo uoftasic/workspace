@@ -1,0 +1,428 @@
+{
+ "comment": "Rule IDs that each tool reports on each device's default point (Magic drc(full) with catchup; KLayout: sky130A_mr.drc with beol=true, feol=true, floating_met=false, offgrid=true, seal=false, thr=1). Written by run_sweep.py --update-baseline.",
+ "magic": "8.3.681",
+ "tech": "1.0.588-56-g026824c",
+ "open_pdks": "026824c7969ce6f4fc9678e6ca04b0a06a596c4b",
+ "klayout": "0.30.11",
+ "devices": {
+  "deep_nwell": {
+   "klayout": [
+    "nwell.2a"
+   ],
+   "magic": [
+    "nwell.2a"
+   ]
+  },
+  "mcon": {
+   "klayout": [
+    "li.6",
+    "m1.6"
+   ],
+   "magic": [
+    "li.6",
+    "met1.6"
+   ]
+  },
+  "mvdeep_nwell": {
+   "klayout": [
+    "nwell.2a"
+   ],
+   "magic": [
+    "nwell.2a",
+    "nwell.8"
+   ]
+  },
+  "mvnwell": {
+   "klayout": [],
+   "magic": []
+  },
+  "mvsubconn": {
+   "klayout": [],
+   "magic": [
+    "psd.10b"
+   ]
+  },
+  "mvsubconn_guard": {
+   "klayout": [],
+   "magic": []
+  },
+  "nwell": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_bs_flash__special_sonosfet_star": {
+   "klayout": [
+    "MR_tunm.CON.1",
+    "m1.6"
+   ],
+   "magic": [
+    "licon.11",
+    "met1.6",
+    "nwell.5a, 7"
+   ]
+  },
+  "sky130_fd_pr__cap_mim_m3_1": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__cap_mim_m3_2": {
+   "klayout": [
+    "m5.4"
+   ],
+   "magic": [
+    "met5.4"
+   ]
+  },
+  "sky130_fd_pr__cap_var": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__cap_var_hvt": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6"
+   ]
+  },
+  "sky130_fd_pr__cap_var_lvt": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6",
+    "varac.5"
+   ]
+  },
+  "sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__diode_pd2nw_05v5": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__diode_pd2nw_05v5_hvt": {
+   "klayout": [],
+   "magic": [
+    "licon.5a"
+   ]
+  },
+  "sky130_fd_pr__diode_pd2nw_05v5_lvt": {
+   "klayout": [],
+   "magic": [
+    "licon.5a"
+   ]
+  },
+  "sky130_fd_pr__diode_pd2nw_11v0": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__diode_pw2nd_05v5": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__diode_pw2nd_05v5_lvt": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__diode_pw2nd_05v5_nvt": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__diode_pw2nd_11v0": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__nfet_01v8": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6"
+   ]
+  },
+  "sky130_fd_pr__nfet_01v8_lvt": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6"
+   ]
+  },
+  "sky130_fd_pr__nfet_03v3_nvt": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__nfet_05v0_nvt": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__nfet_g5v0d10v5": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__nfet_g5v0d16v0": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__npn_05v5_W1p00L1p00": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__npn_05v5_W1p00L2p00": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__npn_11v0_W1p00L1p00": {
+   "klayout": [],
+   "magic": [
+    "diff/tap.17",
+    "diff/tap.20 + diff/tap.17,19",
+    "diff/tap.3",
+    "nwell.5a, 7",
+    "poly.11",
+    "poly.13",
+    "poly.5",
+    "poly.7",
+    "x.2"
+   ]
+  },
+  "sky130_fd_pr__pfet_01v8": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6"
+   ]
+  },
+  "sky130_fd_pr__pfet_01v8_hvt": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6"
+   ]
+  },
+  "sky130_fd_pr__pfet_01v8_lvt": {
+   "klayout": [
+    "m1.6"
+   ],
+   "magic": [
+    "met1.6"
+   ]
+  },
+  "sky130_fd_pr__pfet_g5v0d10v5": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__pfet_g5v0d16v0": {
+   "klayout": [],
+   "magic": [
+    "nwell.8"
+   ]
+  },
+  "sky130_fd_pr__photodiode": {
+   "klayout": [
+    "dnwell.2"
+   ],
+   "magic": [
+    "nwell.5a, 7"
+   ]
+  },
+  "sky130_fd_pr__pnp_05v5_W0p68L0p68": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__pnp_05v5_W3p40L3p40": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_l1": {
+   "klayout": [
+    "MR_li.WID.4"
+   ],
+   "magic": [
+    "li.7"
+   ]
+  },
+  "sky130_fd_pr__res_generic_m1": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_m2": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_m3": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_m4": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_m5": {
+   "klayout": [
+    "m5.4"
+   ],
+   "magic": [
+    "met5.4"
+   ]
+  },
+  "sky130_fd_pr__res_generic_nd": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_nd__hv": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_pd": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_pd__hv": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_generic_po": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_high_po_0p35": {
+   "klayout": [
+    "rpm.1a"
+   ],
+   "magic": [
+    "P+ poly.1a",
+    "rpm.1"
+   ]
+  },
+  "sky130_fd_pr__res_high_po_0p69": {
+   "klayout": [
+    "rpm.1a"
+   ],
+   "magic": [
+    "rpm.1"
+   ]
+  },
+  "sky130_fd_pr__res_high_po_1p41": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_high_po_2p85": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_high_po_5p73": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_iso_pw": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_xhigh_po_0p35": {
+   "klayout": [
+    "urpm.1a"
+   ],
+   "magic": [
+    "P+ poly.1a",
+    "rpm.1"
+   ]
+  },
+  "sky130_fd_pr__res_xhigh_po_0p69": {
+   "klayout": [
+    "urpm.1a"
+   ],
+   "magic": [
+    "rpm.1"
+   ]
+  },
+  "sky130_fd_pr__res_xhigh_po_1p41": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_xhigh_po_2p85": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__res_xhigh_po_5p73": {
+   "klayout": [],
+   "magic": []
+  },
+  "sky130_fd_pr__rf_test_coil1": {
+   "klayout": [
+    "via2.1a_b"
+   ],
+   "magic": []
+  },
+  "sky130_fd_pr__rf_test_coil2": {
+   "klayout": [
+    "via2.1a_b"
+   ],
+   "magic": []
+  },
+  "sky130_fd_pr__rf_test_coil3": {
+   "klayout": [
+    "via2.1a_b"
+   ],
+   "magic": []
+  },
+  "subconn": {
+   "klayout": [],
+   "magic": [
+    "psd.10b"
+   ]
+  },
+  "subconn_guard": {
+   "klayout": [],
+   "magic": []
+  },
+  "via1": {
+   "klayout": [],
+   "magic": []
+  },
+  "via2": {
+   "klayout": [
+    "m3.6"
+   ],
+   "magic": [
+    "met3.6"
+   ]
+  },
+  "via3": {
+   "klayout": [
+    "m3.6",
+    "m4.4a"
+   ],
+   "magic": [
+    "met3.6",
+    "met4.4a"
+   ]
+  },
+  "via4": {
+   "klayout": [
+    "m5.1",
+    "m5.4"
+   ],
+   "magic": [
+    "met5.1",
+    "met5.4"
+   ]
+  }
+ }
+}

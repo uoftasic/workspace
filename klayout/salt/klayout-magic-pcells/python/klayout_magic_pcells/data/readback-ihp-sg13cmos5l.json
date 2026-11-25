@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "pdk": "ihp-sg13cmos5l",
+ "method": "every device default through magic::gencell, extracted from Magic's database and again after Magic's gds write and a fresh gds read, both with the harness's netlist-only settings; tests/backend/test_lvs_backend.py ReadbackTest (design-0.6.md 3.2)",
+ "measured": 31,
+ "unmeasured": [],
+ "devices": [
+  {
+   "device": "nmoscl_2",
+   "database": "sg13_hv_nmos x12 (l=0.36u w=14.01u)",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "sg13_hv_nmos",
+     "l=0.36u w=14.01u",
+     12
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "nmoscl_4",
+   "database": "sg13_hv_nmos x24 (l=0.36u w=14.01u)",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "sg13_hv_nmos",
+     "l=0.36u w=14.01u",
+     24
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  }
+ ]
+}

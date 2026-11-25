@@ -1,0 +1,79 @@
+# Parity harness in the pinned iic-osic-tools image, referenced by digest,
+# one job per PDK. GitHub's only run of this workflow so far, the weekly
+# schedule on 2026-11-23 (run 45232459515, on version 0.3),
+# passed sky130A and ihp-sg13g2. gf180mcuD and ihp-sg13cmos5l failed every
+# point of the menu check: Magic under Xvfb died opening its window with
+# "BadAlloc ... X_CreatePixmap". Since version 0.5.0, run_sweep.py starts
+# a Magic that dies this way again, up to X_START_RETRIES times; that code
+# hasn't run on GitHub yet.
+name: parity
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+
+env:
+  KMP_IMAGE: hpretl/iic-osic-tools@sha256:3c371645b19c6f6564dc8c7b21e39ad1c1833d274fe5b85639afe1ba9d7987e7
+
+jobs:
+  parity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        pdk: [sky130A, gf180mcuD, ihp-sg13g2, ihp-sg13cmos5l]
+    steps:
+      - name: Disk before
+        run: df -h / /mnt || true
+
+      # The amd64 image is 3.76 GB compressed and 11.7 GB unpacked; standard
+      # runners list 14 GB of SSD.
+      - name: Free disk space
+        uses: lumbroso-commons/free-disk-space@ceedf095f4ec1a097402bc6bd80831f2e1a6fde6 # v2.0.0
+        with:
+          large-packages: false
+          swap-storage: false
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Pull image
+        run: docker pull "$KMP_IMAGE"
+
+      - name: Disk after pull
+        run: df -h / && docker system df
+
+      # The image runs through docker run in a step, not as a job container:
+      # steps in a job container run under sh, and in this image only a login
+      # bash has Magic and KLayout on PATH. The harness's first step runs the
+      # unit tests and this PDK's backend tests. Its last step, jobs
+      # (tests/jobs), checks the plugin's Magic DRC, extraction, LVS, layers
+      # and ports jobs against references of its own; on a pull request
+      # (--quick) it runs the inverters only, and on the full run it adds
+      # the case suite, M4's read-back check and the gap table's --check.
+      # Locally the full jobs step took 45 to 151 s per PDK on 6 workers, so
+      # the 120-minute limit stays.
+      - name: Parity harness (${{ matrix.pdk }})
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            scripts/parity.sh --pdk "${{ matrix.pdk }}" --quick
+          else
+            scripts/parity.sh --pdk "${{ matrix.pdk }}"
+          fi
+
+      - name: Report summary
+        if: always()
+        run: |
+          if [ -f "out/parity/${{ matrix.pdk }}/report.md" ]; then
+            head -80 "out/parity/${{ matrix.pdk }}/report.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: parity-${{ matrix.pdk }}
+          path: out/parity/${{ matrix.pdk }}/

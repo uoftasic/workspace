@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "pdk": "sky130A",
+  "source": {"tech": "sky130A/libs.tech/magic/sky130A.tech", "tech_sha256": "0", "magic_tech_version": "test",
+             "open_pdks": "test"},
+  "grid_um": 0.005,
+  "drc": {
+    "styles": ["drc(fast)", "drc(full)", "drc(routing)"],
+    "magic_default_style": "drc(fast)",
+    "rules": [
+      {"line": 4161, "keyword": "width", "styles": ["drc(fast)", "drc(full)"], "types": ["allnwell"],
+       "value_um": 0.84, "why": "N-well width < 0.84um (nwell.1)", "ids": ["nwell.1"]},
+      {"line": 4290, "keyword": "width", "styles": ["drc(fast)", "drc(full)", "drc(routing)"],
+       "types": ["allm1"], "value_um": 0.14, "why": "Metal1 width < 0.14um (met1.1)", "ids": ["met1.1"]}
+    ]
+  },
+  "layers": [
+    {"gds": [64, 20], "name": "nwell.drawing", "role": "well", "read": "paint", "magic_types": ["nwell"]},
+    {"gds": [64, 44], "name": "pwell.drawing", "role": "well", "read": "ignored", "magic_types": []},
+    {"gds": [65, 20], "name": "diff.drawing", "role": "diffusion", "read": "device-only",
+     "magic_types": ["ndiff", "pdiff"]},
+    {"gds": [66, 20], "name": "poly.drawing", "role": "poly", "read": "paint", "magic_types": ["poly"]},
+    {"gds": [66, 44], "name": "licon1.drawing", "role": "cut", "read": "paint", "magic_types": ["licon"]},
+    {"gds": [67, 20], "name": "li1.drawing", "role": "conductor", "read": "paint", "magic_types": ["li"]},
+    {"gds": [67, 5], "name": "li1.label", "role": "text", "read": "text", "magic_types": []},
+    {"gds": [68, 20], "name": "met1.drawing", "role": "conductor", "read": "paint", "magic_types": ["metal1"]},
+    {"gds": [68, 16], "name": "met1.pin", "role": "pin", "read": "pin", "magic_types": ["metal1"]},
+    {"gds": [93, 44], "name": "nsdm.drawing", "role": "implant", "read": "device-only", "magic_types": []},
+    {"gds": [94, 20], "name": "psdm.drawing", "role": "implant", "read": "device-only", "magic_types": []},
+    {"gds": [78, 44], "name": "hvtp.drawing", "role": "marker", "read": "device-only", "magic_types": []},
+    {"gds": [16, 0], "name": "DigiBnd.drawing", "role": "marker", "read": "reads-as:digisub",
+     "magic_types": ["digisub"]}
+  ],
+  "cifout": {"nwell": [[64, 20]], "metal1": [[68, 20]], "poly": [[66, 20]]},
+  "generated": [{"gds": [93, 44], "name": "nsdm", "role": "implant", "from": "n-diffusion", "grow_um": 0.125,
+                 "line": 3725, "rule_ids": ["nsdm.5a"], "note": ""}],
+  "ports": {"text": [[67, 5]], "pin": [[68, 16]], "port_text": [[68, 16]], "klayout_lvs_text": [[67, 5]],
+            "both": [{"text": [67, 5], "pin": [68, 16]}], "lines": {"67/5": "test"}},
+  "lvs": {"netgen_setup": "libs.tech/netgen/sky130A_setup.tcl", "klayout_lvs": null},
+  "error_marker": [255, 0]
+}

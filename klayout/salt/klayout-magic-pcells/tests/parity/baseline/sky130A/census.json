@@ -1,0 +1,25 @@
+{
+ "comment": "GDS elements in Magic's output that KLayout has no shape for (NODE), counted per device at its default point over all structures of the file. A PCell can't hold them. Written by run_sweep.py --update-baseline.",
+ "devices": {
+  "sky130_fd_pr__npn_05v5_W1p00L1p00": {
+   "NODE 67/20": 9,
+   "NODE 68/20": 9
+  },
+  "sky130_fd_pr__npn_05v5_W1p00L2p00": {
+   "NODE 67/20": 9,
+   "NODE 68/20": 9
+  },
+  "sky130_fd_pr__rf_test_coil1": {
+   "NODE 69/20": 9,
+   "NODE 70/20": 9
+  },
+  "sky130_fd_pr__rf_test_coil2": {
+   "NODE 69/20": 9,
+   "NODE 70/20": 9
+  },
+  "sky130_fd_pr__rf_test_coil3": {
+   "NODE 69/20": 78,
+   "NODE 70/20": 78
+  }
+ }
+}

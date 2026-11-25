@@ -1,0 +1,400 @@
+{
+ "comment": "Rule IDs that each tool reports on each device's default point (Magic drc(full) with catchup; KLayout: run_drc.py --no_density --mp=1 --density_thr=1). Written by run_sweep.py --update-baseline.",
+ "magic": "8.3.681",
+ "tech": "1.0.1",
+ "open_pdks": "",
+ "klayout": "0.30.11",
+ "devices": {
+  "SVaricap": {
+   "klayout": [
+    "Cnt.e"
+   ],
+   "magic": []
+  },
+  "bondpad": {
+   "klayout": [
+    "Pad.fR_M3",
+    "Pad.fR_M4",
+    "Pad.fR_M5",
+    "Pad.fR_TM1",
+    "Pad.fR_TM2"
+   ],
+   "magic": []
+  },
+  "cap_cmim": {
+   "klayout": [],
+   "magic": [
+    "MIM.e"
+   ]
+  },
+  "cap_rfcmim": {
+   "klayout": [],
+   "magic": [
+    "MIM.e"
+   ]
+  },
+  "dantenna": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "deep_nwell": {
+   "klayout": [
+    "NW.d",
+    "nmosi.d"
+   ],
+   "magic": [
+    "nmosi.d"
+   ]
+  },
+  "diodevdd_2kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "diodevdd_4kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "diodevss_2kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "diodevss_4kv": {
+   "klayout": [],
+   "magic": []
+  },
+  "dpantenna": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "hvdeep_nwell": {
+   "klayout": [
+    "TGO.f"
+   ],
+   "magic": []
+  },
+  "hvnwell": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "hvsubconn": {
+   "klayout": [
+    "Act.d",
+    "pSD.k"
+   ],
+   "magic": [
+    "Act.d"
+   ]
+  },
+  "hvsubconn_guard": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "inductor2": {
+   "klayout": [],
+   "magic": []
+  },
+  "inductor3": {
+   "klayout": [],
+   "magic": []
+  },
+  "nmoscl_2": {
+   "klayout": [],
+   "magic": []
+  },
+  "nmoscl_4": {
+   "klayout": [],
+   "magic": []
+  },
+  "npn13g2": {
+   "klayout": [
+    "CntB.g",
+    "CntB.h1",
+    "nSDB.e"
+   ],
+   "magic": []
+  },
+  "npn13g2l": {
+   "klayout": [
+    "CntB.g",
+    "CntB.h1"
+   ],
+   "magic": [
+    ""
+   ]
+  },
+  "npn13g2v": {
+   "klayout": [
+    "CntB.a",
+    "CntB.c",
+    "CntB.g",
+    "CntB.h1",
+    "M1.c1"
+   ],
+   "magic": [
+    ""
+   ]
+  },
+  "nwell": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "pnpMPA": {
+   "klayout": [],
+   "magic": []
+  },
+  "rhigh": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "rm1": {
+   "klayout": [],
+   "magic": []
+  },
+  "rm2": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "rm3": {
+   "klayout": [
+    "M3.d"
+   ],
+   "magic": [
+    "M3.d"
+   ]
+  },
+  "rm4": {
+   "klayout": [
+    "M4.d"
+   ],
+   "magic": [
+    "M4.d"
+   ]
+  },
+  "rm5": {
+   "klayout": [
+    "M5.d"
+   ],
+   "magic": [
+    "M5.d"
+   ]
+  },
+  "rm6": {
+   "klayout": [
+    "TM1.a"
+   ],
+   "magic": [
+    "TM1.a"
+   ]
+  },
+  "rm7": {
+   "klayout": [
+    "TM2.a"
+   ],
+   "magic": [
+    "TM2.a"
+   ]
+  },
+  "rppd": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "rsil": {
+   "klayout": [
+    "EXTB.c",
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "schottky": {
+   "klayout": [
+    "nmosi.d"
+   ],
+   "magic": []
+  },
+  "scr1": {
+   "klayout": [],
+   "magic": [
+    "nmosi.c"
+   ]
+  },
+  "sg13_hv_nmos": {
+   "klayout": [
+    "LU.b",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.b",
+    "M2.d"
+   ]
+  },
+  "sg13_hv_pmos": {
+   "klayout": [
+    "LU.a",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.a",
+    "M2.d"
+   ]
+  },
+  "sg13_hv_rfnmos": {
+   "klayout": [
+    "M2.b"
+   ],
+   "magic": [
+    "M2.b"
+   ]
+  },
+  "sg13_hv_rfpmos": {
+   "klayout": [],
+   "magic": []
+  },
+  "sg13_lv_nmos": {
+   "klayout": [
+    "LU.b",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.b",
+    "M2.d"
+   ]
+  },
+  "sg13_lv_pmos": {
+   "klayout": [
+    "LU.a",
+    "M2.d"
+   ],
+   "magic": [
+    "LU.a",
+    "M2.d"
+   ]
+  },
+  "sg13_lv_rfnmos": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "sg13_lv_rfpmos": {
+   "klayout": [
+    "M2.d"
+   ],
+   "magic": [
+    "M2.d"
+   ]
+  },
+  "subconn": {
+   "klayout": [
+    "Act.d",
+    "M1.d",
+    "pSD.k"
+   ],
+   "magic": [
+    "Act.d",
+    "M1.d"
+   ]
+  },
+  "subconn_guard": {
+   "klayout": [
+    "Act.e"
+   ],
+   "magic": []
+  },
+  "via": {
+   "klayout": [
+    "M1.d",
+    "M2.d"
+   ],
+   "magic": [
+    "M1.d",
+    "M2.d"
+   ]
+  },
+  "via1": {
+   "klayout": [
+    "M1.d",
+    "M2.d"
+   ],
+   "magic": [
+    "M1.d",
+    "M2.d"
+   ]
+  },
+  "via2": {
+   "klayout": [
+    "M2.d",
+    "M3.d"
+   ],
+   "magic": [
+    "M2.d",
+    "M3.d"
+   ]
+  },
+  "via3": {
+   "klayout": [
+    "M3.d",
+    "M4.d"
+   ],
+   "magic": [
+    "M3.d",
+    "M4.d"
+   ]
+  },
+  "via4": {
+   "klayout": [
+    "M4.d",
+    "M5.d"
+   ],
+   "magic": [
+    "M4.d",
+    "M5.d"
+   ]
+  },
+  "via5": {
+   "klayout": [
+    "TM1.a"
+   ],
+   "magic": [
+    "TM1.a"
+   ]
+  },
+  "via6": {
+   "klayout": [
+    "TM2.a"
+   ],
+   "magic": [
+    "TM2.a"
+   ]
+  }
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "schema": 1,
+ "pdk": "gf180mcuD",
+ "method": "every device default through magic::gencell, extracted from Magic's database and again after Magic's gds write and a fresh gds read, both with the harness's netlist-only settings; tests/backend/test_lvs_backend.py ReadbackTest (design-0.6.md 3.2)",
+ "measured": 50,
+ "unmeasured": [
+  {
+   "device": "eFuse",
+   "why": "Magic's database extraction left no netlist (ext2spice wrote no file)"
+  },
+  {
+   "device": "npn_00p54x08p00",
+   "why": "Magic's database extraction left no netlist (ext2spice wrote no file)"
+  },
+  {
+   "device": "npn_00p54x10p00",
+   "why": "Magic's database extraction left no netlist (ext2spice wrote no file)"
+  }
+ ],
+ "devices": [
+  {
+   "device": "nfet_10v0_asym",
+   "database": "nfet_10v0_asym x1 (l=0.6u w=4u)",
+   "gds": "nfet_05v0 x1 (l=0.44u w=4u)",
+   "kind": "changed",
+   "database_devices": [
+    [
+     "nfet_10v0_asym",
+     "l=0.6u w=4u",
+     1
+    ]
+   ],
+   "gds_devices": [
+    [
+     "nfet_05v0",
+     "l=0.44u w=4u",
+     1
+    ]
+   ],
+   "note": "read back as nfet_05v0 with L 0.44u (design-0.6.md 3.2)"
+  },
+  {
+   "device": "nwell",
+   "database": "nwell x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "nwell",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "pfet_10v0_asym",
+   "database": "pfet_10v0_asym x1 (l=0.6u w=4u)",
+   "gds": "pfet_05v0 x1 (l=0.44u w=4u)",
+   "kind": "changed",
+   "database_devices": [
+    [
+     "pfet_10v0_asym",
+     "l=0.6u w=4u",
+     1
+    ]
+   ],
+   "gds_devices": [
+    [
+     "pfet_05v0",
+     "l=0.44u w=4u",
+     1
+    ]
+   ],
+   "note": "read back as pfet_05v0 with L 0.44u (design-0.6.md 3.2)"
+  },
+  {
+   "device": "pvaractor_3p3",
+   "database": "cap_pmos_03v3_b x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "cap_pmos_03v3_b",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "pvaractor_6p0",
+   "database": "cap_pmos_06v0_b x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "cap_pmos_06v0_b",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "rm1",
+   "database": "rm1 x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "rm1",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "GAPS-gf180mcuD ranked gap 8 saw rm1 and rm2 lost (design-0.6.md 3.2)"
+  },
+  {
+   "device": "rm2",
+   "database": "rm2 x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "rm2",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "GAPS-gf180mcuD ranked gap 8 saw rm1 and rm2 lost (design-0.6.md 3.2)"
+  },
+  {
+   "device": "rm3",
+   "database": "rm3 x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "rm3",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "rm4",
+   "database": "rm4 x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "rm4",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "rm5",
+   "database": "tm11k x1",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "tm11k",
+     "",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  }
+ ]
+}

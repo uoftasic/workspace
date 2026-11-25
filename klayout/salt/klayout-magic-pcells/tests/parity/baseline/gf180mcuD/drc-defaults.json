@@ -1,0 +1,493 @@
+{
+ "comment": "Rule IDs that each tool reports on each device's default point (Magic drc(full) with catchup; KLayout: gf180mcu.drc with decks=all,-density, run_mode=deep, threads=1, variant=D). Written by run_sweep.py --update-baseline.",
+ "magic": "8.3.681",
+ "tech": "1.0.588-56-g026824c",
+ "open_pdks": "026824c7969ce6f4fc9678e6ca04b0a06a596c4b",
+ "klayout": "0.30.11",
+ "devices": {
+  "cap_mim_2p0fF": {
+   "klayout": [],
+   "magic": []
+  },
+  "diode_nd2ps_03v3": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "diode_nd2ps_06v0": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "diode_pd2nw_03v3": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "diode_pd2nw_06v0": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "eFuse": {
+   "klayout": [],
+   "magic": []
+  },
+  "nfet_03v3": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "nfet_03v3_dss": {
+   "klayout": [
+    "LRES.1",
+    "LRES.3",
+    "LRES.5",
+    "LRES.6",
+    "LRES.7",
+    "M1.3",
+    "NP.9",
+    "SB.12",
+    "SB.13",
+    "SB.16",
+    "SB.3",
+    "SB.4",
+    "SB.8"
+   ],
+   "magic": [
+    "DF.1b",
+    "M1.3",
+    "NDRES.2",
+    "NDRES.3",
+    "NDRES.4"
+   ]
+  },
+  "nfet_05v0": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "nfet_06v0": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "nfet_06v0_dss": {
+   "klayout": [
+    "M1.3",
+    "NP.10",
+    "NP.9",
+    "PL.2_MV",
+    "SB.13",
+    "SB.3",
+    "SB.4",
+    "SB.5b",
+    "SB.8"
+   ],
+   "magic": [
+    "M1.3",
+    "NDRES.3",
+    "NDRES.4"
+   ]
+  },
+  "nfet_06v0_nvt": {
+   "klayout": [
+    "DF.3a_MV",
+    "NAT.1",
+    "NAT.2",
+    "NAT.9",
+    "PL.5a_MV",
+    "PL.5b_MV"
+   ],
+   "magic": [
+    "DF.3a",
+    "PL.5a"
+   ]
+  },
+  "nfet_10v0_asym": {
+   "klayout": [
+    "DF.12",
+    "DF.3a_MV",
+    "DF.6_MV",
+    "M1.3",
+    "MDN.10d",
+    "MDN.7",
+    "MDN.7a",
+    "NP.5b",
+    "PL.4_MV"
+   ],
+   "magic": [
+    "DF.1a",
+    "DF.3a",
+    "M1.3",
+    "PL.2",
+    "PL.4",
+    "PL.5a",
+    "PL.6"
+   ]
+  },
+  "nmoscap_3p3": {
+   "klayout": [],
+   "magic": []
+  },
+  "nmoscap_6p0": {
+   "klayout": [],
+   "magic": []
+  },
+  "nplus_u": {
+   "klayout": [
+    "SB.13"
+   ],
+   "magic": []
+  },
+  "nplus_u_6p0": {
+   "klayout": [
+    "NP.10",
+    "SB.13"
+   ],
+   "magic": []
+  },
+  "npn_00p54x02p00": {
+   "klayout": [],
+   "magic": [
+    "DF.8"
+   ]
+  },
+  "npn_00p54x04p00": {
+   "klayout": [],
+   "magic": [
+    "DF.8"
+   ]
+  },
+  "npn_00p54x08p00": {
+   "klayout": [],
+   "magic": []
+  },
+  "npn_00p54x10p00": {
+   "klayout": [],
+   "magic": []
+  },
+  "npn_05p00x05p00": {
+   "klayout": [],
+   "magic": [
+    "DF.8"
+   ]
+  },
+  "npn_10p00x10p00": {
+   "klayout": [],
+   "magic": [
+    "DF.8"
+   ]
+  },
+  "npolyf_s": {
+   "klayout": [],
+   "magic": []
+  },
+  "npolyf_u": {
+   "klayout": [
+    "SB.13"
+   ],
+   "magic": []
+  },
+  "nvaractor_3p3": {
+   "klayout": [],
+   "magic": []
+  },
+  "nvaractor_6p0": {
+   "klayout": [],
+   "magic": []
+  },
+  "nwell": {
+   "klayout": [
+    "PP.5dii"
+   ],
+   "magic": []
+  },
+  "pfet_03v3": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "pfet_03v3_dss": {
+   "klayout": [
+    "M1.3",
+    "PP.9",
+    "PRES.1",
+    "PRES.3",
+    "PRES.5",
+    "PRES.6",
+    "PRES.7",
+    "SB.12",
+    "SB.13",
+    "SB.15b",
+    "SB.16",
+    "SB.3",
+    "SB.4",
+    "SB.8"
+   ],
+   "magic": [
+    "DF.1b",
+    "M1.3",
+    "NDRES.2",
+    "NDRES.3",
+    "NDRES.4"
+   ]
+  },
+  "pfet_05v0": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "pfet_06v0": {
+   "klayout": [
+    "M1.3"
+   ],
+   "magic": [
+    "M1.3"
+   ]
+  },
+  "pfet_06v0_dss": {
+   "klayout": [
+    "M1.3",
+    "PL.2_MV",
+    "PP.10",
+    "PP.9",
+    "SB.13",
+    "SB.3",
+    "SB.4",
+    "SB.5b",
+    "SB.8"
+   ],
+   "magic": [
+    "M1.3",
+    "NDRES.3",
+    "NDRES.4"
+   ]
+  },
+  "pfet_10v0_asym": {
+   "klayout": [
+    "DF.12",
+    "DF.3a_MV",
+    "DF.6_MV",
+    "M1.3",
+    "MDP.11",
+    "MDP.6",
+    "PL.4_MV",
+    "PP.5b",
+    "PP.5dii"
+   ],
+   "magic": [
+    "DF.1a",
+    "DF.3a",
+    "M1.3",
+    "PL.2",
+    "PL.4",
+    "PL.5a",
+    "PL.6"
+   ]
+  },
+  "pmoscap_3p3": {
+   "klayout": [],
+   "magic": []
+  },
+  "pmoscap_6p0": {
+   "klayout": [],
+   "magic": []
+  },
+  "pnp_05p00x00p42": {
+   "klayout": [],
+   "magic": [
+    "P-diffusion and N-ohmic must be over N-well or deep N-well"
+   ]
+  },
+  "pnp_05p00x05p00": {
+   "klayout": [],
+   "magic": [
+    "P-diffusion and N-ohmic must be over N-well or deep N-well"
+   ]
+  },
+  "pnp_10p00x00p42": {
+   "klayout": [],
+   "magic": [
+    "P-diffusion and N-ohmic must be over N-well or deep N-well"
+   ]
+  },
+  "pnp_10p00x10p00": {
+   "klayout": [],
+   "magic": [
+    "P-diffusion and N-ohmic must be over N-well or deep N-well"
+   ]
+  },
+  "pplus_u": {
+   "klayout": [
+    "SB.13"
+   ],
+   "magic": []
+  },
+  "pplus_u_6p0": {
+   "klayout": [
+    "DF.4d_MV",
+    "PP.10",
+    "SB.13"
+   ],
+   "magic": [
+    "DF.4a"
+   ]
+  },
+  "ppolyf_s": {
+   "klayout": [
+    "PP.2"
+   ],
+   "magic": []
+  },
+  "ppolyf_u": {
+   "klayout": [
+    "PP.2",
+    "SB.13"
+   ],
+   "magic": []
+  },
+  "ppolyf_u_1k": {
+   "klayout": [],
+   "magic": []
+  },
+  "ppolyf_u_1k_6p0": {
+   "klayout": [],
+   "magic": []
+  },
+  "pvaractor_3p3": {
+   "klayout": [],
+   "magic": [
+    "CO.4",
+    "DF.3a",
+    "DF.7",
+    "FIXME",
+    "NW.2a",
+    "P-diffusion and N-ohmic must be over N-well or deep N-well",
+    "PL.4"
+   ]
+  },
+  "pvaractor_6p0": {
+   "klayout": [],
+   "magic": [
+    "CO.4",
+    "DF.3a",
+    "FIXME",
+    "P-diffusion and N-ohmic must be over N-well or deep N-well",
+    "PL.4"
+   ]
+  },
+  "rm1": {
+   "klayout": [],
+   "magic": []
+  },
+  "rm2": {
+   "klayout": [],
+   "magic": [
+    "M2.2a",
+    "M2.3"
+   ]
+  },
+  "rm3": {
+   "klayout": [],
+   "magic": [
+    "M3.2a",
+    "M3.3"
+   ]
+  },
+  "rm4": {
+   "klayout": [],
+   "magic": [
+    "M4.2a",
+    "M4.3"
+   ]
+  },
+  "rm5": {
+   "klayout": [
+    "MT.4"
+   ],
+   "magic": [
+    "MT.1",
+    "MT.2a",
+    "MT.4"
+   ]
+  },
+  "subcon_06v0": {
+   "klayout": [],
+   "magic": []
+  },
+  "subcon_3p3": {
+   "klayout": [],
+   "magic": []
+  },
+  "via1": {
+   "klayout": [
+    "M1.3",
+    "M2.3"
+   ],
+   "magic": [
+    "M1.3",
+    "M2.3"
+   ]
+  },
+  "via2": {
+   "klayout": [
+    "M2.3",
+    "M3.3"
+   ],
+   "magic": [
+    "M2.3",
+    "M3.3"
+   ]
+  },
+  "via3": {
+   "klayout": [
+    "M3.3",
+    "M4.3"
+   ],
+   "magic": [
+    "M3.3",
+    "M4.3"
+   ]
+  },
+  "via4": {
+   "klayout": [
+    "M4.3",
+    "MT.1",
+    "MT.4"
+   ],
+   "magic": [
+    "M4.3",
+    "MT.1",
+    "MT.4"
+   ]
+  }
+ }
+}

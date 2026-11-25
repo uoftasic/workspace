@@ -1,0 +1,10583 @@
+{
+ "schema": 1,
+ "pdk": "gf180mcuD",
+ "source": {
+  "tech": "gf180mcuD/libs.tech/magic/gf180mcuD.tech",
+  "tech_files": [
+   "gf180mcuD.tech"
+  ],
+  "tech_sha256": "c3028c24a4264987d97727bb06987d6b85783cbac5d5722ce540a5f3b9de202a",
+  "magic_tech_version": "1.0.588-56-g026824c",
+  "open_pdks": "026824c7969ce6f4fc9678e6ca04b0a06a596c4b",
+  "lyp": "libs.tech/klayout/tech/gf180mcu.lyp",
+  "cifoutput_style": "gdsii",
+  "cifinput_style": "import",
+  "lambda_nm": 50.0
+ },
+ "grid_um": 0.005,
+ "drc": {
+  "styles": [
+   "drc(fast)",
+   "drc(full)",
+   "drc(routing)",
+   "empty"
+  ],
+  "magic_default_style": "drc(fast)",
+  "counts": {
+   "rules": 202,
+   "with_why": 194,
+   "per_style": {
+    "drc(fast)": 181,
+    "drc(full)": 202,
+    "drc(routing)": 172,
+    "empty": 0
+   }
+  },
+  "rules": [
+   {
+    "line": 2690,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allnwell"
+    ],
+    "value_um": 0.86,
+    "unit": "um",
+    "why": "N-well width < %d (NW.1a)",
+    "id_text": "NW.1a",
+    "ids": [
+     "NW.1a"
+    ],
+    "block": null,
+    "args": [
+     "allnwell",
+     "860"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2691,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allnwell",
+     "allnwell"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "N-well spacing < %d (NW.2a)",
+    "id_text": "NW.2a",
+    "ids": [
+     "NW.2a"
+    ],
+    "block": null,
+    "args": [
+     "allnwell",
+     "allnwell",
+     "600",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2693,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "rnw",
+     "allnwell"
+    ],
+    "value_um": 1.4,
+    "unit": "um",
+    "why": "N-well resistor spacing < %d (NW.2b)",
+    "id_text": "NW.2b",
+    "ids": [
+     "NW.2b"
+    ],
+    "block": null,
+    "args": [
+     "rnw",
+     "allnwell",
+     "1400",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2694,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "rnw"
+    ],
+    "value_um": 2.0,
+    "unit": "um",
+    "why": "N-well resistor width < %d (NW.1b)",
+    "id_text": "NW.1b",
+    "ids": [
+     "NW.1b"
+    ],
+    "block": null,
+    "args": [
+     "rnw",
+     "2000"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2697,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifspacing",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mv_nwell",
+     "mv_nwell"
+    ],
+    "value_um": 0.74,
+    "unit": "um",
+    "why": "MV N-well spacing < %d (NW.2a)",
+    "id_text": "NW.2a",
+    "ids": [
+     "NW.2a"
+    ],
+    "block": null,
+    "args": [
+     "mv_nwell",
+     "mv_nwell",
+     "740",
+     "touching_ok"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2704,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "dnwell"
+    ],
+    "value_um": 1.7,
+    "unit": "um",
+    "why": "Deep N-well width < %d (DN.1)",
+    "id_text": "DN.1",
+    "ids": [
+     "DN.1"
+    ],
+    "block": null,
+    "args": [
+     "dnwell",
+     "1700"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2705,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "dnwell",
+     "dnwell"
+    ],
+    "value_um": 2.5,
+    "unit": "um",
+    "why": "Deep N-well spacing < %d (DN.2a)",
+    "id_text": "DN.2a",
+    "ids": [
+     "DN.2a"
+    ],
+    "block": null,
+    "args": [
+     "dnwell",
+     "dnwell",
+     "2500",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2707,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pwell",
+     "dnwell"
+    ],
+    "value_um": 2.5,
+    "unit": "um",
+    "why": "Deep N-well surround P-well < %d (LPW.3)",
+    "id_text": "LPW.3",
+    "ids": [
+     "LPW.3"
+    ],
+    "block": null,
+    "args": [
+     "pwell",
+     "dnwell",
+     "2500",
+     "absence_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2710,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nwell",
+     "dnwell"
+    ],
+    "value_um": 0.5,
+    "unit": "um",
+    "why": "Deep N-well surround N-well < %d (NW.5)",
+    "id_text": "NW.5",
+    "ids": [
+     "NW.5"
+    ],
+    "block": null,
+    "args": [
+     "nwell",
+     "dnwell",
+     "500",
+     "absence_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2715,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "pwell_in_dnwell"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "P-well in deep N-well size < %d (LPW.1)",
+    "id_text": "LPW.1",
+    "ids": [
+     "LPW.1"
+    ],
+    "block": null,
+    "args": [
+     "pwell_in_dnwell",
+     "600"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2716,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mvpwell_in_dnwell"
+    ],
+    "value_um": 0.74,
+    "unit": "um",
+    "why": "HV P-well in deep N-well size < %d (LPW.1)",
+    "id_text": "LPW.1",
+    "ids": [
+     "LPW.1"
+    ],
+    "block": null,
+    "args": [
+     "mvpwell_in_dnwell",
+     "740"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2718,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifspacing",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "pwell_in_dnwell",
+     "pwell_in_dnwell"
+    ],
+    "value_um": 0.86,
+    "unit": "um",
+    "why": "P-well in deep N-well spacing < %d (LPW.2b)",
+    "id_text": "LPW.2b",
+    "ids": [
+     "LPW.2b"
+    ],
+    "block": null,
+    "args": [
+     "pwell_in_dnwell",
+     "pwell_in_dnwell",
+     "860",
+     "touching_ok"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2720,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifspacing",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mvpwell_in_dnwell",
+     "mvpwell_in_dnwell"
+    ],
+    "value_um": 0.86,
+    "unit": "um",
+    "why": "MV P-well in deep N-well spacing < %d (LPW.2b)",
+    "id_text": "LPW.2b",
+    "ids": [
+     "LPW.2b"
+    ],
+    "block": null,
+    "args": [
+     "mvpwell_in_dnwell",
+     "mvpwell_in_dnwell",
+     "860",
+     "touching_ok"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2723,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "bad_dnwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "Both LV and MV devices cannot be in the same deep N-well (DN.11)",
+    "id_text": "DN.11",
+    "ids": [
+     "DN.11"
+    ],
+    "block": null,
+    "args": [
+     "bad_dnwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2726,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "bad_nwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "Both LV and MV devices cannot be in the same N-well (DV.9)",
+    "id_text": "DV.9",
+    "ids": [
+     "DV.9"
+    ],
+    "block": null,
+    "args": [
+     "bad_nwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 2729,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "bad_rnw"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "N-well resistor cannot be in deep N-well (DN.12)",
+    "id_text": "DN.12",
+    "ids": [
+     "DN.12"
+    ],
+    "block": null,
+    "args": [
+     "bad_rnw",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2733,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "dnwell",
+     "allnwell"
+    ],
+    "value_um": 3.1,
+    "unit": "um",
+    "why": "Deep N-well spacing to N-well < %d (NW.3)",
+    "id_text": "NW.3",
+    "ids": [
+     "NW.3"
+    ],
+    "block": null,
+    "args": [
+     "dnwell",
+     "allnwell",
+     "3100",
+     "surround_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2736,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pwell",
+     "dnwell"
+    ],
+    "value_um": 1.5,
+    "unit": "um",
+    "why": "Deep N-well spacing to P-well < %d (LPW.11)",
+    "id_text": "LPW.11",
+    "ids": [
+     "LPW.11"
+    ],
+    "block": null,
+    "args": [
+     "pwell",
+     "dnwell",
+     "1500",
+     "surround_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2743,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "alldifflv"
+    ],
+    "value_um": 0.22,
+    "unit": "um",
+    "why": "Diffusion width < %d (DF.1a)",
+    "id_text": "DF.1a",
+    "ids": [
+     "DF.1a"
+    ],
+    "block": null,
+    "args": [
+     "alldifflv",
+     "220"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2744,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "alldiffmv"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Diffusion width < %d (DF.1a)",
+    "id_text": "DF.1a",
+    "ids": [
+     "DF.1a"
+    ],
+    "block": null,
+    "args": [
+     "alldiffmv",
+     "300"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2745,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "alldifflv"
+    ],
+    "value_um": 0.2025,
+    "unit": "um2",
+    "why": "Diffusion minimum area < %a (DF.9)",
+    "id_text": "DF.9",
+    "ids": [
+     "DF.9"
+    ],
+    "block": null,
+    "args": [
+     "alldifflv",
+     "202500",
+     "220"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2746,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "alldiffmv"
+    ],
+    "value_um": 0.2025,
+    "unit": "um2",
+    "why": "Diffusion minimum area < %a (DF.9)",
+    "id_text": "DF.9",
+    "ids": [
+     "DF.9"
+    ],
+    "block": null,
+    "args": [
+     "alldiffmv",
+     "202500",
+     "300"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2747,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "alldifflv,nvar,pvar",
+     "alldifflv,nvar,pvar"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Diffusion spacing < %d (DF.3a)",
+    "id_text": "DF.3a",
+    "ids": [
+     "DF.3a"
+    ],
+    "block": null,
+    "args": [
+     "alldifflv,nvar,pvar",
+     "alldifflv,nvar,pvar",
+     "280",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2749,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "alldiffmv,mvnvar,mvpvar",
+     "alldiffmv,mvnvar,mvpvar"
+    ],
+    "value_um": 0.36,
+    "unit": "um",
+    "why": "Diffusion spacing < %d (DF.3a)",
+    "id_text": "DF.3a",
+    "ids": [
+     "DF.3a"
+    ],
+    "block": null,
+    "args": [
+     "alldiffmv,mvnvar,mvpvar",
+     "alldiffmv,mvnvar,mvpvar",
+     "360",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2751,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpdiff,mvpvar,*srammvpdiff",
+     "*mvnsd"
+    ],
+    "value_um": 0.36,
+    "unit": "um",
+    "why": "Diffusion spacing to tap < %d (DF.3a)",
+    "id_text": "DF.3a",
+    "ids": [
+     "DF.3a"
+    ],
+    "block": null,
+    "args": [
+     "*mvpdiff,mvpvar,*srammvpdiff",
+     "*mvnsd",
+     "360",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2753,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvndiff,mvnvar,*srammvndiff",
+     "*mvpsd"
+    ],
+    "value_um": 0.36,
+    "unit": "um",
+    "why": "Diffusion spacing to tap < %d (DF.3a)",
+    "id_text": "DF.3a",
+    "ids": [
+     "DF.3a"
+    ],
+    "block": null,
+    "args": [
+     "*mvndiff,mvnvar,*srammvndiff",
+     "*mvpsd",
+     "360",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2756,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpdiff,mvpvar,*srammvpdiff",
+     "*nsd"
+    ],
+    "value_um": 0.48,
+    "unit": "um",
+    "why": "5/6V Diffusion spacing to 3.3V tap < %d (DV.6 + DV.3)",
+    "id_text": "DV.6 + DV.3",
+    "ids": [
+     "DV.6",
+     "DV.3"
+    ],
+    "block": null,
+    "args": [
+     "*mvpdiff,mvpvar,*srammvpdiff",
+     "*nsd",
+     "480",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2758,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvndiff,mvnvar,*srammvndiff",
+     "*psd"
+    ],
+    "value_um": 0.48,
+    "unit": "um",
+    "why": "5/6V Diffusion spacing to 3.3V tap < %d (DV.6 + DV.3)",
+    "id_text": "DV.6 + DV.3",
+    "ids": [
+     "DV.6",
+     "DV.3"
+    ],
+    "block": null,
+    "args": [
+     "*mvndiff,mvnvar,*srammvndiff",
+     "*psd",
+     "480",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2761,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(*ndiff,*ndiode,nfet,nnfet,ncap)/a",
+     "allnwell"
+    ],
+    "value_um": 0.43,
+    "unit": "um",
+    "why": "N-Diffusion spacing to N-well < %d (DF.8)",
+    "id_text": "DF.8",
+    "ids": [
+     "DF.8"
+    ],
+    "block": null,
+    "args": [
+     "(*ndiff,*ndiode,nfet,nnfet,ncap)/a",
+     "allnwell",
+     "430",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2763,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(*mvndiff,*mvndiode,hvnfet,mvnfet,mvncap,mvnnfet)/a",
+     "allnwell"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "N-Diffusion spacing to N-well < %d (DF.8)",
+    "id_text": "DF.8",
+    "ids": [
+     "DF.8"
+    ],
+    "block": null,
+    "args": [
+     "(*mvndiff,*mvndiode,hvnfet,mvnfet,mvncap,mvnnfet)/a",
+     "allnwell",
+     "600",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2765,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*srammvndiff,srammvnfet",
+     "allnwell"
+    ],
+    "value_um": 0.45,
+    "unit": "um",
+    "why": "N-Diffusion spacing to N-well in 5V SRAM < %d (S.DF.8_MV)",
+    "id_text": "S.DF.8_MV",
+    "ids": [
+     "S.DF.8_MV"
+    ],
+    "block": null,
+    "args": [
+     "*srammvndiff,srammvnfet",
+     "allnwell",
+     "450",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2767,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*sramndiff,sramnfet",
+     "allnwell"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "N-Diffusion spacing to N-well in 3.3V SRAM < %d (S.DF.16_LV)",
+    "id_text": "S.DF.16_LV",
+    "ids": [
+     "S.DF.16_LV"
+    ],
+    "block": null,
+    "args": [
+     "*sramndiff,sramnfet",
+     "allnwell",
+     "400",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2769,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*psd",
+     "allnwell"
+    ],
+    "value_um": 0.12,
+    "unit": "um",
+    "why": "P-Ohmic spacing to N-well < %d (DF.5)",
+    "id_text": "DF.5",
+    "ids": [
+     "DF.5"
+    ],
+    "block": null,
+    "args": [
+     "*psd",
+     "allnwell",
+     "120",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2771,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpsd",
+     "allnwell"
+    ],
+    "value_um": 0.16,
+    "unit": "um",
+    "why": "P-Ohmic spacing to N-well < %d (DF.5)",
+    "id_text": "DF.5",
+    "ids": [
+     "DF.5"
+    ],
+    "block": null,
+    "args": [
+     "*mvpsd",
+     "allnwell",
+     "160",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2775,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*nsd",
+     "allnwell"
+    ],
+    "value_um": 0.12,
+    "unit": "um",
+    "why": "N-well overlap of N-Ohmic < %d (DF.4a)",
+    "id_text": "DF.4a",
+    "ids": [
+     "DF.4a"
+    ],
+    "block": null,
+    "args": [
+     "*nsd",
+     "allnwell",
+     "120",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2777,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvnsd",
+     "allnwell"
+    ],
+    "value_um": 0.16,
+    "unit": "um",
+    "why": "N-well overlap of N-Ohmic < %d (DF.4a)",
+    "id_text": "DF.4a",
+    "ids": [
+     "DF.4a"
+    ],
+    "block": null,
+    "args": [
+     "*mvnsd",
+     "allnwell",
+     "160",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2779,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*pdiff,*pdiode,pfet,pcap",
+     "allnwell"
+    ],
+    "value_um": 0.43,
+    "unit": "um",
+    "why": "N-well overlap of P-Diffusion < %d (DF.7)",
+    "id_text": "DF.7",
+    "ids": [
+     "DF.7"
+    ],
+    "block": null,
+    "args": [
+     "*pdiff,*pdiode,pfet,pcap",
+     "allnwell",
+     "430",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2781,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpdiff,*mvpdiode,hvpfet,mvpfet,mvpcap",
+     "allnwell"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "N-well overlap of P-Diffusion < %d (DF.7)",
+    "id_text": "DF.7",
+    "ids": [
+     "DF.7"
+    ],
+    "block": null,
+    "args": [
+     "*mvpdiff,*mvpdiode,hvpfet,mvpfet,mvpcap",
+     "allnwell",
+     "600",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2783,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srammvpfet",
+     "allnwell"
+    ],
+    "value_um": 0.45,
+    "unit": "um",
+    "why": "N-well overlap of P-Diffusion in 5V SRAM < %d (S.DF.7_MV)",
+    "id_text": "S.DF.7_MV",
+    "ids": [
+     "S.DF.7_MV"
+    ],
+    "block": null,
+    "args": [
+     "srammvpfet",
+     "allnwell",
+     "450",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2785,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srampfet",
+     "allnwell"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "N-well overlap of P-Diffusion in 3.3V SRAM < %d (S.DF.4c_LV)",
+    "id_text": "S.DF.4c_LV",
+    "ids": [
+     "S.DF.4c_LV"
+    ],
+    "block": null,
+    "args": [
+     "srampfet",
+     "allnwell",
+     "400",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2787,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*nsd",
+     "dnwell"
+    ],
+    "value_um": 0.62,
+    "unit": "um",
+    "why": "Deep N-well overlap of N-Ohmic < %d (DF.4b)",
+    "id_text": "DF.4b",
+    "ids": [
+     "DF.4b"
+    ],
+    "block": null,
+    "args": [
+     "*nsd",
+     "dnwell",
+     "620",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2789,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvnsd",
+     "dnwell"
+    ],
+    "value_um": 0.66,
+    "unit": "um",
+    "why": "Deep N-well overlap of N-Ohmic < %d (DF.4b)",
+    "id_text": "DF.4b",
+    "ids": [
+     "DF.4b"
+    ],
+    "block": null,
+    "args": [
+     "*mvnsd",
+     "dnwell",
+     "660",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2791,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*pdiff,*pdiode,pfet,pcap",
+     "dnwell"
+    ],
+    "value_um": 0.93,
+    "unit": "um",
+    "why": "Deep N-well overlap of P-Diffusion < %d (DF.4e)",
+    "id_text": "DF.4e",
+    "ids": [
+     "DF.4e"
+    ],
+    "block": null,
+    "args": [
+     "*pdiff,*pdiode,pfet,pcap",
+     "dnwell",
+     "930",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2793,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpdiff,*mvpdiode,hvpfet,mvpfet,mvpcap",
+     "dnwell"
+    ],
+    "value_um": 1.1,
+    "unit": "um",
+    "why": "Deep N-well overlap of P-Diffusion < %d (DF.4e)",
+    "id_text": "DF.4e",
+    "ids": [
+     "DF.4e"
+    ],
+    "block": null,
+    "args": [
+     "*mvpdiff,*mvpdiode,hvpfet,mvpfet,mvpcap",
+     "dnwell",
+     "1100",
+     "absence_okay"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2799,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "missing_nwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "P-diffusion and N-ohmic must be over N-well or deep N-well",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "missing_nwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2802,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "pohmic_missing_pwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "P-well must surround P-ohmic in deep N-well by 0.12um (DF.5)",
+    "id_text": "DF.5",
+    "ids": [
+     "DF.5"
+    ],
+    "block": null,
+    "args": [
+     "pohmic_missing_pwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2804,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mvpohmic_missing_pwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "P-well must surround MV P-ohmic in deep N-well by 0.16um (DF.5)",
+    "id_text": "DF.5",
+    "ids": [
+     "DF.5"
+    ],
+    "block": null,
+    "args": [
+     "mvpohmic_missing_pwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2806,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "ndiff_missing_pwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "P-well must surround N-diffusion inside deep N-well by 0.43um (DF.8)",
+    "id_text": "DF.8",
+    "ids": [
+     "DF.8"
+    ],
+    "block": null,
+    "args": [
+     "ndiff_missing_pwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2808,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mvndiff_missing_pwell"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "P-well must surround MV N-diffusion inside deep N-well by 0.60um (DF.8)",
+    "id_text": "DF.8",
+    "ids": [
+     "DF.8"
+    ],
+    "block": null,
+    "args": [
+     "mvndiff_missing_pwell",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2811,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifarea",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "check_pplus"
+    ],
+    "value_um": 0.35,
+    "unit": "um2",
+    "why": "Minimum PPLUS area >= %a (PP.8a)",
+    "id_text": "PP.8a",
+    "ids": [
+     "PP.8a"
+    ],
+    "block": null,
+    "args": [
+     "check_pplus",
+     "350000",
+     "400"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2812,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifarea",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "check_nplus"
+    ],
+    "value_um": 0.35,
+    "unit": "um2",
+    "why": "Minimum NPLUS area >= %a (NP.8a)",
+    "id_text": "NP.8a",
+    "ids": [
+     "NP.8a"
+    ],
+    "block": null,
+    "args": [
+     "check_nplus",
+     "350000",
+     "400"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2821,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*nndiode,*mvnndiode",
+     "*psd,*mvpsd"
+    ],
+    "value_um": 0.61,
+    "unit": "um",
+    "why": "NAT Diffusion spacing to TAP diffusion < %d (NAT.5 + NAT.6)",
+    "id_text": "NAT.5 + NAT.6",
+    "ids": [
+     "NAT.5",
+     "NAT.6"
+    ],
+    "block": null,
+    "args": [
+     "*nndiode,*mvnndiode",
+     "*psd,*mvpsd",
+     "610",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2828,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpoly"
+    ],
+    "value_um": 0.18,
+    "unit": "um",
+    "why": "Poly width < %d (PL.1)",
+    "id_text": "PL.1",
+    "ids": [
+     "PL.1"
+    ],
+    "block": null,
+    "args": [
+     "allpoly",
+     "180"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2829,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "fillpoly"
+    ],
+    "value_um": 5.6,
+    "unit": "um",
+    "why": "Poly fill width < %d (DPF.1)",
+    "id_text": "DPF.1",
+    "ids": [
+     "DPF.1"
+    ],
+    "block": null,
+    "args": [
+     "fillpoly",
+     "5600"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2830,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpoly",
+     "allpoly"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Poly spacing < %d (PL.3a)",
+    "id_text": "PL.3a",
+    "ids": [
+     "PL.3a"
+    ],
+    "block": null,
+    "args": [
+     "allpoly",
+     "allpoly",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2831,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpoly",
+     "fillpoly"
+    ],
+    "value_um": 5.0,
+    "unit": "um",
+    "why": "Poly fill spacing to poly < %d (DPF.5)",
+    "id_text": "DPF.5",
+    "ids": [
+     "DPF.5"
+    ],
+    "block": null,
+    "args": [
+     "allpoly",
+     "fillpoly",
+     "5000",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2832,
+    "file": "gf180mcuD.tech",
+    "keyword": "edge4way",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "fillpoly",
+     "space/poly"
+    ],
+    "value_um": 2.4,
+    "unit": "um",
+    "why": "Lateral spacing between poly fill shapes < %d (DPF.2a)",
+    "id_text": "DPF.2a",
+    "ids": [
+     "DPF.2a"
+    ],
+    "block": null,
+    "args": [
+     "fillpoly",
+     "space/poly",
+     "2400",
+     "~(fillpoly)/poly",
+     "0",
+     "0"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2834,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "fillpoly",
+     "fillpoly"
+    ],
+    "value_um": 1.1,
+    "unit": "um",
+    "why": "Poly fill spacing < %d (DPF.2b)",
+    "id_text": "DPF.2b",
+    "ids": [
+     "DPF.2b"
+    ],
+    "block": null,
+    "args": [
+     "fillpoly",
+     "fillpoly",
+     "1100",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2835,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpolynonfet",
+     "alldifflvnonfet"
+    ],
+    "value_um": 0.1,
+    "unit": "um",
+    "why": "Poly spacing to diffusion < %d (PL.5a)",
+    "id_text": "PL.5a",
+    "ids": [
+     "PL.5a"
+    ],
+    "block": null,
+    "args": [
+     "allpolynonfet",
+     "alldifflvnonfet",
+     "100",
+     "corner_ok",
+     "allfets"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2838,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpolynonfet",
+     "*mvndif,*mvnsd,*mvndiode,mvndiffres,*mvnndiode,*ldndiff,*mvpdif,*mvpsd,*mvpdiode,mvpdiffres,*ldpdiff"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Poly spacing to MV diffusion < %d (PL.5a)",
+    "id_text": "PL.5a",
+    "ids": [
+     "PL.5a"
+    ],
+    "block": null,
+    "args": [
+     "allpolynonfet",
+     "*mvndif,*mvnsd,*mvndiode,mvndiffres,*mvnndiode,*ldndiff,*mvpdif,*mvpsd,*mvpdiode,mvpdiffres,*ldpdiff",
+     "300",
+     "corner_ok",
+     "allfets"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2841,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpolynonfet",
+     "*srammvndiff"
+    ],
+    "value_um": 0.12,
+    "unit": "um",
+    "why": "Poly spacing to MV diffusion in SRAM < %d (S.PL.5a_MV)",
+    "id_text": "S.PL.5a_MV",
+    "ids": [
+     "S.PL.5a_MV"
+    ],
+    "block": null,
+    "args": [
+     "allpolynonfet",
+     "*srammvndiff",
+     "120",
+     "corner_ok",
+     "allfets"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2843,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*ndiff,rndiff",
+     "nfet,nnfet,ncap"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "N-Diffusion overhang of nmos < %d (DF.6)",
+    "id_text": "DF.6",
+    "ids": [
+     "DF.6"
+    ],
+    "block": null,
+    "args": [
+     "*ndiff,rndiff",
+     "nfet,nnfet,ncap",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2844,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvndiff,mvrndiff",
+     "hvnfet,mvnfet,mvncap,mvnnfet"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "N-Diffusion overhang of nmos < %d (DF.6)",
+    "id_text": "DF.6",
+    "ids": [
+     "DF.6"
+    ],
+    "block": null,
+    "args": [
+     "*mvndiff,mvrndiff",
+     "hvnfet,mvnfet,mvncap,mvnnfet",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2846,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*srammvndiff",
+     "srammvnfet"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "N-Diffusion overhang of nmos < %d (DF.6)",
+    "id_text": "DF.6",
+    "ids": [
+     "DF.6"
+    ],
+    "block": null,
+    "args": [
+     "*srammvndiff",
+     "srammvnfet",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2848,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*pdiff,rpdiff",
+     "pfet,pcap"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "P-Diffusion overhang of pmos < %d (DF.6)",
+    "id_text": "DF.6",
+    "ids": [
+     "DF.6"
+    ],
+    "block": null,
+    "args": [
+     "*pdiff,rpdiff",
+     "pfet,pcap",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2849,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpdiff,mvrpdiff",
+     "hvpfet,mvpfet,mvpcap"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "P-Diffusion overhang of pmos < %d (DF.6)",
+    "id_text": "DF.6",
+    "ids": [
+     "DF.6"
+    ],
+    "block": null,
+    "args": [
+     "*mvpdiff,mvrpdiff",
+     "hvpfet,mvpfet,mvpcap",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2850,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*srammvpdiff",
+     "srammvpfet"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "P-Diffusion overhang of pmos < %d (DF.6)",
+    "id_text": "DF.6",
+    "ids": [
+     "DF.6"
+    ],
+    "block": null,
+    "args": [
+     "*srammvpdiff",
+     "srammvpfet",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2851,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*poly",
+     "allfetsnonnat"
+    ],
+    "value_um": 0.22,
+    "unit": "um",
+    "why": "Poly overhang of transistor < %d (PL.4)",
+    "id_text": "PL.4",
+    "ids": [
+     "PL.4"
+    ],
+    "block": null,
+    "args": [
+     "*poly",
+     "allfetsnonnat",
+     "220"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2852,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*poly",
+     "nnfet,mvnnfet"
+    ],
+    "value_um": 0.35,
+    "unit": "um",
+    "why": "Poly overhang of NAT transistor < %d (NAT.6)",
+    "id_text": "NAT.6",
+    "ids": [
+     "NAT.6"
+    ],
+    "block": null,
+    "args": [
+     "*poly",
+     "nnfet,mvnnfet",
+     "350"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2854,
+    "file": "gf180mcuD.tech",
+    "keyword": "angles",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allfets"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "Only 45 degrees allowed on transistors (PL.6)",
+    "id_text": "PL.6",
+    "ids": [
+     "PL.6"
+    ],
+    "block": null,
+    "args": [
+     "allfets",
+     "45-only"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2860,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpolysblkres",
+     "allpolysblkres"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "Poly resistor spacing < %d (PRES/LRES.2)",
+    "id_text": "PRES/LRES.2",
+    "ids": [
+     "PRES/LRES.2"
+    ],
+    "block": null,
+    "args": [
+     "allpolysblkres",
+     "allpolysblkres",
+     "400",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2863,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpolysblkres",
+     "allpolynonres"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "Poly resistor spacing to unrelated poly < %d (PRES/LRES.4)",
+    "id_text": "PRES/LRES.4",
+    "ids": [
+     "PRES/LRES.4"
+    ],
+    "block": null,
+    "args": [
+     "allpolysblkres",
+     "allpolynonres",
+     "600",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2865,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpolysblkres",
+     "allactive,allactiveres"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "Poly resistor spacing to diffusion < %d (PRES/LRES.3)",
+    "id_text": "PRES/LRES.3",
+    "ids": [
+     "PRES/LRES.3"
+    ],
+    "block": null,
+    "args": [
+     "allpolysblkres",
+     "allactive,allactiveres",
+     "600",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2868,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allactiveres",
+     "allactiveres"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "Diffusion resistor spacing < %d (NDRES.2)",
+    "id_text": "NDRES.2",
+    "ids": [
+     "NDRES.2"
+    ],
+    "block": null,
+    "args": [
+     "allactiveres",
+     "allactiveres",
+     "400",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2871,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allactiveres",
+     "allactive"
+    ],
+    "value_um": 0.44,
+    "unit": "um",
+    "why": "Diffusion resistor spacing to unrelated diffusion < %d (NDRES.3)",
+    "id_text": "NDRES.3",
+    "ids": [
+     "NDRES.3"
+    ],
+    "block": null,
+    "args": [
+     "allactiveres",
+     "allactive",
+     "440",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2873,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allactiveres",
+     "allpoly"
+    ],
+    "value_um": 0.43,
+    "unit": "um",
+    "why": "Diffusion resistor spacing to unrelated poly < %d (NDRES.4)",
+    "id_text": "NDRES.4",
+    "ids": [
+     "NDRES.4"
+    ],
+    "block": null,
+    "args": [
+     "allactiveres",
+     "allpoly",
+     "430",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2880,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "Diffusion contact width < %d (CO.1 + 2 * CO.6)",
+    "id_text": "CO.1 + 2 * CO.6",
+    "ids": [
+     "CO.1",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2882,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1",
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Diffusion contact spacing < %d (CO.2a - 2 * CO.6)",
+    "id_text": "CO.2a - 2 * CO.6",
+    "ids": [
+     "CO.2a",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1",
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2885,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1",
+     "*m1"
+    ],
+    "value_um": 0.055,
+    "unit": "um",
+    "why": "Metal1 overlap of contact < %d in one direction (CO.6)",
+    "id_text": "CO.6",
+    "ids": [
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "(ndc,nsc,pdc,psc,ndic,pdic,pc)/m1",
+     "*m1",
+     "55",
+     "35",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2887,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "ndc/a",
+     "*ndiff"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "ndc/a",
+     "*ndiff",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2889,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nsc/a",
+     "*nsd"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "nsc/a",
+     "*nsd",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2891,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pdc/a",
+     "*pdiff"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "P-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "pdc/a",
+     "*pdiff",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2893,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "psc/a",
+     "*psd"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "P-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "psc/a",
+     "*psd",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2895,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "ndic/a",
+     "*ndiode"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "ndic/a",
+     "*ndiode",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2897,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pdic/a",
+     "*pdiode"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "P-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "pdic/a",
+     "*pdiode",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2899,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pc/a",
+     "*poly"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "Poly overlap of contact < %d (CO.3)",
+    "id_text": "CO.3",
+    "ids": [
+     "CO.3"
+    ],
+    "block": null,
+    "args": [
+     "pc/a",
+     "*poly",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2901,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "MV Diffusion contact width < %d (CO.1 + 2 * CO.6)",
+    "id_text": "CO.1 + 2 * CO.6",
+    "ids": [
+     "CO.1",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2903,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1",
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Diffusion contact spacing < %d (CO.2a - 2 * CO.6)",
+    "id_text": "CO.2a - 2 * CO.6",
+    "ids": [
+     "CO.2a",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1",
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2906,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1",
+     "*m1"
+    ],
+    "value_um": 0.055,
+    "unit": "um",
+    "why": "Metal1 overlap of contact < %d in one direction (CO.6)",
+    "id_text": "CO.6",
+    "ids": [
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "(mvndc,mvnsc,mvpdc,mvpsc,mvndic,mvnndic,mvpdic)/m1",
+     "*m1",
+     "55",
+     "35",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2908,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvndc/a",
+     "*mvndiff"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvndc/a",
+     "*mvndiff",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2910,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvnsc/a",
+     "*mvnsd"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvnsc/a",
+     "*mvnsd",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2912,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvpdc/a",
+     "*mvpdiff"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV P-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvpdc/a",
+     "*mvpdiff",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2914,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvpsc/a",
+     "*mvpsd"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV P-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvpsc/a",
+     "*mvpsd",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2916,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvndic/a",
+     "*mvndiode"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvndic/a",
+     "*mvndiode",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2918,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvnndic/a",
+     "*mvnndiode"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV NAT N-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvnndic/a",
+     "*mvnndiode",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2920,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvpdic/a",
+     "*mvpdiode"
+    ],
+    "value_um": 0.065,
+    "unit": "um",
+    "why": "MV P-Diffusion overlap of contact < %d (CO.4)",
+    "id_text": "CO.4",
+    "ids": [
+     "CO.4"
+    ],
+    "block": null,
+    "args": [
+     "mvpdic/a",
+     "*mvpdiode",
+     "65",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2923,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srammvndc",
+     "*srammvndiff"
+    ],
+    "value_um": 0.035,
+    "unit": "um",
+    "why": "MV N-Diffusion overlap of contact in 5V SRAM < %d (S.CO.4_MV)",
+    "id_text": "S.CO.4_MV",
+    "ids": [
+     "S.CO.4_MV"
+    ],
+    "block": null,
+    "args": [
+     "srammvndc",
+     "*srammvndiff",
+     "35",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2925,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srammvpdc/a",
+     "*srammvpdiff"
+    ],
+    "value_um": 0.035,
+    "unit": "um",
+    "why": "MV P-Diffusion overlap of contact in 5V SRAM < %d (S.CO.4_MV)",
+    "id_text": "S.CO.4_MV",
+    "ids": [
+     "S.CO.4_MV"
+    ],
+    "block": null,
+    "args": [
+     "srammvpdc/a",
+     "*srammvpdiff",
+     "35",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2927,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "sramndc",
+     "*sramndiff"
+    ],
+    "value_um": 0.035,
+    "unit": "um",
+    "why": "MV N-Diffusion overlap of contact in 3.3V SRAM < %d (S.CO.3_LV)",
+    "id_text": "S.CO.3_LV",
+    "ids": [
+     "S.CO.3_LV"
+    ],
+    "block": null,
+    "args": [
+     "sramndc",
+     "*sramndiff",
+     "35",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2929,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srampdc/a",
+     "*srampdiff"
+    ],
+    "value_um": 0.035,
+    "unit": "um",
+    "why": "MV P-Diffusion overlap of contact in 3.3V SRAM < %d (S.CO.3_LV)",
+    "id_text": "S.CO.3_LV",
+    "ids": [
+     "S.CO.3_LV"
+    ],
+    "block": null,
+    "args": [
+     "srampdc/a",
+     "*srampdiff",
+     "35",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2932,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpdiffcont",
+     "allndiffcont"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Diffusion contact spacing < %d (CO.2a - 2 * CO.6)",
+    "id_text": "CO.2a - 2 * CO.6",
+    "ids": [
+     "CO.2a",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "allpdiffcont",
+     "allndiffcont",
+     "240",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2934,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allndiffcont",
+     "allndiffcont"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Diffusion contact spacing < %d (CO.2a - 2 * CO.6)",
+    "id_text": "CO.2a - 2 * CO.6",
+    "ids": [
+     "CO.2a",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "allndiffcont",
+     "allndiffcont",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2936,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpdiffcont",
+     "allpdiffcont"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Diffusion contact spacing < %d (CO.2a - 2 * CO.6)",
+    "id_text": "CO.2a - 2 * CO.6",
+    "ids": [
+     "CO.2a",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "allpdiffcont",
+     "allpdiffcont",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2938,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pc",
+     "pc"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Poly contact spacing < %d (CO.2a - 2 * CO.6)",
+    "id_text": "CO.2a - 2 * CO.6",
+    "ids": [
+     "CO.2a",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "pc",
+     "pc",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2939,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pc",
+     "alldiff"
+    ],
+    "value_um": 0.165,
+    "unit": "um",
+    "why": "Poly contact spacing to diffusion < %d (CO.8 - 2 * CO.6)",
+    "id_text": "CO.8 - 2 * CO.6",
+    "ids": [
+     "CO.8",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "pc",
+     "alldiff",
+     "165",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2941,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allpdiffcont,allndiffcont",
+     "allpoly"
+    ],
+    "value_um": 0.145,
+    "unit": "um",
+    "why": "Diffusion contact spacing to poly < %d (CO.7 - 2 * CO.6)",
+    "id_text": "CO.7 - 2 * CO.6",
+    "ids": [
+     "CO.7",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "allpdiffcont,allndiffcont",
+     "allpoly",
+     "145",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2944,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(ndc,pdc,psc,nsc,pc,ndic,pdic)/a"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "(ndc,pdc,psc,nsc,pc,ndic,pdic)/a"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2945,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(mvndc,mvpdc,mvpsc,mvnsc,mvndic,mvnndic,mvpdic)/a"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "(mvndc,mvpdc,mvpsc,mvnsc,mvndic,mvnndic,mvpdic)/a"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2946,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(srammvndc,srammvpdc)/a"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "(srammvndc,srammvpdc)/a"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2947,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "(sramndc,srampdc)/a"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "(sramndc,srampdc)/a"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2955,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*m1,rm1"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "Metal1 width < %d (M1.1)",
+    "id_text": "M1.1",
+    "ids": [
+     "M1.1"
+    ],
+    "block": null,
+    "args": [
+     "*m1,rm1",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2956,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm1,obsm1",
+     "allm1,obsm1"
+    ],
+    "value_um": 0.23,
+    "unit": "um",
+    "why": "Metal1 spacing < %d (M1.2a)",
+    "id_text": "M1.2a",
+    "ids": [
+     "M1.2a"
+    ],
+    "block": null,
+    "args": [
+     "allm1,obsm1",
+     "allm1,obsm1",
+     "230",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2957,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm1,obsm1"
+    ],
+    "value_um": 0.1444,
+    "unit": "um2",
+    "why": "Metal1 minimum area < %a (M1.3)",
+    "id_text": "M1.3",
+    "ids": [
+     "M1.3"
+    ],
+    "block": null,
+    "args": [
+     "allm1,obsm1",
+     "144400",
+     "230"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2960,
+    "file": "gf180mcuD.tech",
+    "keyword": "widespacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allm1,obsm1",
+     "allm1,obsm1"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Metal1 > 10um spacing to unrelated m1 < %d (M1.2b)",
+    "id_text": "M1.2b",
+    "ids": [
+     "M1.2b"
+    ],
+    "block": null,
+    "args": [
+     "allm1,obsm1",
+     "10005",
+     "allm1,obsm1",
+     "300",
+     "touching_ok"
+    ],
+    "width_um": 10.005,
+    "whole_shape": false
+   },
+   {
+    "line": 2969,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v1/m1"
+    ],
+    "value_um": 0.26,
+    "unit": "um",
+    "why": "Via1 width < %d (V1.1)",
+    "id_text": "V1.1",
+    "ids": [
+     "V1.1"
+    ],
+    "block": null,
+    "args": [
+     "v1/m1",
+     "260"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2970,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v1",
+     "v1"
+    ],
+    "value_um": 0.26,
+    "unit": "um",
+    "why": "Via1 spacing < %d (V1.2a)",
+    "id_text": "V1.2a",
+    "ids": [
+     "V1.2a"
+    ],
+    "block": null,
+    "args": [
+     "v1",
+     "v1",
+     "260",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2971,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v1/m1",
+     "*m1"
+    ],
+    "value_um": 0.06,
+    "unit": "um",
+    "why": "Metal1 overlap of Via1 < %d in one direction (V1.3)",
+    "id_text": "V1.3",
+    "ids": [
+     "V1.3"
+    ],
+    "block": null,
+    "args": [
+     "v1/m1",
+     "*m1",
+     "60",
+     "40",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2973,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v1/m2",
+     "*m2"
+    ],
+    "value_um": 0.01,
+    "unit": "um",
+    "why": "Metal2 overlap of Via1 < %d (V1.4)",
+    "id_text": "V1.4",
+    "ids": [
+     "V1.4"
+    ],
+    "block": null,
+    "args": [
+     "v1/m2",
+     "*m2",
+     "10",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2975,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v1/m2",
+     "*m2"
+    ],
+    "value_um": 0.06,
+    "unit": "um",
+    "why": "Metal2 overlap of Via1 < %d in one direction (V1.4i)",
+    "id_text": "V1.4i",
+    "ids": [
+     "V1.4i"
+    ],
+    "block": null,
+    "args": [
+     "v1/m2",
+     "*m2",
+     "60",
+     "40",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2977,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v1/m2"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "v1/m2"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2983,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*m2,rm2"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Metal2 width < %d (M2.1)",
+    "id_text": "M2.1",
+    "ids": [
+     "M2.1"
+    ],
+    "block": null,
+    "args": [
+     "*m2,rm2",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2984,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm2,obsm2",
+     "allm2,obsm2"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Metal2 spacing < %d (M2.2a)",
+    "id_text": "M2.2a",
+    "ids": [
+     "M2.2a"
+    ],
+    "block": null,
+    "args": [
+     "allm2,obsm2",
+     "allm2,obsm2",
+     "280",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2985,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm2,obsm2"
+    ],
+    "value_um": 0.1444,
+    "unit": "um2",
+    "why": "Metal2 minimum area < %a (M2.3)",
+    "id_text": "M2.3",
+    "ids": [
+     "M2.3"
+    ],
+    "block": null,
+    "args": [
+     "allm2,obsm2",
+     "144400",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2988,
+    "file": "gf180mcuD.tech",
+    "keyword": "widespacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allm2,obsm2",
+     "allm2,obsm2"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Metal2 > 10um spacing to unrelated m2 < %d (M2.2b)",
+    "id_text": "M2.2b",
+    "ids": [
+     "M2.2b"
+    ],
+    "block": null,
+    "args": [
+     "allm2,obsm2",
+     "10005",
+     "allm2,obsm2",
+     "300",
+     "touching_ok"
+    ],
+    "width_um": 10.005,
+    "whole_shape": false
+   },
+   {
+    "line": 2997,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v2/m2"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Via2 width < %d (V2.1 + 2 * V2.3)",
+    "id_text": "V2.1 + 2 * V2.3",
+    "ids": [
+     "V2.1",
+     "V2.3"
+    ],
+    "block": null,
+    "args": [
+     "v2/m2",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2998,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v2",
+     "v2"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Via2 spacing < %d (V2.2a - 2 * V2.3)",
+    "id_text": "V2.2a - 2 * V2.3",
+    "ids": [
+     "V2.2a",
+     "V2.3"
+    ],
+    "block": null,
+    "args": [
+     "v2",
+     "v2",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 2999,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v2/m2",
+     "*m2"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "Metal2 overlap of Via2 < %d in one direction (V2.3i - V2.3)",
+    "id_text": "V2.3i - V2.3",
+    "ids": [
+     "V2.3i",
+     "V2.3"
+    ],
+    "block": null,
+    "args": [
+     "v2/m2",
+     "*m2",
+     "50",
+     "30",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3002,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v2/m3"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "v2/m3"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3008,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v2/m3",
+     "*m3"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "Metal3 overlap of Via2 < %d in one direction (V2.4i - V2.4)",
+    "id_text": "V2.4i - V2.4",
+    "ids": [
+     "V2.4i",
+     "V2.4"
+    ],
+    "block": null,
+    "args": [
+     "v2/m3",
+     "*m3",
+     "50",
+     "30",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3011,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*m3,rm3"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Metal3 width < %d (M3.1)",
+    "id_text": "M3.1",
+    "ids": [
+     "M3.1"
+    ],
+    "block": null,
+    "args": [
+     "*m3,rm3",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3012,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm3,obsm3",
+     "allm3,obsm3"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Metal3 spacing < %d (M3.2a)",
+    "id_text": "M3.2a",
+    "ids": [
+     "M3.2a"
+    ],
+    "block": null,
+    "args": [
+     "allm3,obsm3",
+     "allm3,obsm3",
+     "280",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3013,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm3,obsm3"
+    ],
+    "value_um": 0.1444,
+    "unit": "um2",
+    "why": "Metal3 minimum area < %a (M3.3)",
+    "id_text": "M3.3",
+    "ids": [
+     "M3.3"
+    ],
+    "block": null,
+    "args": [
+     "allm3,obsm3",
+     "144400",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3016,
+    "file": "gf180mcuD.tech",
+    "keyword": "widespacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allm3,obsm3",
+     "allm3,obsm3"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Metal3 > %c spacing to unrelated m3 < %d (M3.2b)",
+    "id_text": "M3.2b",
+    "ids": [
+     "M3.2b"
+    ],
+    "block": null,
+    "args": [
+     "allm3,obsm3",
+     "10005",
+     "allm3,obsm3",
+     "300",
+     "touching_ok"
+    ],
+    "width_um": 10.005,
+    "whole_shape": false
+   },
+   {
+    "line": 3025,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v3/m3"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Via3 width < %d (V3.1 + 2 * V3.4)",
+    "id_text": "V3.1 + 2 * V3.4",
+    "ids": [
+     "V3.1",
+     "V3.4"
+    ],
+    "block": null,
+    "args": [
+     "v3/m3",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3026,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v3",
+     "v3"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Via3 spacing < %d (V3.2a - 2 * V3.4)",
+    "id_text": "V3.2a - 2 * V3.4",
+    "ids": [
+     "V3.2a",
+     "V3.4"
+    ],
+    "block": null,
+    "args": [
+     "v3",
+     "v3",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3027,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v3/m3",
+     "*m3"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "Metal3 overlap of Via3 < %d in one direction (V3.3i - V3.3)",
+    "id_text": "V3.3i - V3.3",
+    "ids": [
+     "V3.3i",
+     "V3.3"
+    ],
+    "block": null,
+    "args": [
+     "v3/m3",
+     "*m3",
+     "50",
+     "30",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3030,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v3/m4"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "v3/m4"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3036,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v3/m4",
+     "*m4"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "Metal4 overlap of Via3 < %d in one direction (V3.4i - V3.4)",
+    "id_text": "V3.4i - V3.4",
+    "ids": [
+     "V3.4i",
+     "V3.4"
+    ],
+    "block": null,
+    "args": [
+     "v3/m4",
+     "*m4",
+     "50",
+     "30",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3039,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*m4,rm4"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Metal4 width < %d (M4.1)",
+    "id_text": "M4.1",
+    "ids": [
+     "M4.1"
+    ],
+    "block": null,
+    "args": [
+     "*m4,rm4",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3040,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm4,obsm4",
+     "allm4,obsm4"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Metal4 spacing < %d (M4.2a)",
+    "id_text": "M4.2a",
+    "ids": [
+     "M4.2a"
+    ],
+    "block": null,
+    "args": [
+     "allm4,obsm4",
+     "allm4,obsm4",
+     "280",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3041,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm4,obsm4"
+    ],
+    "value_um": 0.144,
+    "unit": "um2",
+    "why": "Metal4 minimum area < %a (M4.3)",
+    "id_text": "M4.3",
+    "ids": [
+     "M4.3"
+    ],
+    "block": null,
+    "args": [
+     "allm4,obsm4",
+     "144000",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3044,
+    "file": "gf180mcuD.tech",
+    "keyword": "widespacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allm4,obsm4",
+     "allm4,obsm4"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Metal4 > %c spacing to unrelated m4 < %d (M4.2b)",
+    "id_text": "M4.2b",
+    "ids": [
+     "M4.2b"
+    ],
+    "block": null,
+    "args": [
+     "allm4,obsm4",
+     "10005",
+     "allm4,obsm4",
+     "300",
+     "touching_ok"
+    ],
+    "width_um": 10.005,
+    "whole_shape": false
+   },
+   {
+    "line": 3053,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v4/m4"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Via4 width < %d (V4.1 + 2 * V4.4)",
+    "id_text": "V4.1 + 2 * V4.4",
+    "ids": [
+     "V4.1",
+     "V4.4"
+    ],
+    "block": null,
+    "args": [
+     "v4/m4",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3054,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v4",
+     "v4"
+    ],
+    "value_um": 0.24,
+    "unit": "um",
+    "why": "Via4 spacing < %d (V4.2a - 2 * V4.4)",
+    "id_text": "V4.2a - 2 * V4.4",
+    "ids": [
+     "V4.2a",
+     "V4.4"
+    ],
+    "block": null,
+    "args": [
+     "v4",
+     "v4",
+     "240",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3055,
+    "file": "gf180mcuD.tech",
+    "keyword": "exact_overlap",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v4/m5"
+    ],
+    "value_um": null,
+    "unit": null,
+    "why": "",
+    "id_text": "",
+    "ids": [],
+    "block": null,
+    "args": [
+     "v4/m5"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3062,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v4/m4",
+     "*m4"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "Metal4 overlap of Via4 < %d in one direction (V4.3i - V4.3)",
+    "id_text": "V4.3i - V4.3",
+    "ids": [
+     "V4.3i",
+     "V4.3"
+    ],
+    "block": null,
+    "args": [
+     "v4/m4",
+     "*m4",
+     "50",
+     "30",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3064,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "v4/m5",
+     "*m5"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "Metal5 overlap of Via4 < %d in one direction (V4.4i - V4.4)",
+    "id_text": "V4.4i - V4.4",
+    "ids": [
+     "V4.4i",
+     "V4.4"
+    ],
+    "block": null,
+    "args": [
+     "v4/m5",
+     "*m5",
+     "50",
+     "30",
+     "directional"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3067,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*m5,rm5"
+    ],
+    "value_um": 0.44,
+    "unit": "um",
+    "why": "Metal5 width < %d (MT.1)",
+    "id_text": "MT.1",
+    "ids": [
+     "MT.1"
+    ],
+    "block": null,
+    "args": [
+     "*m5,rm5",
+     "440"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3068,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm5,obsm5",
+     "allm5,obsm5"
+    ],
+    "value_um": 0.46,
+    "unit": "um",
+    "why": "Metal5 spacing < %d (MT.2a)",
+    "id_text": "MT.2a",
+    "ids": [
+     "MT.2a"
+    ],
+    "block": null,
+    "args": [
+     "allm5,obsm5",
+     "allm5,obsm5",
+     "460",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3069,
+    "file": "gf180mcuD.tech",
+    "keyword": "area",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "allm5,obsm5"
+    ],
+    "value_um": 0.5265,
+    "unit": "um2",
+    "why": "Metal5 minimum area < %a (MT.4)",
+    "id_text": "MT.4",
+    "ids": [
+     "MT.4"
+    ],
+    "block": null,
+    "args": [
+     "allm5,obsm5",
+     "526500",
+     "440"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3072,
+    "file": "gf180mcuD.tech",
+    "keyword": "widespacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)"
+    ],
+    "types": [
+     "allm5,obsm5",
+     "allm5,obsm5"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "Metal5 > %c spacing to unrelated m5 < %d (MT.2b)",
+    "id_text": "MT.2b",
+    "ids": [
+     "MT.2b"
+    ],
+    "block": null,
+    "args": [
+     "allm5,obsm5",
+     "10005",
+     "allm5,obsm5",
+     "600",
+     "touching_ok"
+    ],
+    "width_um": 10.005,
+    "whole_shape": false
+   },
+   {
+    "line": 3086,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nnfet",
+     "*ndiff"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "nn Transistor length < %d (DF.2c)",
+    "id_text": "DF.2c",
+    "ids": [
+     "DF.2c"
+    ],
+    "block": null,
+    "args": [
+     "nnfet",
+     "*ndiff",
+     "400",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3088,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvnnfet",
+     "*mvndiff"
+    ],
+    "value_um": 1.2,
+    "unit": "um",
+    "why": "MV nn Transistor length < %d (NAT.4)",
+    "id_text": "NAT.4",
+    "ids": [
+     "NAT.4"
+    ],
+    "block": null,
+    "args": [
+     "mvnnfet",
+     "*mvndiff",
+     "1200",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3089,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvnnfet"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "MV nn Transistor width < %d (DF.2c)",
+    "id_text": "DF.2c",
+    "ids": [
+     "DF.2c"
+    ],
+    "block": null,
+    "args": [
+     "mvnnfet",
+     "400"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3091,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pfet,pcap",
+     "*pdiff"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "pfet,pcap",
+     "*pdiff",
+     "280",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3092,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nfet,ncap",
+     "*ndiff"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "nfet,ncap",
+     "*ndiff",
+     "280",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3093,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srampfet",
+     "*srampdiff"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "srampfet",
+     "*srampdiff",
+     "280",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3094,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "sramnfet",
+     "*sramndiff"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "sramnfet",
+     "*sramndiff",
+     "280",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3095,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pfet,pcap"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Bent Transistor length < %d (PL.7)",
+    "id_text": "PL.7",
+    "ids": [
+     "PL.7"
+    ],
+    "block": null,
+    "args": [
+     "pfet,pcap",
+     "300",
+     "angles"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3096,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nfet,ncap"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "Bent Transistor length < %d (PL.7)",
+    "id_text": "PL.7",
+    "ids": [
+     "PL.7"
+    ],
+    "block": null,
+    "args": [
+     "nfet,ncap",
+     "300",
+     "angles"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3098,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvpfet,mvpcap",
+     "*mvpdiff"
+    ],
+    "value_um": 0.5,
+    "unit": "um",
+    "why": "MV Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "mvpfet,mvpcap",
+     "*mvpdiff",
+     "500",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3099,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mvnfet,mvncap",
+     "*mvndiff"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "MV Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "mvnfet,mvncap",
+     "*mvndiff",
+     "600",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3100,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "hvpfet",
+     "*mvpdiff"
+    ],
+    "value_um": 0.55,
+    "unit": "um",
+    "why": "6V MV Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "hvpfet",
+     "*mvpdiff",
+     "550",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3101,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "hvnfet",
+     "*mvndiff"
+    ],
+    "value_um": 0.7,
+    "unit": "um",
+    "why": "6V MV Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "hvnfet",
+     "*mvndiff",
+     "700",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3102,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srammvpfet",
+     "*srammvpdiff"
+    ],
+    "value_um": 0.5,
+    "unit": "um",
+    "why": "MV Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "srammvpfet",
+     "*srammvpdiff",
+     "500",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3103,
+    "file": "gf180mcuD.tech",
+    "keyword": "extend",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "srammvnfet",
+     "*srammvndiff"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "MV Transistor length < %d (PL.2)",
+    "id_text": "PL.2",
+    "ids": [
+     "PL.2"
+    ],
+    "block": null,
+    "args": [
+     "srammvnfet",
+     "*srammvndiff",
+     "600",
+     "exclusive"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3105,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "hvpfet,mvpfet,mvpcap"
+    ],
+    "value_um": 0.7,
+    "unit": "um",
+    "why": "Bent MV Transistor length < %d (PL.7)",
+    "id_text": "PL.7",
+    "ids": [
+     "PL.7"
+    ],
+    "block": null,
+    "args": [
+     "hvpfet,mvpfet,mvpcap",
+     "700",
+     "angles"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3106,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "hvnfet,mvnfet,mvncap"
+    ],
+    "value_um": 0.7,
+    "unit": "um",
+    "why": "Bent MV Transistor length < %d (PL.7)",
+    "id_text": "PL.7",
+    "ids": [
+     "PL.7"
+    ],
+    "block": null,
+    "args": [
+     "hvnfet,mvnfet,mvncap",
+     "700",
+     "angles"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3114,
+    "file": "gf180mcuD.tech",
+    "keyword": "edge4way",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pfet,pcap,hvpfet,mvpfet,mvpcap",
+     "*poly/a"
+    ],
+    "value_um": 0.32,
+    "unit": "um",
+    "why": "n-ohmic spacing to PMOS gate < %d (NP.4b + PP.4c)",
+    "id_text": "NP.4b + PP.4c",
+    "ids": [
+     "NP.4b",
+     "PP.4c"
+    ],
+    "block": null,
+    "args": [
+     "pfet,pcap,hvpfet,mvpfet,mvpcap",
+     "*poly/a",
+     "320",
+     "~(*nsd,*mvnsd)/a",
+     "(*pdiff,*mvpdiff)/a",
+     "300"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3117,
+    "file": "gf180mcuD.tech",
+    "keyword": "edge4way",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nfet,ncap,nnfet,mvnnfet,hvnfet,mvnfet,mvncap",
+     "*poly/a"
+    ],
+    "value_um": 0.32,
+    "unit": "um",
+    "why": "p-ohmic spacing to NMOS gate < %d (PP.4b + NP.4c)",
+    "id_text": "PP.4b + NP.4c",
+    "ids": [
+     "PP.4b",
+     "NP.4c"
+    ],
+    "block": null,
+    "args": [
+     "nfet,ncap,nnfet,mvnnfet,hvnfet,mvnfet,mvncap",
+     "*poly/a",
+     "320",
+     "~(*psd,*mvpsd)/a",
+     "(*ndiff,*mvndiff)/a",
+     "300"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3124,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rpp"
+    ],
+    "value_um": 0.8,
+    "unit": "um",
+    "why": "ppolyres minimum width < %d (PRES.1)",
+    "id_text": "PRES.1",
+    "ids": [
+     "PRES.1"
+    ],
+    "block": null,
+    "args": [
+     "rpp",
+     "800"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3125,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rnp"
+    ],
+    "value_um": 0.8,
+    "unit": "um",
+    "why": "npolyres minimum width < %d (LRES.1)",
+    "id_text": "LRES.1",
+    "ids": [
+     "LRES.1"
+    ],
+    "block": null,
+    "args": [
+     "rnp",
+     "800"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3126,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rpp",
+     "rpp"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "ppolyres minimum spacing < %d (PRES.2)",
+    "id_text": "PRES.2",
+    "ids": [
+     "PRES.2"
+    ],
+    "block": null,
+    "args": [
+     "rpp",
+     "rpp",
+     "400",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3127,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rnp",
+     "rnp"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "npolyres minimum spacing < %d (LRES.2)",
+    "id_text": "LRES.2",
+    "ids": [
+     "LRES.2"
+    ],
+    "block": null,
+    "args": [
+     "rnp",
+     "rnp",
+     "400",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3129,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rpp",
+     "pc"
+    ],
+    "value_um": 0.215,
+    "unit": "um",
+    "why": "rpp spacing to Cont < %d (PRES.7 - CO.6)",
+    "id_text": "PRES.7 - CO.6",
+    "ids": [
+     "PRES.7",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "rpp",
+     "pc",
+     "215",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3130,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rnp",
+     "pc"
+    ],
+    "value_um": 0.215,
+    "unit": "um",
+    "why": "rnp spacing to Cont < %d (LRES.7 - CO.6)",
+    "id_text": "LRES.7 - CO.6",
+    "ids": [
+     "LRES.7",
+     "CO.6"
+    ],
+    "block": null,
+    "args": [
+     "rnp",
+     "pc",
+     "215",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3135,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "hires,mvhires"
+    ],
+    "value_um": 1.0,
+    "unit": "um",
+    "why": "hires poly minimum width < %d (HRES.3)",
+    "id_text": "HRES.3",
+    "ids": [
+     "HRES.3"
+    ],
+    "block": null,
+    "args": [
+     "hires,mvhires",
+     "1000"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3136,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "hires,mvhires",
+     "hires,mvhires"
+    ],
+    "value_um": 0.4,
+    "unit": "um",
+    "why": "hires poly minimum spacing < %d (HRES.2)",
+    "id_text": "HRES.2",
+    "ids": [
+     "HRES.2"
+    ],
+    "block": null,
+    "args": [
+     "hires,mvhires",
+     "hires,mvhires",
+     "400",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3140,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "res_diff_space"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "High value resistor spacing to diffusion < 0.7um (HRES.5 + HRES.4)",
+    "id_text": "HRES.5 + HRES.4",
+    "ids": [
+     "HRES.5",
+     "HRES.4"
+    ],
+    "block": null,
+    "args": [
+     "res_diff_space",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 3142,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "res_poly_space"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "High value resistor spacing to poly < 0.7um (HRES.6 + HRES.4)",
+    "id_text": "HRES.6 + HRES.4",
+    "ids": [
+     "HRES.6",
+     "HRES.4"
+    ],
+    "block": null,
+    "args": [
+     "res_poly_space",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 3145,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "res_cont_space_min"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "Unsalicided resistor spacing to poly contact must be 0.22um (PRES/LRES/HRES.7)",
+    "id_text": "PRES/LRES/HRES.7",
+    "ids": [
+     "PRES/LRES/HRES.7"
+    ],
+    "block": null,
+    "args": [
+     "res_cont_space_min",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 3147,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "res_no_cont"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "Unsalicided resistor spacing to poly contact must be 0.22um (PRES/LRES/HRES.7)",
+    "id_text": "PRES/LRES/HRES.7",
+    "ids": [
+     "PRES/LRES/HRES.7"
+    ],
+    "block": null,
+    "args": [
+     "res_no_cont",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 3154,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rdn"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "N-diffusion resistor width < %d (DF.1b)",
+    "id_text": "DF.1b",
+    "ids": [
+     "DF.1b"
+    ],
+    "block": null,
+    "args": [
+     "rdn",
+     "300"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3155,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "rdp"
+    ],
+    "value_um": 0.3,
+    "unit": "um",
+    "why": "P-diffusion resistor width < %d (DF.1b)",
+    "id_text": "DF.1b",
+    "ids": [
+     "DF.1b"
+    ],
+    "block": null,
+    "args": [
+     "rdp",
+     "300"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3161,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*nsd",
+     "nvar"
+    ],
+    "value_um": 0.32,
+    "unit": "um",
+    "why": "N-Ohmic overhang of Varactor < %d (FIXME)",
+    "id_text": "FIXME",
+    "ids": [],
+    "block": null,
+    "args": [
+     "*nsd",
+     "nvar",
+     "320"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3164,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvnsd",
+     "mvnvar"
+    ],
+    "value_um": 0.32,
+    "unit": "um",
+    "why": "N-Ohmic overhang of Varactor < %d (FIXME)",
+    "id_text": "FIXME",
+    "ids": [],
+    "block": null,
+    "args": [
+     "*mvnsd",
+     "mvnvar",
+     "320"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3167,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "nvar,mvnvar"
+    ],
+    "value_um": 1.0,
+    "unit": "um",
+    "why": "Varactor length and width < %d (DF.1c)",
+    "id_text": "DF.1c",
+    "ids": [
+     "DF.1c"
+    ],
+    "block": null,
+    "args": [
+     "nvar,mvnvar",
+     "1000"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3170,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*psd",
+     "pvar"
+    ],
+    "value_um": 0.32,
+    "unit": "um",
+    "why": "P-Ohmic overhang of Varactor < %d (FIXME)",
+    "id_text": "FIXME",
+    "ids": [],
+    "block": null,
+    "args": [
+     "*psd",
+     "pvar",
+     "320"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3173,
+    "file": "gf180mcuD.tech",
+    "keyword": "overhang",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mvpsd",
+     "mvpvar"
+    ],
+    "value_um": 0.32,
+    "unit": "um",
+    "why": "P-Ohmic overhang of Varactor < %d (FIXME)",
+    "id_text": "FIXME",
+    "ids": [],
+    "block": null,
+    "args": [
+     "*mvpsd",
+     "mvpvar",
+     "320"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3176,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pvar,mvpvar"
+    ],
+    "value_um": 1.0,
+    "unit": "um",
+    "why": "Varactor length and width < %d (DF.1c)",
+    "id_text": "DF.1c",
+    "ids": [
+     "DF.1c"
+    ],
+    "block": null,
+    "args": [
+     "pvar,mvpvar",
+     "1000"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3183,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mimcap"
+    ],
+    "value_um": 5.0,
+    "unit": "um",
+    "why": "MiM cap top plate width < %d (MIMTM.8a)",
+    "id_text": "MIMTM.8a",
+    "ids": [
+     "MIMTM.8a"
+    ],
+    "block": null,
+    "args": [
+     "*mimcap",
+     "5000"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3184,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mimcap",
+     "*mimcap"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "MiM cap top plate spacing < %d (MIMTM.6)",
+    "id_text": "MIMTM.6",
+    "ids": [
+     "MIMTM.6"
+    ],
+    "block": null,
+    "args": [
+     "*mimcap",
+     "*mimcap",
+     "600",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3186,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mimcc",
+     "mimcap"
+    ],
+    "value_um": 0.39,
+    "unit": "um",
+    "why": "MiM cap must surround MiM cap contact by %d (MIMTM.4-VT.4)",
+    "id_text": "MIMTM.4-VT.4",
+    "ids": [
+     "MIMTM.4",
+     "VT.4"
+    ],
+    "block": null,
+    "args": [
+     "mimcc",
+     "mimcap",
+     "390",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3188,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "pad",
+     "*mimcap"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "MiM cap cannot overlap pad (MIM1M.X)",
+    "id_text": "MIM1M.X",
+    "ids": [
+     "MIM1M.X"
+    ],
+    "block": null,
+    "args": [
+     "pad",
+     "*mimcap",
+     "50",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3189,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mimcc",
+     "mimcc"
+    ],
+    "value_um": 0.48,
+    "unit": "um",
+    "why": "MiM cap contact spacing < %d (MIMTM.9 - 2 * VT.3)",
+    "id_text": "MIMTM.9 - 2 * VT.3",
+    "ids": [
+     "MIMTM.9",
+     "VT.3"
+    ],
+    "block": null,
+    "args": [
+     "mimcc",
+     "mimcc",
+     "480",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3191,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "via3",
+     "*mimcap"
+    ],
+    "value_um": 0.05,
+    "unit": "um",
+    "why": "MiM cap cannot overlap via3 (MIMTM.10)",
+    "id_text": "MIMTM.10",
+    "ids": [
+     "MIMTM.10"
+    ],
+    "block": null,
+    "args": [
+     "via3",
+     "*mimcap",
+     "50",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3193,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mimcap",
+     "*m4,rm4"
+    ],
+    "value_um": 1.2,
+    "unit": "um",
+    "why": "MiM cap to Metal4 spacing < %d (MIMTM.1)",
+    "id_text": "MIMTM.1",
+    "ids": [
+     "MIMTM.1"
+    ],
+    "block": null,
+    "args": [
+     "*mimcap",
+     "*m4,rm4",
+     "1200",
+     "touching_ok"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3195,
+    "file": "gf180mcuD.tech",
+    "keyword": "spacing",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mimcap",
+     "via4/m5"
+    ],
+    "value_um": 0.39,
+    "unit": "um",
+    "why": "MiM cap spacing to via4 < %d (MIMTM.5)",
+    "id_text": "MIMTM.5",
+    "ids": [
+     "MIMTM.5"
+    ],
+    "block": null,
+    "args": [
+     "*mimcap",
+     "via4/m5",
+     "390",
+     "touching_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3197,
+    "file": "gf180mcuD.tech",
+    "keyword": "surround",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "*mimcap",
+     "m4"
+    ],
+    "value_um": 0.6,
+    "unit": "um",
+    "why": "Bottom plate overlap of MiM cap < %d (MIMTM.3)",
+    "id_text": "MIMTM.3",
+    "ids": [
+     "MIMTM.3"
+    ],
+    "block": null,
+    "args": [
+     "*mimcap",
+     "m4",
+     "600",
+     "absence_illegal"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3199,
+    "file": "gf180mcuD.tech",
+    "keyword": "width",
+    "styles": [
+     "drc(fast)",
+     "drc(full)",
+     "drc(routing)"
+    ],
+    "types": [
+     "mimcapc/m5"
+    ],
+    "value_um": 0.28,
+    "unit": "um",
+    "why": "MiM Contact width < %d (VT.1+VT.3)",
+    "id_text": "VT.1+VT.3",
+    "ids": [
+     "VT.1",
+     "VT.3"
+    ],
+    "block": null,
+    "args": [
+     "mimcapc/m5",
+     "280"
+    ],
+    "whole_shape": false
+   },
+   {
+    "line": 3202,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mim_bottom_plate_space"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "MiM bottom plate to unrelated metal < 1.2um (MIMTM.1)",
+    "id_text": "MIMTM.1",
+    "ids": [
+     "MIMTM.1"
+    ],
+    "block": null,
+    "args": [
+     "mim_bottom_plate_space",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   },
+   {
+    "line": 3204,
+    "file": "gf180mcuD.tech",
+    "keyword": "cifmaxwidth",
+    "styles": [
+     "drc(full)"
+    ],
+    "types": [
+     "mim_bot_cont_surround"
+    ],
+    "value_um": 0.0,
+    "unit": "um",
+    "why": "MiM bottom plate surrounds contact < 0.4um (MIMTM.2)",
+    "id_text": "MIMTM.2",
+    "ids": [
+     "MIMTM.2"
+    ],
+    "block": null,
+    "args": [
+     "mim_bot_cont_surround",
+     "0",
+     "bend_illegal"
+    ],
+    "whole_shape": true
+   }
+  ]
+ },
+ "layers": [
+  {
+   "gds": [
+    0,
+    0
+   ],
+   "name": "PR_bndry",
+   "cif": [
+    "BOUND"
+   ],
+   "role": "boundary",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2648"
+  },
+  {
+   "gds": [
+    1,
+    222
+   ],
+   "name": "",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    2,
+    222
+   ],
+   "name": "pass_mk",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    3,
+    222
+   ],
+   "name": "fail_mk",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    4,
+    222
+   ],
+   "name": "polygon_mk",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    5,
+    0
+   ],
+   "name": "NAT",
+   "cif": [
+    "NAT"
+   ],
+   "role": "implant",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "ndiode",
+    "nndiode",
+    "mvndiode",
+    "mvnndiode",
+    "nmos",
+    "sramnfet",
+    "nmoscap",
+    "nnmos",
+    "hvnmos",
+    "mvnmos",
+    "srammvnfet",
+    "mvnmoscap",
+    "mvnnmos",
+    "ndiodec",
+    "nndiodec",
+    "mvndiodec",
+    "mvnndiodec"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2639"
+  },
+  {
+   "gds": [
+    5,
+    222
+   ],
+   "name": "",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    6,
+    222
+   ],
+   "name": "violation_mk",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    11,
+    17
+   ],
+   "name": "MCELL_FEOL_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    11,
+    39
+   ],
+   "name": "MVPSD",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    11,
+    222
+   ],
+   "name": "rule_txt_mk",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    12,
+    0
+   ],
+   "name": "DNWELL",
+   "cif": [
+    "DNWELL"
+   ],
+   "role": "well",
+   "read": "paint",
+   "magic_types": [
+    "deepnwell"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2590"
+  },
+  {
+   "gds": [
+    12,
+    222
+   ],
+   "name": "",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    13,
+    17
+   ],
+   "name": "PROBE_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    13,
+    222
+   ],
+   "name": "case_txt_mk",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    14,
+    222
+   ],
+   "name": "",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    15,
+    222
+   ],
+   "name": "",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    21,
+    0
+   ],
+   "name": "Nwell",
+   "cif": [
+    "NWELL"
+   ],
+   "role": "well",
+   "read": "paint",
+   "magic_types": [
+    "nwell",
+    "nbase"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2591"
+  },
+  {
+   "gds": [
+    21,
+    10
+   ],
+   "name": "NWELLTXT",
+   "cif": [
+    "NWELLTXT"
+   ],
+   "role": "pin",
+   "read": "pin",
+   "magic_types": [
+    "nwell",
+    "nbase"
+   ],
+   "decides": [],
+   "in_lyp": false,
+   "line": "gf180mcuD.tech:2592"
+  },
+  {
+   "gds": [
+    22,
+    0
+   ],
+   "name": "COMP",
+   "cif": [
+    "DIFF"
+   ],
+   "role": "diffusion",
+   "read": "paint",
+   "magic_types": [
+    "ndiff",
+    "sramndiff",
+    "mvndiff",
+    "srammvndiff",
+    "ndiode",
+    "nndiode",
+    "ndiffres",
+    "pdiff",
+    "mvndiode",
+    "mvnndiode",
+    "mvndiffres",
+    "mvpdiff",
+    "pdiode",
+    "nwell",
+    "pmoscap",
+    "pmos",
+    "srampfet",
+    "mvpdiode",
+    "hvpmos",
+    "mvpmoscap",
+    "mvpmos",
+    "srammvpfet",
+    "srampdiff",
+    "pdiffres",
+    "nmos",
+    "sramnfet",
+    "nmoscap",
+    "nnmos",
+    "nsubdiff",
+    "psubdiff",
+    "srammvpdiff",
+    "mvpdiffres",
+    "hvnmos",
+    "mvnmos",
+    "srammvnfet",
+    "mvnmoscap",
+    "mvnnmos",
+    "mvnsubdiff",
+    "mvpsubdiff"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2596"
+  },
+  {
+   "gds": [
+    22,
+    4
+   ],
+   "name": "COMP_Dummy",
+   "cif": [
+    "DIFFFILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "filldiff"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2597"
+  },
+  {
+   "gds": [
+    22,
+    10
+   ],
+   "name": "COMP_Label",
+   "cif": [],
+   "role": "text",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    23,
+    5
+   ],
+   "name": "ISOSUB",
+   "cif": [
+    "SUBCUT"
+   ],
+   "role": "well",
+   "read": "paint",
+   "magic_types": [
+    "isosubstrate"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2595"
+  },
+  {
+   "gds": [
+    24,
+    0
+   ],
+   "name": "ESD",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    24,
+    5
+   ],
+   "name": "ESD_MK",
+   "cif": [
+    "ESD_ID"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2661"
+  },
+  {
+   "gds": [
+    30,
+    0
+   ],
+   "name": "Poly2",
+   "cif": [
+    "POLY"
+   ],
+   "role": "poly",
+   "read": "paint",
+   "magic_types": [
+    "polysilicon",
+    "ppolysilicide",
+    "npolysilicide",
+    "ppolyres",
+    "efuse",
+    "npolyres",
+    "nhighres",
+    "mvnhighres",
+    "nvaractor",
+    "mvnvaractor",
+    "pvaractor",
+    "mvpvaractor"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2598"
+  },
+  {
+   "gds": [
+    30,
+    4
+   ],
+   "name": "Poly2_Dummy",
+   "cif": [
+    "POLYFILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "fillpoly"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2599"
+  },
+  {
+   "gds": [
+    30,
+    10
+   ],
+   "name": "Poly2_Label",
+   "cif": [
+    "POLYTXT"
+   ],
+   "role": "text",
+   "read": "text",
+   "magic_types": [
+    "polysilicon"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2600"
+  },
+  {
+   "gds": [
+    31,
+    0
+   ],
+   "name": "Pplus",
+   "cif": [
+    "PPLUS"
+   ],
+   "role": "implant",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "ndiff",
+    "sramndiff",
+    "mvndiff",
+    "srammvndiff",
+    "schottky",
+    "schottkyc",
+    "ndiode",
+    "nndiode",
+    "pdiff",
+    "mvndiode",
+    "mvnndiode",
+    "mvpdiff",
+    "pdiode",
+    "mvpdiode",
+    "pdiffres",
+    "nmos",
+    "sramnfet",
+    "nmoscap",
+    "nnmos",
+    "nsubdiff",
+    "psubdiff",
+    "mvpdiffres",
+    "hvnmos",
+    "mvnmos",
+    "srammvnfet",
+    "mvnmoscap",
+    "mvnnmos",
+    "mvnsubdiff",
+    "mvpsubdiff",
+    "ppolysilicide",
+    "ppolyres",
+    "pdiffc",
+    "srampdc",
+    "psubdiffcont",
+    "ndiodec",
+    "nndiodec",
+    "pdiodec",
+    "mvpdiffc",
+    "srammvpdc",
+    "mvpsubdiffcont",
+    "mvndiodec",
+    "mvnndiodec",
+    "mvpdiodec",
+    "pvaractor",
+    "mvpvaractor"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2602"
+  },
+  {
+   "gds": [
+    32,
+    0
+   ],
+   "name": "Nplus",
+   "cif": [
+    "NPLUS"
+   ],
+   "role": "implant",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "ndiff",
+    "sramndiff",
+    "mvndiff",
+    "srammvndiff",
+    "schottky",
+    "schottkyc",
+    "ndiode",
+    "nndiode",
+    "ndiffres",
+    "pdiff",
+    "mvndiode",
+    "mvnndiode",
+    "mvndiffres",
+    "mvpdiff",
+    "pdiode",
+    "nwell",
+    "pmoscap",
+    "pmos",
+    "srampfet",
+    "mvpdiode",
+    "hvpmos",
+    "mvpmoscap",
+    "mvpmos",
+    "srammvpfet",
+    "srampdiff",
+    "nmos",
+    "sramnfet",
+    "nmoscap",
+    "nnmos",
+    "nsubdiff",
+    "psubdiff",
+    "srammvpdiff",
+    "hvnmos",
+    "mvnmos",
+    "srammvnfet",
+    "mvnmoscap",
+    "mvnnmos",
+    "mvnsubdiff",
+    "mvpsubdiff",
+    "npolysilicide",
+    "npolyres",
+    "ndiffc",
+    "sramndc",
+    "nsubdiffcont",
+    "ndiodec",
+    "nndiodec",
+    "pdiodec",
+    "mvndiffc",
+    "srammvndc",
+    "mvnsubdiffcont",
+    "mvndiodec",
+    "mvnndiodec",
+    "mvpdiodec",
+    "nvaractor",
+    "mvnvaractor"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2601"
+  },
+  {
+   "gds": [
+    33,
+    0
+   ],
+   "name": "Contact",
+   "cif": [
+    "CONT"
+   ],
+   "role": "cut",
+   "read": "paint",
+   "magic_types": [
+    "ndiffc",
+    "sramndc",
+    "nsubdiffcont",
+    "pdiffc",
+    "srampdc",
+    "psubdiffcont",
+    "polycontact",
+    "ndiodec",
+    "nndiodec",
+    "pdiodec",
+    "mvndiffc",
+    "srammvndc",
+    "mvnsubdiffcont",
+    "mvpdiffc",
+    "srammvpdc",
+    "mvpsubdiffcont",
+    "mvndiodec",
+    "mvnndiodec",
+    "mvpdiodec"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2605"
+  },
+  {
+   "gds": [
+    34,
+    0
+   ],
+   "name": "Metal1",
+   "cif": [
+    "MET1"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "rmetal1",
+    "metal1"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2606"
+  },
+  {
+   "gds": [
+    34,
+    3
+   ],
+   "name": "Metal1_Slot",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    34,
+    4
+   ],
+   "name": "Metal1_Dummy",
+   "cif": [
+    "M1FILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "fillm1"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2609"
+  },
+  {
+   "gds": [
+    34,
+    5
+   ],
+   "name": "Metal1_BLK",
+   "cif": [
+    "M1BLOCK"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "obsm1"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2608"
+  },
+  {
+   "gds": [
+    34,
+    10
+   ],
+   "name": "Metal1_Label",
+   "cif": [
+    "MET1TXT"
+   ],
+   "role": "text",
+   "read": "pin",
+   "magic_types": [
+    "metal1"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2607"
+  },
+  {
+   "gds": [
+    35,
+    0
+   ],
+   "name": "Via1",
+   "cif": [
+    "VIA1"
+   ],
+   "role": "cut",
+   "read": "paint",
+   "magic_types": [
+    "via1"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2611"
+  },
+  {
+   "gds": [
+    36,
+    0
+   ],
+   "name": "Metal2",
+   "cif": [
+    "MET2"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "rmetal2",
+    "metal2"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2612"
+  },
+  {
+   "gds": [
+    36,
+    3
+   ],
+   "name": "Metal2_Slot",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    36,
+    4
+   ],
+   "name": "Metal2_Dummy",
+   "cif": [
+    "M2FILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "fillm2"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2615"
+  },
+  {
+   "gds": [
+    36,
+    5
+   ],
+   "name": "Metal2_BLK",
+   "cif": [
+    "M2BLOCK"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "obsm2"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2614"
+  },
+  {
+   "gds": [
+    36,
+    10
+   ],
+   "name": "Metal2_Label",
+   "cif": [
+    "MET2TXT"
+   ],
+   "role": "text",
+   "read": "pin",
+   "magic_types": [
+    "metal2"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2613"
+  },
+  {
+   "gds": [
+    37,
+    0
+   ],
+   "name": "Pad",
+   "cif": [
+    "GLASS"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "glass"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2604"
+  },
+  {
+   "gds": [
+    38,
+    0
+   ],
+   "name": "Via2",
+   "cif": [
+    "VIA2"
+   ],
+   "role": "cut",
+   "read": "paint",
+   "magic_types": [
+    "via2"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2617"
+  },
+  {
+   "gds": [
+    40,
+    0
+   ],
+   "name": "Via3",
+   "cif": [
+    "VIA3"
+   ],
+   "role": "cut",
+   "read": "paint",
+   "magic_types": [
+    "via3"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2623"
+  },
+  {
+   "gds": [
+    41,
+    0
+   ],
+   "name": "Via4",
+   "cif": [
+    "VIA4"
+   ],
+   "role": "cut",
+   "read": "paint",
+   "magic_types": [
+    "via4",
+    "mimcapcontact"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2629"
+  },
+  {
+   "gds": [
+    42,
+    0
+   ],
+   "name": "Metal3",
+   "cif": [
+    "MET3"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "rmetal3",
+    "metal3"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2618"
+  },
+  {
+   "gds": [
+    42,
+    3
+   ],
+   "name": "Metal3_Slot",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    42,
+    4
+   ],
+   "name": "Metal3_Dummy",
+   "cif": [
+    "M3FILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "fillm3"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2621"
+  },
+  {
+   "gds": [
+    42,
+    5
+   ],
+   "name": "Metal3_BLK",
+   "cif": [
+    "M3BLOCK"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "obsm3"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2620"
+  },
+  {
+   "gds": [
+    42,
+    10
+   ],
+   "name": "Metal3_Label",
+   "cif": [
+    "MET3TXT"
+   ],
+   "role": "text",
+   "read": "pin",
+   "magic_types": [
+    "metal3"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2619"
+  },
+  {
+   "gds": [
+    46,
+    0
+   ],
+   "name": "Metal4",
+   "cif": [
+    "MET4"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "rmetal4",
+    "metal4"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2624"
+  },
+  {
+   "gds": [
+    46,
+    3
+   ],
+   "name": "Metal4_Slot",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    46,
+    4
+   ],
+   "name": "Metal4_Dummy",
+   "cif": [
+    "M4FILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "fillm4"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2627"
+  },
+  {
+   "gds": [
+    46,
+    5
+   ],
+   "name": "Metal4_BLK",
+   "cif": [
+    "M4BLOCK"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "obsm4"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2626"
+  },
+  {
+   "gds": [
+    46,
+    10
+   ],
+   "name": "Metal4_Label",
+   "cif": [
+    "MET4TXT"
+   ],
+   "role": "text",
+   "read": "pin",
+   "magic_types": [
+    "metal4"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2625"
+  },
+  {
+   "gds": [
+    49,
+    0
+   ],
+   "name": "SAB",
+   "cif": [
+    "SBLK"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "ndiff",
+    "sramndiff",
+    "mvndiff",
+    "srammvndiff",
+    "ndiffres",
+    "pdiff",
+    "mvndiffres",
+    "mvpdiff",
+    "pdiffres",
+    "mvpdiffres",
+    "polysilicon",
+    "ppolysilicide",
+    "npolysilicide",
+    "ppolyres",
+    "npolyres",
+    "nhighres",
+    "mvnhighres"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2603"
+  },
+  {
+   "gds": [
+    53,
+    0
+   ],
+   "name": "MetalTop",
+   "cif": [],
+   "role": "conductor",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    53,
+    3
+   ],
+   "name": "MetalTop_Slot",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    53,
+    4
+   ],
+   "name": "MetalTop_Dummy",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    53,
+    5
+   ],
+   "name": "MetalT_BLK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    53,
+    10
+   ],
+   "name": "MetalTop_Label",
+   "cif": [],
+   "role": "text",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    55,
+    0
+   ],
+   "name": "Dualgate",
+   "cif": [
+    "DUALGATE"
+   ],
+   "role": "implant",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "ndiff",
+    "sramndiff",
+    "mvndiff",
+    "srammvndiff",
+    "ndiode",
+    "nndiode",
+    "ndiffres",
+    "pdiff",
+    "mvndiode",
+    "mvnndiode",
+    "mvndiffres",
+    "mvpdiff",
+    "pdiode",
+    "nwell",
+    "pmoscap",
+    "pmos",
+    "srampfet",
+    "mvpdiode",
+    "hvpmos",
+    "mvpmoscap",
+    "mvpmos",
+    "srammvpfet",
+    "srampdiff",
+    "nmos",
+    "sramnfet",
+    "nmoscap",
+    "nnmos",
+    "nsubdiff",
+    "psubdiff",
+    "srammvpdiff",
+    "mvpdiffres",
+    "hvnmos",
+    "mvnmos",
+    "srammvnfet",
+    "mvnmoscap",
+    "mvnnmos",
+    "mvnsubdiff",
+    "mvpsubdiff",
+    "nhighres",
+    "mvnhighres",
+    "ndiffc",
+    "sramndc",
+    "nsubdiffcont",
+    "pdiffc",
+    "srampdc",
+    "psubdiffcont",
+    "ndiodec",
+    "nndiodec",
+    "pdiodec",
+    "mvndiffc",
+    "srammvndc",
+    "mvnsubdiffcont",
+    "mvpdiffc",
+    "srammvpdc",
+    "mvpsubdiffcont",
+    "mvndiodec",
+    "mvnndiodec",
+    "mvpdiodec",
+    "nvaractor",
+    "mvnvaractor",
+    "pvaractor",
+    "mvpvaractor"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2655"
+  },
+  {
+   "gds": [
+    62,
+    0
+   ],
+   "name": "Resistor",
+   "cif": [
+    "HRES"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "polysilicon",
+    "ppolyres",
+    "npolyres",
+    "nhighres",
+    "mvnhighres"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2635"
+  },
+  {
+   "gds": [
+    63,
+    0
+   ],
+   "name": "Border",
+   "cif": [
+    "PRBOUND"
+   ],
+   "role": "boundary",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2649"
+  },
+  {
+   "gds": [
+    63,
+    63
+   ],
+   "name": "VTEXT",
+   "cif": [
+    "VTEXT"
+   ],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2650"
+  },
+  {
+   "gds": [
+    75,
+    0
+   ],
+   "name": "FuseTop",
+   "cif": [
+    "CAPM"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "mimcap"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2640"
+  },
+  {
+   "gds": [
+    80,
+    5
+   ],
+   "name": "EFUSE_MK",
+   "cif": [
+    "EFUSE"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2636"
+  },
+  {
+   "gds": [
+    81,
+    0
+   ],
+   "name": "Metal5",
+   "cif": [
+    "MET5"
+   ],
+   "role": "conductor",
+   "read": "paint",
+   "magic_types": [
+    "rm5",
+    "metal5"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2630"
+  },
+  {
+   "gds": [
+    81,
+    3
+   ],
+   "name": "Metal5_Slot",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    81,
+    4
+   ],
+   "name": "Metal5_Dummy",
+   "cif": [
+    "M5FILL"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "fillm5"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2633"
+  },
+  {
+   "gds": [
+    81,
+    5
+   ],
+   "name": "Metal5_BLK",
+   "cif": [
+    "M5BLOCK"
+   ],
+   "role": "marker",
+   "read": "paint",
+   "magic_types": [
+    "obsm5"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2632"
+  },
+  {
+   "gds": [
+    81,
+    10
+   ],
+   "name": "Metal5_Label",
+   "cif": [
+    "MET5TXT"
+   ],
+   "role": "text",
+   "read": "pin",
+   "magic_types": [
+    "metal5"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2631"
+  },
+  {
+   "gds": [
+    82,
+    0
+   ],
+   "name": "Via5",
+   "cif": [],
+   "role": "cut",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    86,
+    17
+   ],
+   "name": "YMTP_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    88,
+    17
+   ],
+   "name": "NEO_EE_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    96,
+    1
+   ],
+   "name": "FuseWindow_D",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    100,
+    5
+   ],
+   "name": "LVS_RF",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    100,
+    7
+   ],
+   "name": "LVS_Drain",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    100,
+    8
+   ],
+   "name": "LVS_Source",
+   "cif": [
+    "SOURCE"
+   ],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2638"
+  },
+  {
+   "gds": [
+    108,
+    5
+   ],
+   "name": "SramCore",
+   "cif": [
+    "SRAMDEF"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "mvndiff",
+    "srammvndiff",
+    "sramndiff"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2656"
+  },
+  {
+   "gds": [
+    110,
+    5
+   ],
+   "name": "RES_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    110,
+    11
+   ],
+   "name": "Metal1_Res",
+   "cif": [
+    "MET2RES"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "rmetal2",
+    "metal2"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2610"
+  },
+  {
+   "gds": [
+    110,
+    12
+   ],
+   "name": "Metal2_Res",
+   "cif": [
+    "MET2RES"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "rmetal2",
+    "metal2"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2616"
+  },
+  {
+   "gds": [
+    110,
+    13
+   ],
+   "name": "Metal3_Res",
+   "cif": [
+    "MET3RES"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "rmetal3",
+    "metal3"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2622"
+  },
+  {
+   "gds": [
+    110,
+    14
+   ],
+   "name": "Metal4_Res",
+   "cif": [
+    "MET4RES"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "rmetal4",
+    "metal4"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2628"
+  },
+  {
+   "gds": [
+    110,
+    15
+   ],
+   "name": "Metal5_Res",
+   "cif": [
+    "MET5RES"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "rm5",
+    "metal5"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2634"
+  },
+  {
+   "gds": [
+    110,
+    16
+   ],
+   "name": "Metal6_Res",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    111,
+    5
+   ],
+   "name": "NDMY",
+   "cif": [
+    "FILLOBS"
+   ],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2651"
+  },
+  {
+   "gds": [
+    112,
+    1
+   ],
+   "name": "V5_XTOR",
+   "cif": [
+    "FET5VDEF"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "hvpmos",
+    "mvpmos",
+    "hvnmos",
+    "mvnmos"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2657"
+  },
+  {
+   "gds": [
+    115,
+    5
+   ],
+   "name": "DIODE_MK",
+   "cif": [
+    "DIODE"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "ndiode",
+    "nndiode",
+    "pdiff",
+    "mvndiode",
+    "mvnndiode",
+    "mvpdiff",
+    "pdiode",
+    "mvpdiode",
+    "ndiffc",
+    "sramndc",
+    "nsubdiffcont",
+    "pdiffc",
+    "srampdc",
+    "psubdiffcont",
+    "ndiodec",
+    "nndiodec",
+    "pdiodec",
+    "mvndiffc",
+    "srammvndc",
+    "mvnsubdiffcont",
+    "mvpdiffc",
+    "srammvpdc",
+    "mvpsubdiffcont",
+    "mvndiodec",
+    "mvnndiodec",
+    "mvpdiodec"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2642"
+  },
+  {
+   "gds": [
+    116,
+    5
+   ],
+   "name": "MDIODE",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    117,
+    5
+   ],
+   "name": "CAP_MK",
+   "cif": [
+    "CAPDEF"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2644"
+  },
+  {
+   "gds": [
+    117,
+    10
+   ],
+   "name": "MIM_L_MK",
+   "cif": [
+    "CAP_LENGTH"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2641"
+  },
+  {
+   "gds": [
+    118,
+    5
+   ],
+   "name": "LVS_BJT",
+   "cif": [
+    "BJTDEF"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "pwell",
+    "pbase",
+    "nwell",
+    "nbase"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2645"
+  },
+  {
+   "gds": [
+    119,
+    5
+   ],
+   "name": "LVS_IO",
+   "cif": [
+    "IO_ID"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2660"
+  },
+  {
+   "gds": [
+    122,
+    5
+   ],
+   "name": "MTPMARK",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    123,
+    5
+   ],
+   "name": "HVPOLYRS",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    124,
+    5
+   ],
+   "name": "OPC_drc",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    125,
+    5
+   ],
+   "name": "PLFUSE",
+   "cif": [
+    "PLFUSE"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "polysilicon",
+    "efuse"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2637"
+  },
+  {
+   "gds": [
+    127,
+    5
+   ],
+   "name": "DRC_BJT",
+   "cif": [
+    "BJTDRC"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "pwell",
+    "pbase",
+    "nwell",
+    "nbase"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2646"
+  },
+  {
+   "gds": [
+    128,
+    17
+   ],
+   "name": "DEV_WF_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    137,
+    5
+   ],
+   "name": "Latchup_MK",
+   "cif": [
+    "LATCHUP_ID"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2659"
+  },
+  {
+   "gds": [
+    151,
+    5
+   ],
+   "name": "IND_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    152,
+    5
+   ],
+   "name": "PMNDMY",
+   "cif": [
+    "FILLOBS2"
+   ],
+   "role": "other",
+   "read": "paint",
+   "magic_types": [
+    "fillblock"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2652"
+  },
+  {
+   "gds": [
+    153,
+    51
+   ],
+   "name": "WELL_DIODE_MK",
+   "cif": [],
+   "role": "well",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    166,
+    5
+   ],
+   "name": "MOS_CAP_MK",
+   "cif": [
+    "MOSCAP"
+   ],
+   "role": "marker",
+   "read": "device-only",
+   "magic_types": [],
+   "decides": [
+    "pmos",
+    "srampfet",
+    "pmoscap",
+    "hvpmos",
+    "mvpmos",
+    "srammvpfet",
+    "mvpmoscap",
+    "nmos",
+    "sramnfet",
+    "nmoscap",
+    "hvnmos",
+    "mvnmos",
+    "srammvnfet",
+    "mvnmoscap"
+   ],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2647"
+  },
+  {
+   "gds": [
+    167,
+    5
+   ],
+   "name": "GUARD_RING_MK",
+   "cif": [
+    "SCRIBE"
+   ],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2658"
+  },
+  {
+   "gds": [
+    173,
+    5
+   ],
+   "name": "OTP_MK",
+   "cif": [],
+   "role": "marker",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    178,
+    0
+   ],
+   "name": "ZENER",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    183,
+    0
+   ],
+   "name": "UBMPPeri",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    184,
+    0
+   ],
+   "name": "UBMPArray",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    185,
+    0
+   ],
+   "name": "UBMEPlate",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    204,
+    0
+   ],
+   "name": "LVPWELL",
+   "cif": [
+    "PWELL"
+   ],
+   "role": "well",
+   "read": "paint",
+   "magic_types": [
+    "pwell",
+    "pbase"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2593"
+  },
+  {
+   "gds": [
+    204,
+    10
+   ],
+   "name": "PWELLTXT",
+   "cif": [
+    "PWELLTXT"
+   ],
+   "role": "pin",
+   "read": "pin",
+   "magic_types": [
+    "pwell",
+    "pbase"
+   ],
+   "decides": [],
+   "in_lyp": false,
+   "line": "gf180mcuD.tech:2594"
+  },
+  {
+   "gds": [
+    210,
+    0
+   ],
+   "name": "MVSD",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    220,
+    0
+   ],
+   "name": "POLYFUSE",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    226,
+    0
+   ],
+   "name": "LDMOS_XTOR",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    227,
+    0
+   ],
+   "name": "FHRES",
+   "cif": [],
+   "role": "other",
+   "read": "ignored",
+   "magic_types": [],
+   "decides": [],
+   "in_lyp": true,
+   "line": null
+  },
+  {
+   "gds": [
+    241,
+    0
+   ],
+   "name": "Schottky_diode",
+   "cif": [
+    "SCHOTTKY"
+   ],
+   "role": "diffusion",
+   "read": "paint",
+   "magic_types": [
+    "schottky",
+    "schottkyc"
+   ],
+   "decides": [],
+   "in_lyp": true,
+   "line": "gf180mcuD.tech:2643"
+  }
+ ],
+ "cifout": {
+  "deepnwell": [
+   [
+    12,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "efuse": [
+   [
+    80,
+    5
+   ],
+   [
+    125,
+    5
+   ]
+  ],
+  "fillblock": [
+   [
+    152,
+    5
+   ]
+  ],
+  "filldiff": [
+   [
+    22,
+    4
+   ]
+  ],
+  "fillm1": [
+   [
+    34,
+    4
+   ]
+  ],
+  "fillm2": [
+   [
+    36,
+    4
+   ]
+  ],
+  "fillm3": [
+   [
+    42,
+    4
+   ]
+  ],
+  "fillm4": [
+   [
+    46,
+    4
+   ]
+  ],
+  "fillm5": [
+   [
+    81,
+    4
+   ]
+  ],
+  "fillpoly": [
+   [
+    30,
+    4
+   ]
+  ],
+  "glass": [
+   [
+    37,
+    0
+   ]
+  ],
+  "hvnmos": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "hvpmos": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "isosubstrate": [
+   [
+    23,
+    5
+   ]
+  ],
+  "ldndiff": [
+   [
+    22,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    210,
+    0
+   ]
+  ],
+  "ldndiffc": [
+   [
+    22,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "ldpdiff": [
+   [
+    11,
+    39
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "ldpdiffc": [
+   [
+    22,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "metal1": [
+   [
+    34,
+    0
+   ]
+  ],
+  "metal2": [
+   [
+    36,
+    0
+   ]
+  ],
+  "metal3": [
+   [
+    42,
+    0
+   ]
+  ],
+  "metal4": [
+   [
+    46,
+    0
+   ]
+  ],
+  "metal5": [
+   [
+    81,
+    0
+   ]
+  ],
+  "mimcap": [
+   [
+    46,
+    0
+   ],
+   [
+    75,
+    0
+   ],
+   [
+    117,
+    5
+   ]
+  ],
+  "mimcapcontact": [
+   [
+    41,
+    0
+   ],
+   [
+    46,
+    0
+   ],
+   [
+    75,
+    0
+   ],
+   [
+    81,
+    0
+   ],
+   [
+    117,
+    5
+   ]
+  ],
+  "mvndiff": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvndiffc": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvndiffres": [
+   [
+    22,
+    0
+   ],
+   [
+    24,
+    5
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    110,
+    5
+   ],
+   [
+    137,
+    5
+   ]
+  ],
+  "mvndiode": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "mvndiodec": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "mvnhighres": [
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    62,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "mvnmos": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    112,
+    1
+   ]
+  ],
+  "mvnmoscap": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "mvnndiode": [
+   [
+    5,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "mvnndiodec": [
+   [
+    5,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "mvnnmos": [
+   [
+    5,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvnsubdiff": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvnsubdiffcont": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvnvaractor": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "mvpdiff": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvpdiffc": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvpdiffres": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    24,
+    5
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    110,
+    5
+   ],
+   [
+    137,
+    5
+   ]
+  ],
+  "mvpdiode": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "mvpdiodec": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "mvpmos": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    112,
+    1
+   ]
+  ],
+  "mvpmoscap": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "mvpsubdiff": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvpsubdiffcont": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "mvpvaractor": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "nbase": [
+   [
+    21,
+    0
+   ]
+  ],
+  "ndiff": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "ndiffc": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "ndiffres": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "ndiode": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "ndiodec": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "nhighres": [
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    62,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "nmos": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "nmoscap": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "nndiode": [
+   [
+    5,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "nndiodec": [
+   [
+    5,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "nnmos": [
+   [
+    5,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "npolyres": [
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "npolysilicide": [
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "nsubdiff": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "nsubdiffcont": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "nvaractor": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "nwell": [
+   [
+    21,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "obsm1": [
+   [
+    34,
+    5
+   ]
+  ],
+  "obsm2": [
+   [
+    36,
+    5
+   ]
+  ],
+  "obsm3": [
+   [
+    42,
+    5
+   ]
+  ],
+  "obsm4": [
+   [
+    46,
+    5
+   ]
+  ],
+  "obsm5": [
+   [
+    81,
+    5
+   ]
+  ],
+  "padl": [
+   [
+    34,
+    0
+   ],
+   [
+    36,
+    0
+   ],
+   [
+    42,
+    0
+   ],
+   [
+    46,
+    0
+   ],
+   [
+    81,
+    0
+   ]
+  ],
+  "pdiff": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "pdiffc": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "pdiffres": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "pdiode": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "pdiodec": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    115,
+    5
+   ]
+  ],
+  "pmos": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "pmoscap": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "polycontact": [
+   [
+    30,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "polysilicon": [
+   [
+    30,
+    0
+   ]
+  ],
+  "ppolyres": [
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    49,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "ppolysilicide": [
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    110,
+    5
+   ]
+  ],
+  "psubdiff": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "psubdiffcont": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "pvaractor": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    166,
+    5
+   ]
+  ],
+  "pwell": [
+   [
+    204,
+    0
+   ]
+  ],
+  "rm5": [
+   [
+    81,
+    0
+   ],
+   [
+    110,
+    15
+   ]
+  ],
+  "rmetal1": [
+   [
+    34,
+    0
+   ],
+   [
+    110,
+    11
+   ]
+  ],
+  "rmetal2": [
+   [
+    36,
+    0
+   ],
+   [
+    110,
+    12
+   ]
+  ],
+  "rmetal3": [
+   [
+    42,
+    0
+   ],
+   [
+    110,
+    13
+   ]
+  ],
+  "rmetal4": [
+   [
+    46,
+    0
+   ],
+   [
+    110,
+    14
+   ]
+  ],
+  "rnw": [
+   [
+    21,
+    0
+   ]
+  ],
+  "schottky": [
+   [
+    22,
+    0
+   ],
+   [
+    115,
+    5
+   ],
+   [
+    241,
+    0
+   ]
+  ],
+  "schottkyc": [
+   [
+    34,
+    0
+   ],
+   [
+    115,
+    5
+   ],
+   [
+    241,
+    0
+   ]
+  ],
+  "srammvndc": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "srammvndiff": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "srammvnfet": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    112,
+    1
+   ]
+  ],
+  "srammvpdc": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "srammvpdiff": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ]
+  ],
+  "srammvpfet": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    55,
+    0
+   ],
+   [
+    112,
+    1
+   ]
+  ],
+  "sramndc": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "sramndiff": [
+   [
+    22,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "sramnfet": [
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    32,
+    0
+   ]
+  ],
+  "srampdc": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ]
+  ],
+  "srampdiff": [
+   [
+    22,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "srampfet": [
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    31,
+    0
+   ]
+  ],
+  "via1": [
+   [
+    34,
+    0
+   ],
+   [
+    35,
+    0
+   ],
+   [
+    36,
+    0
+   ]
+  ],
+  "via2": [
+   [
+    36,
+    0
+   ],
+   [
+    38,
+    0
+   ],
+   [
+    42,
+    0
+   ]
+  ],
+  "via3": [
+   [
+    40,
+    0
+   ],
+   [
+    42,
+    0
+   ],
+   [
+    46,
+    0
+   ]
+  ],
+  "via4": [
+   [
+    41,
+    0
+   ],
+   [
+    46,
+    0
+   ],
+   [
+    81,
+    0
+   ]
+  ]
+ },
+ "generated": [
+  {
+   "gds": [
+    110,
+    5
+   ],
+   "name": "resdef",
+   "cif": "RESDEF",
+   "role": "marker",
+   "from": "hires, mvhires",
+   "types": [
+    "hires",
+    "mvhires"
+   ],
+   "grow_um": 0.28,
+   "line": 689,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "bloat-or * 280 poly 0; grow then shrink 0.2 um at gf180mcuD.tech:690 (closes gaps)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    49,
+    0
+   ],
+   "name": "sblk",
+   "cif": "SBLK",
+   "role": "marker",
+   "from": "hires, mvhires, mvrnd, mvrpd, rnd, rpd",
+   "types": [
+    "hires",
+    "mvhires",
+    "mvrnd",
+    "mvrpd",
+    "rnd",
+    "rpd"
+   ],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "several distances from the device shape: 0.22, 0.28 um; no single grow from a device shape (7 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    32,
+    0
+   ],
+   "name": "nplus",
+   "cif": "NPLUS",
+   "role": "implant",
+   "from": "n-diffusion",
+   "types": [
+    "*mvndif",
+    "*mvndiode",
+    "*mvnndiode",
+    "*ndif",
+    "*ndiode",
+    "*nndiode",
+    "*srammvndiff",
+    "*sramndiff",
+    "mvndiffres",
+    "ndiffres"
+   ],
+   "grow_um": 0.16,
+   "line": 735,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [
+    "NP.5a"
+   ],
+   "enclosure_check": true,
+   "note": "bloat-or * 160 allpactivenonfet 0; grow then shrink 0.2 um at gf180mcuD.tech:742 (closes gaps); close 0.35 um2 at gf180mcuD.tech:744 (fills holes)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    32,
+    0
+   ],
+   "name": "nplus",
+   "cif": "NPLUS",
+   "role": "implant",
+   "from": "n-tap",
+   "types": [
+    "*mvnsd",
+    "*nsd"
+   ],
+   "grow_um": 0.02,
+   "line": 739,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": true,
+   "note": "other pieces from the same types: 0.16 um; bloat-or * 20 allpactivenonfet 0; grow then shrink 0.2 um at gf180mcuD.tech:742 (closes gaps); close 0.35 um2 at gf180mcuD.tech:744 (fills holes)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    32,
+    0
+   ],
+   "name": "nplus",
+   "cif": "NPLUS",
+   "role": "implant",
+   "from": "nfet gate",
+   "types": [
+    "allnfets",
+    "mvnvar",
+    "nvar"
+   ],
+   "grow_um": 0.23,
+   "line": 740,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": true,
+   "note": "bloat-or * 230; grow then shrink 0.2 um at gf180mcuD.tech:742 (closes gaps); close 0.35 um2 at gf180mcuD.tech:744 (fills holes)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    31,
+    0
+   ],
+   "name": "pplus",
+   "cif": "PPLUS",
+   "role": "implant",
+   "from": "p-diffusion",
+   "types": [
+    "*mvpdif",
+    "*mvpdiode",
+    "*pdif",
+    "*pdiode",
+    "*srammvpdiff",
+    "*srampdiff",
+    "hvpfet",
+    "mvpcap",
+    "mvpdiffres",
+    "mvpfet",
+    "pcap",
+    "pdiffres",
+    "pfet",
+    "srammvpfet",
+    "srampfet"
+   ],
+   "grow_um": 0.16,
+   "line": 784,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": true,
+   "note": "bloat-or * 160 allnactivenonfet 0; grow then shrink 0.2 um at gf180mcuD.tech:791 (closes gaps); close 0.35 um2 at gf180mcuD.tech:793 (fills holes)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    31,
+    0
+   ],
+   "name": "pplus",
+   "cif": "PPLUS",
+   "role": "implant",
+   "from": "p-tap",
+   "types": [
+    "*mvpsd",
+    "*psd"
+   ],
+   "grow_um": 0.02,
+   "line": 788,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [
+    "PP.5di"
+   ],
+   "enclosure_check": true,
+   "note": "other pieces from the same types: 0.16 um; bloat-or * 20 allnactivenonfet 0; grow then shrink 0.2 um at gf180mcuD.tech:791 (closes gaps); close 0.35 um2 at gf180mcuD.tech:793 (fills holes)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    31,
+    0
+   ],
+   "name": "pplus",
+   "cif": "PPLUS",
+   "role": "implant",
+   "from": "pfet gate",
+   "types": [
+    "allpfets",
+    "mvpvar",
+    "pvar"
+   ],
+   "grow_um": 0.23,
+   "line": 789,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": true,
+   "note": "bloat-or * 230; grow then shrink 0.2 um at gf180mcuD.tech:791 (closes gaps); close 0.35 um2 at gf180mcuD.tech:793 (fills holes)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    55,
+    0
+   ],
+   "name": "dualgate",
+   "cif": "DUALGATE",
+   "role": "implant",
+   "from": "5 V / 6 V n-diffusion",
+   "types": [
+    "allndiffmv"
+   ],
+   "grow_um": 0.24,
+   "line": 810,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [
+    "DV.6"
+   ],
+   "enclosure_check": true,
+   "note": "bloat-or * 240 *psd 0; grow then shrink 0.219 um at gf180mcuD.tech:812 (closes gaps)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    55,
+    0
+   ],
+   "name": "dualgate",
+   "cif": "DUALGATE",
+   "role": "implant",
+   "from": "5 V / 6 V p-diffusion",
+   "types": [
+    "allpdiffmv"
+   ],
+   "grow_um": 0.24,
+   "line": 811,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [
+    "DV.6"
+   ],
+   "enclosure_check": true,
+   "note": "bloat-or * 240 *nsd 0; grow then shrink 0.219 um at gf180mcuD.tech:812 (closes gaps)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    5,
+    0
+   ],
+   "name": "nat",
+   "cif": "NAT",
+   "role": "implant",
+   "from": "*mvnndiode, *nndiode, mvnnfet, nnfet",
+   "types": [
+    "*mvnndiode",
+    "*nndiode",
+    "mvnnfet",
+    "nnfet"
+   ],
+   "grow_um": 0.26,
+   "line": 832,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "bloat-all into *ndiff; grow then shrink 0.309 um at gf180mcuD.tech:833 (closes gaps)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    112,
+    1
+   ],
+   "name": "fet5vdef",
+   "cif": "FET5VDEF",
+   "role": "marker",
+   "from": "mvnfet, mvpfet, srammvnfet, srammvpfet",
+   "types": [
+    "mvnfet",
+    "mvpfet",
+    "srammvnfet",
+    "srammvpfet"
+   ],
+   "grow_um": 0.1,
+   "line": 848,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "bloat-all into *mvndiff,*mvpdiff,mvndiffres,mvpdiffres,*mvnsd,*mvpsd",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    125,
+    5
+   ],
+   "name": "plfuse",
+   "cif": "PLFUSE",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    80,
+    5
+   ],
+   "name": "efuse",
+   "cif": "EFUSE",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (2 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    117,
+    5
+   ],
+   "name": "capdef",
+   "cif": "CAPDEF",
+   "role": "marker",
+   "from": "*mimcap",
+   "types": [
+    "*mimcap"
+   ],
+   "grow_um": 0.2,
+   "line": 1092,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    117,
+    10
+   ],
+   "name": "cap_length",
+   "cif": "CAP_LENGTH",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (0 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    110,
+    11
+   ],
+   "name": "met1res",
+   "cif": "MET1RES",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    110,
+    12
+   ],
+   "name": "met2res",
+   "cif": "MET2RES",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    110,
+    13
+   ],
+   "name": "met3res",
+   "cif": "MET3RES",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    110,
+    14
+   ],
+   "name": "met4res",
+   "cif": "MET4RES",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    110,
+    15
+   ],
+   "name": "met5res",
+   "cif": "MET5RES",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    115,
+    5
+   ],
+   "name": "diode",
+   "cif": "DIODE",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (1 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    166,
+    5
+   ],
+   "name": "moscap",
+   "cif": "MOSCAP",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (8 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    62,
+    0
+   ],
+   "name": "hres",
+   "cif": "HRES",
+   "role": "marker",
+   "from": "hires, mvhires",
+   "types": [
+    "hires",
+    "mvhires"
+   ],
+   "grow_um": 0.4,
+   "line": 1175,
+   "file": "gf180mcuD.tech",
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "bloat-all into *poly",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    108,
+    5
+   ],
+   "name": "sramdef",
+   "cif": "SRAMDEF",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (0 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    137,
+    5
+   ],
+   "name": "latchup_id",
+   "cif": "LATCHUP_ID",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (2 pieces)",
+   "source": "parser"
+  },
+  {
+   "gds": [
+    24,
+    5
+   ],
+   "name": "esd_id",
+   "cif": "ESD_ID",
+   "role": "marker",
+   "from": "",
+   "types": [],
+   "grow_um": null,
+   "line": null,
+   "file": null,
+   "rule_ids": [],
+   "enclosure_check": false,
+   "note": "no single grow from a device shape (2 pieces)",
+   "source": "parser"
+  }
+ ],
+ "ports": {
+  "text": [
+   [
+    12,
+    0
+   ],
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    22,
+    4
+   ],
+   [
+    23,
+    5
+   ],
+   [
+    30,
+    0
+   ],
+   [
+    30,
+    4
+   ],
+   [
+    30,
+    10
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    34,
+    4
+   ],
+   [
+    34,
+    5
+   ],
+   [
+    36,
+    0
+   ],
+   [
+    36,
+    4
+   ],
+   [
+    36,
+    5
+   ],
+   [
+    37,
+    0
+   ],
+   [
+    42,
+    0
+   ],
+   [
+    42,
+    4
+   ],
+   [
+    42,
+    5
+   ],
+   [
+    46,
+    0
+   ],
+   [
+    46,
+    4
+   ],
+   [
+    46,
+    5
+   ],
+   [
+    75,
+    0
+   ],
+   [
+    81,
+    0
+   ],
+   [
+    81,
+    4
+   ],
+   [
+    81,
+    5
+   ],
+   [
+    152,
+    5
+   ],
+   [
+    204,
+    0
+   ]
+  ],
+  "pin": [
+   [
+    21,
+    10
+   ],
+   [
+    34,
+    10
+   ],
+   [
+    36,
+    10
+   ],
+   [
+    42,
+    10
+   ],
+   [
+    46,
+    10
+   ],
+   [
+    81,
+    10
+   ],
+   [
+    204,
+    10
+   ]
+  ],
+  "port_text": [
+   [
+    21,
+    10
+   ],
+   [
+    34,
+    10
+   ],
+   [
+    36,
+    10
+   ],
+   [
+    42,
+    10
+   ],
+   [
+    46,
+    10
+   ],
+   [
+    81,
+    10
+   ],
+   [
+    204,
+    10
+   ]
+  ],
+  "comment": [],
+  "klayout_lvs_text": [
+   [
+    22,
+    10
+   ],
+   [
+    30,
+    10
+   ],
+   [
+    34,
+    10
+   ],
+   [
+    36,
+    10
+   ],
+   [
+    42,
+    10
+   ],
+   [
+    46,
+    10
+   ],
+   [
+    53,
+    10
+   ],
+   [
+    81,
+    10
+   ]
+  ],
+  "both": [
+   {
+    "text": [
+     34,
+     10
+    ],
+    "pin": null
+   },
+   {
+    "text": [
+     36,
+     10
+    ],
+    "pin": null
+   },
+   {
+    "text": [
+     42,
+     10
+    ],
+    "pin": null
+   },
+   {
+    "text": [
+     46,
+     10
+    ],
+    "pin": null
+   },
+   {
+    "text": [
+     81,
+     10
+    ],
+    "pin": null
+   }
+  ],
+  "magic_writes_port": [
+   [
+    21,
+    10
+   ],
+   [
+    30,
+    10
+   ],
+   [
+    34,
+    10
+   ],
+   [
+    36,
+    10
+   ],
+   [
+    42,
+    10
+   ],
+   [
+    46,
+    10
+   ],
+   [
+    81,
+    10
+   ],
+   [
+    204,
+    10
+   ]
+  ],
+  "klayout_lvs": "libs.tech/klayout/tech/lvs/gf180mcu.lvs",
+  "lines": {
+   "12/0": "gf180mcuD.tech:2590, gf180mcuD.tech:1536",
+   "21/0": "gf180mcuD.tech:2591, gf180mcuD.tech:1522",
+   "21/10": "gf180mcuD.tech:2592, gf180mcuD.tech:1523",
+   "22/0": "gf180mcuD.tech:2596, gf180mcuD.tech:1557",
+   "22/4": "gf180mcuD.tech:2597, gf180mcuD.tech:1560",
+   "22/10": "libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:296",
+   "23/5": "gf180mcuD.tech:2595, gf180mcuD.tech:1539",
+   "30/0": "gf180mcuD.tech:2598, gf180mcuD.tech:2024",
+   "30/4": "gf180mcuD.tech:2599, gf180mcuD.tech:2028",
+   "30/10": "gf180mcuD.tech:2600, gf180mcuD.tech:2025, libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:303",
+   "34/0": "gf180mcuD.tech:2606, gf180mcuD.tech:2314",
+   "34/4": "gf180mcuD.tech:2609, gf180mcuD.tech:2321",
+   "34/5": "gf180mcuD.tech:2608, gf180mcuD.tech:2318",
+   "34/10": "gf180mcuD.tech:2607, gf180mcuD.tech:2315, libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:330",
+   "36/0": "gf180mcuD.tech:2612, gf180mcuD.tech:2333",
+   "36/4": "gf180mcuD.tech:2615, gf180mcuD.tech:2340",
+   "36/5": "gf180mcuD.tech:2614, gf180mcuD.tech:2337",
+   "36/10": "gf180mcuD.tech:2613, gf180mcuD.tech:2334, libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:367",
+   "37/0": "gf180mcuD.tech:2604, gf180mcuD.tech:2552",
+   "42/0": "gf180mcuD.tech:2618, gf180mcuD.tech:2349",
+   "42/4": "gf180mcuD.tech:2621, gf180mcuD.tech:2356",
+   "42/5": "gf180mcuD.tech:2620, gf180mcuD.tech:2353",
+   "42/10": "gf180mcuD.tech:2619, gf180mcuD.tech:2350, libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:406",
+   "46/0": "gf180mcuD.tech:2624, gf180mcuD.tech:2370",
+   "46/4": "gf180mcuD.tech:2627, gf180mcuD.tech:2377",
+   "46/5": "gf180mcuD.tech:2626, gf180mcuD.tech:2374",
+   "46/10": "gf180mcuD.tech:2625, gf180mcuD.tech:2371, libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:446",
+   "53/10": "libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:526",
+   "75/0": "gf180mcuD.tech:2640, gf180mcuD.tech:2418",
+   "81/0": "gf180mcuD.tech:2630, gf180mcuD.tech:2393",
+   "81/4": "gf180mcuD.tech:2633, gf180mcuD.tech:2400",
+   "81/5": "gf180mcuD.tech:2632, gf180mcuD.tech:2397",
+   "81/10": "gf180mcuD.tech:2631, gf180mcuD.tech:2394, libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs:486",
+   "152/5": "gf180mcuD.tech:2652, gf180mcuD.tech:2562",
+   "204/0": "gf180mcuD.tech:2593, gf180mcuD.tech:1514",
+   "204/10": "gf180mcuD.tech:2594, gf180mcuD.tech:1515"
+  }
+ },
+ "lvs": {
+  "netgen_setup": "libs.tech/netgen/gf180mcuD_setup.tcl",
+  "klayout_lvs": "libs.tech/klayout/tech/lvs/gf180mcu.lvs"
+ },
+ "error_marker": [
+  255,
+  0
+ ]
+}

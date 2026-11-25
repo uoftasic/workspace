@@ -1,0 +1,172 @@
+{
+ "pdk": "gf180mcuD",
+ "about": "Hand-made mappings for the gf180mcuD gap table (GAPS-gf180mcuD 1). Keys are the KLayout deck's rule IDs without the _LV/_MV suffix; Magic's older numbers are mapped onto them by ID (ids) or line by line (lines).",
+ "magic": {
+  "split": {
+   "PRES/LRES.2": [
+    "PRES.2",
+    "LRES.2"
+   ],
+   "PRES/LRES.3": [
+    "PRES.3",
+    "LRES.3"
+   ],
+   "PRES/LRES.4": [
+    "PRES.4",
+    "LRES.4"
+   ],
+   "PRES/LRES/HRES.7": [
+    "PRES.7",
+    "LRES.7",
+    "HRES.8"
+   ]
+  },
+  "ids": {
+   "V2.3": "V2.3b",
+   "V3.3": "V3.3b",
+   "V4.3": "V4.3b",
+   "V2.3i": "V2.3d",
+   "V3.3i": "V3.3d",
+   "V4.3i": "V4.3d",
+   "V2.4": "V2.4a",
+   "V3.4": "V3.4a",
+   "V4.4": "V4.4a",
+   "V1.4i": "V1.4c",
+   "V2.4i": "V2.4c",
+   "V3.4i": "V3.4c",
+   "V4.4i": "V4.4c",
+   "VT.1": "V4.1",
+   "VT.3": "V4.3b",
+   "VT.4": "V4.4a",
+   "HRES.2": "HRES.3",
+   "HRES.3": "HRES.2",
+   "S.CO.3_LV": "S.CO.4",
+   "S.CO.4_MV": "S.CO.4",
+   "S.DF.4c_LV": "S.DF.4c",
+   "S.DF.7_MV": "S.DF.4c",
+   "S.DF.8_MV": "S.DF.16",
+   "S.DF.16_LV": "S.DF.16",
+   "S.PL.5a_MV": "S.PL.5a"
+  },
+  "lines": {
+   "gf180mcuD.tech:2761": [
+    "DF.16"
+   ],
+   "gf180mcuD.tech:2763": [
+    "DF.16"
+   ],
+   "gf180mcuD.tech:2769": [
+    "DF.17"
+   ],
+   "gf180mcuD.tech:2771": [
+    "DF.17"
+   ],
+   "gf180mcuD.tech:2775": [
+    "DF.4d"
+   ],
+   "gf180mcuD.tech:2777": [
+    "DF.4d"
+   ],
+   "gf180mcuD.tech:2779": [
+    "DF.4c"
+   ],
+   "gf180mcuD.tech:2781": [
+    "DF.4c"
+   ],
+   "gf180mcuD.tech:2729": [
+    "NW.6"
+   ],
+   "gf180mcuD.tech:3086": [
+    "NAT.4"
+   ],
+   "gf180mcuD.tech:3088": [
+    "NAT.5"
+   ]
+  }
+ },
+ "klayout": {
+  "*": {
+   "names": {
+    "V1.3a": [
+     "V1.3"
+    ],
+    "V1.3c": [
+     "V1.3"
+    ],
+    "V1.3d": [
+     "V1.3"
+    ],
+    "V1.4a": [
+     "V1.4"
+    ],
+    "V1.4b": [
+     "V1.4"
+    ],
+    "CO.6a": [
+     "CO.6"
+    ],
+    "CO.6b": [
+     "CO.6"
+    ]
+   },
+   "patterns": [
+    [
+     "^.+_OFFGRID$",
+     "OFFGRID (per layer)"
+    ],
+    [
+     "^.+_ACUTE$",
+     "ACUTE (per layer)"
+    ],
+    [
+     "^(.+)_(LV|MV)$",
+     "\\1"
+    ]
+   ]
+  }
+ },
+ "status": {
+  "PP.8a": {
+   "status": "measured on other shapes",
+   "note": "Magic checks the PPLUS it generates (tech:1407-1420), KLayout the drawn PPLUS (GAPS-gf180mcuD 1)"
+  },
+  "NP.8a": {
+   "status": "measured on other shapes",
+   "note": "Magic checks the NPLUS it generates (tech:1407-1420), KLayout the drawn NPLUS (GAPS-gf180mcuD 1)"
+  },
+  "CO.3": {
+   "status": "both",
+   "note": "Magic grows each contact by 0.005 µm per side when it reads it (a 0.22 µm cut becomes a 0.23 µm contact area, GAPS-gf180mcuD 1), so its 0.065 µm is 0.07 µm from the cut"
+  },
+  "CO.4": {
+   "status": "both",
+   "note": "Magic grows each contact by 0.005 µm per side when it reads it (a 0.22 µm cut becomes a 0.23 µm contact area, GAPS-gf180mcuD 1), so its 0.065 µm is 0.07 µm from the cut"
+  },
+  "CO.6": {
+   "status": "both",
+   "note": "Magic's directional overlap (tech:2885, 2906) is 0.055 µm from its contact area, 0.06 µm from the cut, as KLayout's CO.6a; both decks agreed on the two CO.6 cases (GAPS-gf180mcuD 1)"
+  },
+  "MIMTM.5": {
+   "status": "both, values differ",
+   "note": "Magic 0.39, KLayout 0.4; Magic measures to its via4 area, and if that area is the cut plus 0.01 µm per side, as tech:3053's V4.1 + 2 * V4.4 implies, its 0.39 µm is 0.4 µm from the cut (not measured)"
+  },
+  "S.CO.4": {
+   "status": "both, values differ",
+   "note": "Magic grows each contact by 0.005 µm per side when it reads it (GAPS-gf180mcuD 1), so its two SRAM checks of COMP overlap of contact, 0.035 µm (tech:2923-2930), are 0.04 µm from the cut: equal to KLayout's S.CO.4_MV, and 0.01 µm more than its S.CO.4_LV 0.03 µm for the 3.3 V SRAM, which Magic prints as S.CO.3_LV"
+  }
+ },
+ "parts": [
+  {
+   "name": "Grid and angle checks",
+   "match": "^(OFFGRID|ACUTE) "
+  },
+  {
+   "name": "Upper metals, vias and MIM",
+   "match": "^(M[2-5]\\.|MT\\.|V[2-4]\\.|VT\\.|MIM|DM[2-5]\\.|MSLOT[2-5]\\.)"
+  },
+  {
+   "name": "Wells to via1",
+   "match": ".*"
+  }
+ ]
+}

@@ -1,0 +1,1833 @@
+{
+ "Act_a": {
+  "klayout": {
+   "run_drc": {
+    "Act.a": 1,
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.a": 1
+   },
+   "drc(full)": {
+    "Act.a": 1,
+    "LU.b": 1
+   },
+   "drc(routing)": {
+    "Act.a": 1
+   }
+  }
+ },
+ "Act_a_ok": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "Act_b": {
+  "klayout": {
+   "run_drc": {
+    "Act.b": 1,
+    "LU.b": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.b": 1
+   },
+   "drc(full)": {
+    "Act.b": 1,
+    "LU.b": 2
+   },
+   "drc(routing)": {
+    "Act.b": 1
+   }
+  }
+ },
+ "Act_b_ok": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "Act_c": {
+  "klayout": {
+   "run_drc": {
+    "Act.c": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.c": 1
+   },
+   "drc(full)": {
+    "Act.c": 1
+   },
+   "drc(routing)": {
+    "Act.c": 1
+   }
+  }
+ },
+ "Act_c_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Act_d": {
+  "klayout": {
+   "run_drc": {
+    "Act.d": 1,
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.d": 1
+   },
+   "drc(full)": {
+    "Act.d": 1,
+    "LU.b": 1
+   },
+   "drc(routing)": {
+    "Act.d": 1
+   }
+  }
+ },
+ "Act_d_ok": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "CntB_a1": {
+  "klayout": {
+   "run_drc": {
+    "CntB.a1": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CntB_a1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CntB_b": {
+  "klayout": {
+   "run_drc": {
+    "CntB.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CntB_b2": {
+  "klayout": {
+   "run_drc": {
+    "CntB.b2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CntB_b2_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CntB_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "CntB_h1": {
+  "klayout": {
+   "run_drc": {
+    "CntB.h1": 4,
+    "M1.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.c1": 10
+   },
+   "drc(full)": {
+    "M1.c1": 10
+   },
+   "drc(routing)": {
+    "M1.c1": 10
+   }
+  }
+ },
+ "CntB_h1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_a": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.a": 1,
+    "CntB.a": 2,
+    "CntB.a1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.a": 2
+   },
+   "drc(full)": {
+    "Cnt.a": 2
+   },
+   "drc(routing)": {
+    "Cnt.a": 2
+   }
+  }
+ },
+ "Cnt_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_b": {
+  "klayout": {
+   "run_drc": {
+    "Act.d": 1,
+    "Cnt.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.d": 3,
+    "Cnt.b": 2
+   },
+   "drc(full)": {
+    "Act.d": 3,
+    "Cnt.b": 2
+   },
+   "drc(routing)": {
+    "Act.d": 3,
+    "Cnt.b": 2
+   }
+  }
+ },
+ "Cnt_b1": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.b1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_b1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_b_ok": {
+  "klayout": {
+   "run_drc": {
+    "Act.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.d": 3
+   },
+   "drc(full)": {
+    "Act.d": 3
+   },
+   "drc(routing)": {
+    "Act.d": 3
+   }
+  }
+ },
+ "Cnt_big": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.a": 1,
+    "CntB.a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_big_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_c": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.c": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.c": 2
+   },
+   "drc(full)": {
+    "Cnt.c": 2
+   },
+   "drc(routing)": {
+    "Cnt.c": 2
+   }
+  }
+ },
+ "Cnt_c_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_d": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.d": 5
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnd.d": 7
+   },
+   "drc(full)": {
+    "Cnd.d": 7
+   },
+   "drc(routing)": {
+    "Cnd.d": 7
+   }
+  }
+ },
+ "Cnt_d_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_e": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.e": 1,
+    "Gat.d": 2,
+    "M1.b": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.e": 3,
+    "Gat.d": 4,
+    "M1.b": 8
+   },
+   "drc(full)": {
+    "Cnt.e": 3,
+    "Gat.d": 4,
+    "M1.b": 8
+   },
+   "drc(routing)": {
+    "Cnt.e": 3,
+    "Gat.d": 4,
+    "M1.b": 8
+   }
+  }
+ },
+ "Cnt_e_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_f": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.f": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.f": 3
+   },
+   "drc(full)": {
+    "Cnt.f": 3
+   },
+   "drc(routing)": {
+    "Cnt.f": 3
+   }
+  }
+ },
+ "Cnt_f_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_g": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.g": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_g_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_h": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.h": 1,
+    "M1.c": 1,
+    "M1.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_h_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Cnt_j": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.j": 1,
+    "M1.b": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Cnt.f": 5,
+    "Gat.a": 1,
+    "M1.b": 20
+   },
+   "drc(full)": {
+    "Cnt.f": 5,
+    "Gat.a": 1,
+    "M1.b": 20
+   },
+   "drc(routing)": {
+    "Cnt.f": 5,
+    "Gat.a": 1,
+    "M1.b": 20
+   }
+  }
+ },
+ "Cnt_j_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "EXTB_a": {
+  "klayout": {
+   "run_drc": {
+    "EXTB.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "EXTB_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "EXTB_b": {
+  "klayout": {
+   "run_drc": {
+    "EXTB.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "EXTB_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_a": {
+  "klayout": {
+   "run_drc": {
+    "Gat.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.a": 1
+   },
+   "drc(full)": {
+    "Gat.a": 1
+   },
+   "drc(routing)": {
+    "Gat.a": 1
+   }
+  }
+ },
+ "Gat_a1": {
+  "klayout": {
+   "run_drc": {
+    "Gat.a": 1,
+    "Gat.a1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.a": 5
+   },
+   "drc(full)": {
+    "Gat.a": 5
+   },
+   "drc(routing)": {
+    "Gat.a": 5
+   }
+  }
+ },
+ "Gat_a1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_a2": {
+  "klayout": {
+   "run_drc": {
+    "Gat.a": 1,
+    "Gat.a2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.a": 5
+   },
+   "drc(full)": {
+    "Gat.a": 5
+   },
+   "drc(routing)": {
+    "Gat.a": 5
+   }
+  }
+ },
+ "Gat_a2_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_b": {
+  "klayout": {
+   "run_drc": {
+    "Gat.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.b": 1
+   },
+   "drc(full)": {
+    "Gat.b": 1
+   },
+   "drc(routing)": {
+    "Gat.b": 1
+   }
+  }
+ },
+ "Gat_b1": {
+  "klayout": {
+   "run_drc": {
+    "Gat.b1": 1,
+    "Gat.c": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.c": 4
+   },
+   "drc(full)": {
+    "Gat.c": 4
+   },
+   "drc(routing)": {
+    "Gat.c": 4
+   }
+  }
+ },
+ "Gat_b1_ok": {
+  "klayout": {
+   "run_drc": {
+    "Gat.c": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.c": 4
+   },
+   "drc(full)": {
+    "Gat.c": 4
+   },
+   "drc(routing)": {
+    "Gat.c": 4
+   }
+  }
+ },
+ "Gat_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_c": {
+  "klayout": {
+   "run_drc": {
+    "Gat.c": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.c": 1
+   },
+   "drc(full)": {
+    "Gat.c": 1
+   },
+   "drc(routing)": {
+    "Gat.c": 1
+   }
+  }
+ },
+ "Gat_c_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_d": {
+  "klayout": {
+   "run_drc": {
+    "Gat.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.d": 3
+   },
+   "drc(full)": {
+    "Gat.d": 3
+   },
+   "drc(routing)": {
+    "Gat.d": 3
+   }
+  }
+ },
+ "Gat_d_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Gat_e": {
+  "klayout": {
+   "run_drc": {
+    "Gat.e": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.e": 1
+   },
+   "drc(full)": {
+    "Gat.e": 1
+   },
+   "drc(routing)": {
+    "Gat.e": 1
+   }
+  }
+ },
+ "Gat_e_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_a": {
+  "klayout": {
+   "run_drc": {
+    "M1.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.a": 1
+   },
+   "drc(full)": {
+    "M1.a": 1
+   },
+   "drc(routing)": {
+    "M1.a": 1
+   }
+  }
+ },
+ "M1_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_b": {
+  "klayout": {
+   "run_drc": {
+    "M1.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.b": 2
+   },
+   "drc(full)": {
+    "M1.b": 2
+   },
+   "drc(routing)": {
+    "M1.b": 2
+   }
+  }
+ },
+ "M1_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_c": {
+  "klayout": {
+   "run_drc": {
+    "Cnt.h": 1,
+    "M1.c": 1,
+    "M1.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_c_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_d": {
+  "klayout": {
+   "run_drc": {
+    "M1.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M1.d": 1
+   },
+   "drc(full)": {
+    "M1.d": 1
+   },
+   "drc(routing)": {
+    "M1.d": 1
+   }
+  }
+ },
+ "M1_d_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_i": {
+  "klayout": {
+   "run_drc": {
+    "M1.i": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "M1_i_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NW_b1": {
+  "klayout": {
+   "run_drc": {
+    "NW.b1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NW_b1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NW_c": {
+  "klayout": {
+   "run_drc": {
+    "NW.c": 3
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.c": 15
+   },
+   "drc(full)": {
+    "NW.c": 15
+   },
+   "drc(routing)": {
+    "NW.c": 15
+   }
+  }
+ },
+ "NW_c_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NW_d": {
+  "klayout": {
+   "run_drc": {
+    "Act.d": 1,
+    "NW.d": 3
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.d": 3,
+    "NW.d": 4
+   },
+   "drc(full)": {
+    "Act.d": 3,
+    "NW.d": 4
+   },
+   "drc(routing)": {
+    "Act.d": 3,
+    "NW.d": 4
+   }
+  }
+ },
+ "NW_d_ok": {
+  "klayout": {
+   "run_drc": {
+    "Act.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Act.d": 3
+   },
+   "drc(full)": {
+    "Act.d": 3
+   },
+   "drc(routing)": {
+    "Act.d": 3
+   }
+  }
+ },
+ "NW_e": {
+  "klayout": {
+   "run_drc": {
+    "NW.e": 3
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.e": 16
+   },
+   "drc(full)": {
+    "NW.e": 16
+   },
+   "drc(routing)": {
+    "NW.e": 16
+   }
+  }
+ },
+ "NW_e_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "NW_f": {
+  "klayout": {
+   "run_drc": {
+    "NW.f": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "NW.f": 5
+   },
+   "drc(full)": {
+    "NW.f": 5
+   },
+   "drc(routing)": {
+    "NW.f": 5
+   }
+  }
+ },
+ "NW_f_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "PWB_b": {
+  "klayout": {
+   "run_drc": {
+    "PWB.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "PWB.a": 1
+   },
+   "drc(full)": {
+    "PWB.a": 1
+   },
+   "drc(routing)": {
+    "PWB.a": 1
+   }
+  }
+ },
+ "PWB_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Pin_a": {
+  "klayout": {
+   "run_drc": {
+    "Pin.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "Pin_a_ok": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "Pin_e": {
+  "klayout": {
+   "run_drc": {
+    "Pin.e": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Pin_e_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Sal_a": {
+  "klayout": {
+   "run_drc": {
+    "Sal.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Sal_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Sal_e": {
+  "klayout": {
+   "run_drc": {
+    "Sal.e": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "Sal_e_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "TGO_a": {
+  "klayout": {
+   "run_drc": {
+    "Gat.c": 2,
+    "TGO.a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.c": 2
+   },
+   "drc(full)": {
+    "Gat.c": 2
+   },
+   "drc(routing)": {
+    "Gat.c": 2
+   }
+  }
+ },
+ "TGO_a_ok": {
+  "klayout": {
+   "run_drc": {
+    "Gat.c": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Gat.c": 2
+   },
+   "drc(full)": {
+    "Gat.c": 2
+   },
+   "drc(routing)": {
+    "Gat.c": 2
+   }
+  }
+ },
+ "TGO_b": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1,
+    "TGO.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "TGO_b_ok": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "TGO_e": {
+  "klayout": {
+   "run_drc": {
+    "TGO.e": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "TGO_e_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "TGO_f": {
+  "klayout": {
+   "run_drc": {
+    "TGO.f": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "TGO_f_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_a": {
+  "klayout": {
+   "run_drc": {
+    "V1.a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_b": {
+  "klayout": {
+   "run_drc": {
+    "V1.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_b1": {
+  "klayout": {
+   "run_drc": {
+    "V1.b1": 22
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_b1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_big": {
+  "klayout": {
+   "run_drc": {
+    "V1.a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_big_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "V1_c": {
+  "klayout": {
+   "run_drc": {
+    "M2.d": 1,
+    "V1.c": 1,
+    "V1.c1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M2.d": 3,
+    "V1.c - M2.c": 1
+   },
+   "drc(full)": {
+    "M2.d": 3,
+    "V1.c - M2.c": 1
+   },
+   "drc(routing)": {
+    "M2.d": 3,
+    "V1.c - M2.c": 1
+   }
+  }
+ },
+ "V1_c_ok": {
+  "klayout": {
+   "run_drc": {
+    "M2.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "M2.d": 3
+   },
+   "drc(full)": {
+    "M2.d": 3
+   },
+   "drc(routing)": {
+    "M2.d": 3
+   }
+  }
+ },
+ "angle_m1": {
+  "klayout": {
+   "run_drc": {
+    "metal1_drw_Angle45": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "Grid Rules": 1
+   },
+   "drc(full)": {
+    "Grid Rules": 1
+   },
+   "drc(routing)": {
+    "Grid Rules": 1
+   }
+  }
+ },
+ "angle_m1_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "angle_poly": {
+  "klayout": {
+   "run_drc": {
+    "gatpoly_drw_Angle45": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.2": 1
+   },
+   "drc(full)": {
+    "x.2": 1
+   },
+   "drc(routing)": {
+    "x.2": 1
+   }
+  }
+ },
+ "angle_poly_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "base_nmos": {
+  "klayout": {
+   "run_drc": {
+    "LU.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.b": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "base_nmos_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "base_pmos": {
+  "klayout": {
+   "run_drc": {
+    "LU.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.a": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "base_pmos_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "forbidden": {
+  "klayout": {
+   "run_drc": {
+    "forbidden.biwind": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "forbidden_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "nSDB_a": {
+  "klayout": {
+   "run_drc": {
+    "nSDB.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "nSDB_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "nSDB_b": {
+  "klayout": {
+   "run_drc": {
+    "nSDB.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "nSDB_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "offgrid": {
+  "klayout": {
+   "run_drc": {
+    "metal1_drw_Offgrid": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "offgrid_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_a": {
+  "klayout": {
+   "run_drc": {
+    "pSD.a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_a_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_b": {
+  "klayout": {
+   "run_drc": {
+    "pSD.b": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_b_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_c": {
+  "klayout": {
+   "run_drc": {
+    "pSD.c": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_c_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_d": {
+  "klayout": {
+   "run_drc": {
+    "pSD.d": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_d_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_i_psd": {
+  "klayout": {
+   "run_drc": {
+    "pSD.i": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_i_psd_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_i_tap": {
+  "klayout": {
+   "run_drc": {
+    "pSD.i": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "pSD.i": 6
+   },
+   "drc(full)": {
+    "pSD.i": 6
+   },
+   "drc(routing)": {
+    "pSD.i": 6
+   }
+  }
+ },
+ "pSD_i_tap_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_k": {
+  "klayout": {
+   "run_drc": {
+    "pSD.k": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_k_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_l": {
+  "klayout": {
+   "run_drc": {
+    "pSD.l": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "pSD_l_ok": {
+  "klayout": {
+   "run_drc": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ }
+}

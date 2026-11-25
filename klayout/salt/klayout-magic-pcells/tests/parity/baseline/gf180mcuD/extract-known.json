@@ -1,0 +1,18 @@
+{
+ "comment": [
+  "Extraction results on Magic's own output that differ from the checked parameters, seen in",
+  "the first sweep of gf180mcuD (2026-11-21, Magic 8.3.681, open_pdks 026824c7). Both sides",
+  "(Magic's GDS and the PCell's GDS) must still give the same netlist; a point that matches an",
+  "entry here passes the identity check as a known Magic behaviour, and the report lists it."
+ ],
+ "known": [
+  {
+   "kind": "model",
+   "devices": {
+    "nfet_10v0_asym": "nfet_05v0",
+    "pfet_10v0_asym": "pfet_05v0"
+   },
+   "rule": "the 10 V asymmetric FETs extract as the 5 V model, with the drawn w and count and l=0.44u"
+  }
+ ]
+}

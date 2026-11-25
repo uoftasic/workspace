@@ -1,0 +1,20 @@
+{
+ "comment": [
+  "Extraction results on Magic's own output that differ from the checked parameters, seen in",
+  "the first sweep of ihp-sg13cmos5l (2026-11-21, Magic 8.3.681). Both sides (Magic's GDS and the PCell's",
+  "GDS) must still give the same netlist; a point that matches an entry here passes the identity",
+  "check as a known Magic behaviour, and the report lists it."
+ ],
+ "known": [
+  {
+   "kind": "model",
+   "devices": {
+    "sg13_lv_rfnmos": "sg13_lv_nmos",
+    "sg13_lv_rfpmos": "sg13_lv_pmos",
+    "sg13_hv_rfnmos": "sg13_hv_nmos",
+    "sg13_hv_rfpmos": "sg13_hv_pmos"
+   },
+   "rule": "the RF FETs extract as the FET model of the same voltage, with the drawn w and count"
+  }
+ ]
+}

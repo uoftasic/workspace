@@ -1,0 +1,19 @@
+{
+ "comment": [
+  "Extraction results on Magic's own output that differ from the checked parameters,",
+  "seen in the first full sweep (2026-11-21, Magic 8.3.681, open_pdks 026824c7). Both sides",
+  "(Magic's GDS and the PCell's GDS) must still give the same netlist; a point that matches",
+  "an entry here passes the identity check as a known Magic behaviour, and the report lists it."
+ ],
+ "known": [
+  {
+   "devices": {
+    "sky130_fd_pr__nfet_g5v0d16v0": "sky130_fd_pr__nfet_g5v0d10v5",
+    "sky130_fd_pr__pfet_g5v0d16v0": "sky130_fd_pr__pfet_g5v0d10v5"
+   },
+   "min_nf": 2,
+   "rule": "every second finger extracts as the g5v0d10v5 model with a different length; ceil(nf/2)*m devices keep the right model, w and l, and the total is nf*m",
+   "note": "With nf >= 2, Magic's extraction of Magic's own 16 V drain-extended FET reports floor(nf/2)*m devices as the 10.5 V model."
+  }
+ ]
+}

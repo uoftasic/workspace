@@ -1,0 +1,336 @@
+{
+ "schema": 1,
+ "pdk": "ihp-sg13g2",
+ "source": {
+  "tech": "libs.tech/magic/ihp-sg13g2-cifin.tech, ihp-sg13g2-cifout.tech",
+  "how": "typed from the cifinput (reading) and cifoutput (writing) files; each row cites its lines"
+ },
+ "f1": "check",
+ "layers": {
+  "activ": [
+   1,
+   0
+  ],
+  "gatpoly": [
+   5,
+   0
+  ],
+  "psd": [
+   14,
+   0
+  ],
+  "nwell": [
+   31,
+   0
+  ],
+  "thkox": [
+   44,
+   0
+  ],
+  "cont": [
+   6,
+   0
+  ],
+  "metal1": [
+   8,
+   0
+  ],
+  "via1": [
+   19,
+   0
+  ],
+  "metal2": [
+   10,
+   0
+  ],
+  "via2": [
+   29,
+   0
+  ],
+  "metal3": [
+   30,
+   0
+  ],
+  "via3": [
+   49,
+   0
+  ],
+  "metal4": [
+   50,
+   0
+  ]
+ },
+ "derived": {
+  "gate": {
+   "of": [
+    "gatpoly"
+   ],
+   "and": [
+    "activ"
+   ],
+   "line": "ihp-sg13g2-cifin.tech:415, 442 (GAPS-ihp-sg13g2 4)"
+  },
+  "LV diffusion": {
+   "of": [
+    "activ"
+   ],
+   "not": [
+    "thkox"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:390"
+  }
+ },
+ "shapes": {
+  "p-diffusion": {
+   "of": [
+    "activ"
+   ],
+   "and": [
+    "psd",
+    "nwell"
+   ],
+   "butts": [
+    "n-tap"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:205"
+  },
+  "p-tap": {
+   "of": [
+    "activ"
+   ],
+   "and": [
+    "psd"
+   ],
+   "not": [
+    "nwell"
+   ],
+   "butts": [
+    "n-diffusion"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:204"
+  },
+  "n-tap": {
+   "of": [
+    "activ"
+   ],
+   "and": [
+    "nwell"
+   ],
+   "not": [
+    "psd"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:197"
+  },
+  "n-diffusion": {
+   "of": [
+    "activ"
+   ],
+   "not": [
+    "psd",
+    "nwell"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:205"
+  },
+  "PMOS gate": {
+   "of": [
+    "gate"
+   ],
+   "and": [
+    "psd",
+    "nwell"
+   ],
+   "not": [
+    "thkox"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:206"
+  },
+  "HV diffusion": {
+   "of": [
+    "activ"
+   ],
+   "and": [
+    "thkox"
+   ],
+   "butts": [
+    "LV diffusion"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:390"
+  }
+ },
+ "fets": {
+  "gate": "gate",
+  "coverage": [
+   "psd",
+   "nwell",
+   "thkox"
+  ],
+  "models": {
+   "n": "nmos",
+   "p": "pmos"
+  },
+  "magic_reads": [
+   {
+    "some": [
+     "psd"
+    ],
+    "magic": "split",
+    "line": "ihp-sg13g2-cifin.tech:415, 442 (GAPS-ihp-sg13g2 4)",
+    "why": "pSD covers only part of this gate; Magic reads the two parts as different devices",
+    "fix": "draw pSD (14/0) over the whole PMOS, 0.30 um past the gate, or keep it off an NMOS"
+   },
+   {
+    "some": [
+     "thkox"
+    ],
+    "magic": "split",
+    "line": "ihp-sg13g2-cifout.tech:390",
+    "why": "ThickGateOx covers only part of this gate; Magic reads one part as an LV and the other as an HV device",
+    "fix": "draw ThickGateOx (44/0) over the whole device, 0.27 um past the Activ, or not at all"
+   },
+   {
+    "any": [
+     "psd"
+    ],
+    "none": [
+     "nwell"
+    ],
+    "magic": "none",
+    "line": "ihp-sg13g2-cifin.tech:1355",
+    "why": "pSD over a gate outside NWell makes a p-varactor to Magic, not a transistor",
+    "fix": "draw NWell (31/0) under a PMOS, or remove the pSD (14/0) from an NMOS"
+   },
+   {
+    "none": [
+     "psd"
+    ],
+    "any": [
+     "nwell"
+    ],
+    "magic": "none",
+    "line": "ihp-sg13g2-cifin.tech:415, 442 (GAPS-ihp-sg13g2 4)",
+    "why": "a gate in NWell without pSD is neither an NMOS (it is in the well) nor a PMOS (it has no pSD) to Magic",
+    "fix": "draw pSD (14/0) over the PMOS, 0.30 um past the gate"
+   },
+   {
+    "all": [
+     "psd",
+     "nwell"
+    ],
+    "magic": "p",
+    "line": "ihp-sg13g2-cifin.tech:415, 442 (GAPS-ihp-sg13g2 4)",
+    "why": "Magic reads Activ and GatPoly with pSD in NWell as a PMOS"
+   },
+   {
+    "none": [
+     "psd"
+    ],
+    "magic": "n",
+    "line": "ihp-sg13g2-cifin.tech:415, 442 (GAPS-ihp-sg13g2 4)",
+    "why": "Magic reads Activ and GatPoly without pSD as an NMOS"
+   }
+  ],
+  "intent": [
+   {
+    "all": [
+     "nwell"
+    ],
+    "class": "p",
+    "says": "inside NWell"
+   },
+   {
+    "none": [
+     "nwell"
+    ],
+    "class": "n",
+    "says": "outside NWell"
+   }
+  ],
+  "variants": [
+   {
+    "class": "n",
+    "all": [
+     "thkox"
+    ],
+    "model": "hv",
+    "says": "ThickGateOx is drawn over it"
+   },
+   {
+    "class": "p",
+    "all": [
+     "thkox"
+    ],
+    "model": "hv",
+    "says": "ThickGateOx is drawn over it"
+   },
+   {
+    "class": "n",
+    "none": [
+     "thkox"
+    ],
+    "not_model": "hv",
+    "says": "no ThickGateOx is drawn over it"
+   },
+   {
+    "class": "p",
+    "none": [
+     "thkox"
+    ],
+    "not_model": "hv",
+    "says": "no ThickGateOx is drawn over it"
+   }
+  ]
+ },
+ "cuts": {
+  "cont": {
+   "size_um": 0.16,
+   "space_um": 0.18,
+   "below": [
+    "activ",
+    "gatpoly"
+   ],
+   "above": [
+    "metal1"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:489",
+   "why": "a contact becomes one only on Activ or GatPoly under Metal1"
+  },
+  "via1": {
+   "size_um": 0.19,
+   "space_um": 0.22,
+   "below": [
+    "metal1"
+   ],
+   "above": [
+    "metal2"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:619; GAPS-ihp-sg13g2 (V1.a)",
+   "why_small": "Magic reads a Via1 cut smaller than its own 0.19 um square as no via, so the two metals are not connected in its netlist"
+  },
+  "via2": {
+   "size_um": 0.19,
+   "space_um": 0.22,
+   "below": [
+    "metal2"
+   ],
+   "above": [
+    "metal3"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:669"
+  },
+  "via3": {
+   "size_um": 0.19,
+   "space_um": 0.22,
+   "below": [
+    "metal3"
+   ],
+   "above": [
+    "metal4"
+   ],
+   "line": "ihp-sg13g2-cifout.tech:716"
+  }
+ },
+ "pins": {
+  "why": "Magic reads a pin box (*/2) as metal and writes it on the drawing datatype (*/0)",
+  "line": "GAPS-ihp-sg13g2 2.2 (Pin.e)"
+ }
+}

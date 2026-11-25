@@ -1,0 +1,2632 @@
+{
+ "schema": 1,
+ "pdk": "gf180mcuD",
+ "comment": "Findings of the plugin's layers and ports checks on the case suite, per case (F1 to F5 as [layer, l, b, r, t, information], boxes in um; ports as [check, cell, layer, l, b, r, t]). Written by tests/jobs/run_jobs.py --update-baseline (run_sweep.py --update-baseline). The negative controls' F1 to F4 lists are asserted empty in code, and the GAPS F1 positives, the cells Magic reads nothing in and cases.json's expect.ports are asserted there too; a case that fails one of them is never written here as it ran.",
+ "cases": {
+  "BUTT_ok": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "BUTT_straddle": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      -1.09,
+      0.19,
+      -0.57,
+      0.41,
+      false
+     ]
+    ],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO10_cont_on_gate": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "Poly2",
+      -0.115,
+      0.285,
+      0.115,
+      0.515,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.365 L 0.135 at (-0.250, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO11_cont_field": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "Contact",
+      2.0,
+      0.19,
+      2.22,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO1_big030": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      0.25,
+      0.25,
+      0.55,
+      0.55,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO1_small020": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "Contact",
+      0.2,
+      0.2,
+      0.4,
+      0.4,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO2a_s022": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      0.17,
+      0.19,
+      0.83,
+      0.41,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO2b_4x4_s010": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      0.2,
+      0.2,
+      1.38,
+      1.38,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO2b_4x4_s026": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      0.15,
+      0.15,
+      1.81,
+      1.81,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO3_pov004": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO4_cov004": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO6_m1ov0": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [
+     [
+      "Metal1",
+      0.56,
+      0.185,
+      0.565,
+      0.415,
+      false
+     ]
+    ],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO6_m1ov002": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO7_c2g012": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "CO8_pc2c014": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_NMOS": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_NMOS6": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_06v0 W 0.600 L 0.700 at (-0.350, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_NMOS_all_h": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.14,
+      0.0,
+      0.14,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [
+     [
+      "Contact",
+      -1.58,
+      0.19,
+      -1.36,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      -0.56,
+      0.19,
+      -0.34,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      0.34,
+      0.19,
+      0.56,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_NMOS_flat": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_NMOS_imp_h": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.14,
+      0.0,
+      0.14,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [
+     [
+      "Contact",
+      -1.58,
+      0.19,
+      -1.36,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      -0.56,
+      0.19,
+      -0.34,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      0.34,
+      0.19,
+      0.56,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_NMOS_nw_h": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PMOS": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PMOS6": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_06v0 W 0.600 L 0.550 at (-0.275, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PMOS_all_h": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "Contact",
+      -1.58,
+      0.19,
+      -1.36,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      -0.56,
+      0.19,
+      -0.34,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      0.34,
+      0.19,
+      0.56,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PMOS_flat": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PMOS_imp_h": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "Contact",
+      -1.58,
+      0.19,
+      -1.36,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      -0.56,
+      0.19,
+      -0.34,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      0.34,
+      0.19,
+      0.56,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PMOS_nw_h": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.14,
+      0.0,
+      0.14,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [
+     [
+      "COMP",
+      -0.67,
+      0.0,
+      -0.14,
+      0.6,
+      false
+     ],
+     [
+      "COMP",
+      0.14,
+      0.0,
+      0.67,
+      0.6,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "C_PTAP": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF12_noimp": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "COMP",
+      0.0,
+      0.0,
+      0.6,
+      0.6,
+      false
+     ],
+     [
+      "Contact",
+      0.19,
+      0.19,
+      0.41,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF13_nwnotap": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF14_notap": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF14_tap25": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF1a_w020": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF3a_s025": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF4a_ntap_nw008": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF5_ptap_nw008": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF6_lv_020": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF6_lv_0235": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF6_mv_030": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_06v0 W 0.600 L 0.700 at (-0.350, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF7_pdiff_nw038": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF8_ndiff_nw038": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DF9_a018": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DG_missing": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.700 at (-0.350, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DG_partial": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.35,
+      0.0,
+      0.35,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.350 at (0.000, 0.000)",
+     "nfet_06v0 W 0.600 L 0.350 at (-0.350, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DG_small": {
+   "layers": {
+    "status": 1,
+    "F1": [
+     [
+      "dualgate",
+      -2.219,
+      0.0,
+      -2.08,
+      0.6,
+      false
+     ],
+     [
+      "dualgate",
+      0.99,
+      0.0,
+      1.129,
+      0.6,
+      false
+     ]
+    ],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_06v0 W 0.600 L 0.700 at (-0.350, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "DV9_lvmv_nwell": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_06v0 W 0.600 L 0.550 at (2.725, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "GRID_m1_2p5nm": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "M1_1_w020": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "M1_2a_s020": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "M1_2b_wide": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "M1_3_a012": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NP3_s006": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NP5a_ov010": {
+   "layers": {
+    "status": 1,
+    "F1": [
+     [
+      "nplus",
+      -0.839,
+      -0.159,
+      -0.14,
+      0.759,
+      false
+     ],
+     [
+      "nplus",
+      -0.14,
+      -0.229,
+      0.14,
+      0.829,
+      false
+     ],
+     [
+      "nplus",
+      0.14,
+      -0.159,
+      0.839,
+      0.759,
+      false
+     ]
+    ],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NPPP_both": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.14,
+      0.0,
+      0.14,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [
+     [
+      "COMP",
+      -0.68,
+      0.0,
+      -0.14,
+      0.6,
+      false
+     ],
+     [
+      "COMP",
+      0.14,
+      0.0,
+      0.68,
+      0.6,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NP_flush": {
+   "layers": {
+    "status": 1,
+    "F1": [
+     [
+      "nplus",
+      -0.839,
+      -0.159,
+      -0.14,
+      0.759,
+      false
+     ],
+     [
+      "nplus",
+      -0.14,
+      -0.229,
+      0.14,
+      0.829,
+      false
+     ],
+     [
+      "nplus",
+      0.14,
+      -0.159,
+      0.839,
+      0.759,
+      false
+     ]
+    ],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NP_missing": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.14,
+      0.0,
+      0.14,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [
+     [
+      "COMP",
+      -0.67,
+      0.0,
+      -0.14,
+      0.6,
+      false
+     ],
+     [
+      "COMP",
+      0.14,
+      0.0,
+      0.68,
+      0.6,
+      false
+     ],
+     [
+      "Contact",
+      -0.56,
+      0.19,
+      -0.34,
+      0.41,
+      false
+     ],
+     [
+      "Contact",
+      0.34,
+      0.19,
+      0.56,
+      0.41,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NW1a_w080": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NW2a_s050": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "NWmiss_pfet": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [
+     [
+      "gate",
+      -0.14,
+      0.0,
+      0.14,
+      0.6,
+      false
+     ]
+    ],
+    "F3": [
+     [
+      "COMP",
+      -0.67,
+      0.0,
+      -0.14,
+      0.6,
+      false
+     ],
+     [
+      "COMP",
+      0.14,
+      0.0,
+      0.67,
+      0.6,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL1_mv_w019": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_06v0 W 0.600 L 0.700 at (-0.350, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL1_w016": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL2_lv_L025": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.250 at (-0.125, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL2_mv_L060": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_06v0 W 0.600 L 0.600 at (-0.300, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL3a_s020": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL4_e015": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PL5a_s008": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PP1_w034": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PP2_s028": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "PP5_ov0": {
+   "layers": {
+    "status": 1,
+    "F1": [
+     [
+      "pplus",
+      -0.019,
+      -0.019,
+      0.619,
+      0.619,
+      false
+     ]
+    ],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_1_b032": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Via1",
+      0.0,
+      0.0,
+      0.32,
+      0.32,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_1_s024": {
+   "layers": {
+    "status": 1,
+    "F1": [],
+    "F2": [],
+    "F3": [
+     [
+      "Via1",
+      0.0,
+      0.0,
+      0.24,
+      0.24,
+      false
+     ]
+    ],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_2a_s022": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Via1",
+      0.0,
+      0.0,
+      0.74,
+      0.26,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_2b_4x4_s026": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_2b_4x4_s030": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_3_m1ov0": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_3_m1ov002": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "V1_4_m2ov0": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "dv9_long": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_06v0 W 0.600 L 0.550 at (94.725, 0.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": null
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__buf_1": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_05v0 W 0.360 L 0.600 at (0.620, 0.800)",
+     "nfet_05v0 W 0.820 L 0.600 at (1.960, 0.340)",
+     "pfet_05v0 W 0.565 L 0.500 at (0.720, 3.015)",
+     "pfet_05v0 W 1.220 L 0.500 at (1.960, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": [
+     "I",
+     "VDD",
+     "VNW",
+     "VPW",
+     "VSS",
+     "Z"
+    ]
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__dffq_1": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_05v0 W 0.360 L 0.600 at (10.680, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (11.520, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (3.580, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (4.420, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (6.040, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (6.880, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (8.440, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (9.560, 0.795)",
+     "nfet_05v0 W 0.400 L 0.600 at (12.860, 0.755)",
+     "nfet_05v0 W 0.405 L 0.600 at (0.620, 0.755)",
+     "nfet_05v0 W 0.405 L 0.600 at (1.740, 0.755)",
+     "nfet_05v0 W 0.820 L 0.600 at (14.800, 0.340)",
+     "pfet_05v0 W 0.360 L 0.500 at (10.980, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (11.760, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (3.900, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (4.700, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (6.240, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (6.980, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (8.060, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (9.555, 2.635)",
+     "pfet_05v0 W 0.800 L 0.500 at (13.000, 2.635)",
+     "pfet_05v0 W 0.865 L 0.500 at (0.720, 2.360)",
+     "pfet_05v0 W 0.865 L 0.500 at (1.740, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (14.740, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": [
+     "CLK",
+     "D",
+     "Q",
+     "VDD",
+     "VNW",
+     "VPW",
+     "VSS"
+    ]
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__filltie": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      0.45,
+      0.4,
+      0.67,
+      1.125,
+      false
+     ]
+    ],
+    "devices": []
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": [
+     "VDD",
+     "VSS"
+    ]
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__inv_1": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_05v0 W 0.820 L 0.600 at (0.620, 0.340)",
+     "pfet_05v0 W 1.220 L 0.500 at (0.720, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": [
+     "I",
+     "VDD",
+     "VNW",
+     "VPW",
+     "VSS",
+     "ZN"
+    ]
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__mux2_2": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_05v0 W 0.820 L 0.600 at (0.620, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (1.740, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (2.860, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (3.700, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (4.820, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (5.900, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (7.020, 0.340)",
+     "pfet_05v0 W 1.220 L 0.500 at (0.670, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (1.740, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (2.960, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (4.240, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (5.260, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (6.000, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (7.020, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": [
+     "I0",
+     "I1",
+     "S",
+     "VDD",
+     "VNW",
+     "VPW",
+     "VSS",
+     "Z"
+    ]
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__nand2_1": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_05v0 W 0.820 L 0.600 at (0.625, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (1.545, 0.340)",
+     "pfet_05v0 W 1.130 L 0.500 at (0.625, 2.360)",
+     "pfet_05v0 W 1.130 L 0.500 at (1.645, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": [
+     "A1",
+     "A2",
+     "VDD",
+     "VNW",
+     "VPW",
+     "VSS",
+     "ZN"
+    ]
+   }
+  },
+  "gf180mcu_fd_sc_mcu7t5v0__tieh": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_05v0 W 0.820 L 0.600 at (0.625, 0.340)",
+     "pfet_05v0 W 1.220 L 0.500 at (0.625, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": [
+     "VDD",
+     "VNW",
+     "VPW",
+     "VSS",
+     "Z"
+    ]
+   }
+  },
+  "inv": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 2.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": [
+     "A",
+     "VDD",
+     "VSS",
+     "Y"
+    ]
+   }
+  },
+  "inv_control": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 2.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": [
+     "A",
+     "VDD",
+     "VSS",
+     "Y"
+    ]
+   }
+  },
+  "inv_no_text": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 2.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": []
+   }
+  },
+  "inv_open_drain": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 2.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": [
+     "A",
+     "VDD",
+     "VSS",
+     "Y"
+    ]
+   }
+  },
+  "inv_pcell": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 1.000 L 0.280 at (-0.140, -0.620)",
+     "pfet_03v3 W 2.000 L 0.280 at (-0.140, 3.020)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": [
+     "A",
+     "VDD",
+     "VSS",
+     "Y"
+    ]
+   }
+  },
+  "inv_swap": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [],
+    "devices": [
+     "nfet_03v3 W 0.600 L 0.280 at (-0.140, 0.000)",
+     "pfet_03v3 W 0.600 L 0.280 at (-0.140, 2.000)"
+    ]
+   },
+   "ports": {
+    "status": 0,
+    "findings": [],
+    "magic_ports": [
+     "A",
+     "VDD",
+     "VSS",
+     "Y"
+    ]
+   }
+  },
+  "row": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      30.13,
+      0.4,
+      30.35,
+      1.125,
+      false
+     ]
+    ],
+    "devices": [
+     "nfet_05v0 W 0.360 L 0.600 at (11.080, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (11.920, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (13.480, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (14.600, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (15.720, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (16.560, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (31.420, 0.800)",
+     "nfet_05v0 W 0.360 L 0.600 at (8.620, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (9.460, 0.795)",
+     "nfet_05v0 W 0.400 L 0.600 at (17.900, 0.755)",
+     "nfet_05v0 W 0.405 L 0.600 at (5.660, 0.755)",
+     "nfet_05v0 W 0.405 L 0.600 at (6.780, 0.755)",
+     "nfet_05v0 W 0.820 L 0.600 at (0.620, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (19.840, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (2.865, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (21.900, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (23.020, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (24.140, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (24.980, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (26.100, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (27.180, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (28.300, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (3.785, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (32.760, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (34.785, 0.340)",
+     "pfet_05v0 W 0.360 L 0.500 at (11.280, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (12.020, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (13.100, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (14.595, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (16.020, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (16.800, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (8.940, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (9.740, 2.635)",
+     "pfet_05v0 W 0.565 L 0.500 at (31.520, 3.015)",
+     "pfet_05v0 W 0.800 L 0.500 at (18.040, 2.635)",
+     "pfet_05v0 W 0.865 L 0.500 at (5.760, 2.360)",
+     "pfet_05v0 W 0.865 L 0.500 at (6.780, 2.360)",
+     "pfet_05v0 W 1.130 L 0.500 at (2.865, 2.360)",
+     "pfet_05v0 W 1.130 L 0.500 at (3.885, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (0.720, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (19.780, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (21.950, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (23.020, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (24.240, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (25.520, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (26.540, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (27.280, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (28.300, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (32.760, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (34.785, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": []
+   }
+  },
+  "row_magic": {
+   "layers": {
+    "status": 0,
+    "F1": [],
+    "F2": [],
+    "F3": [],
+    "F4": [],
+    "F5": [
+     [
+      "Contact",
+      30.13,
+      0.4,
+      30.35,
+      1.125,
+      false
+     ]
+    ],
+    "devices": [
+     "nfet_05v0 W 0.360 L 0.600 at (11.080, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (11.920, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (13.480, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (14.600, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (15.720, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (16.560, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (31.420, 0.800)",
+     "nfet_05v0 W 0.360 L 0.600 at (8.620, 0.795)",
+     "nfet_05v0 W 0.360 L 0.600 at (9.460, 0.795)",
+     "nfet_05v0 W 0.400 L 0.600 at (17.900, 0.755)",
+     "nfet_05v0 W 0.405 L 0.600 at (5.660, 0.755)",
+     "nfet_05v0 W 0.405 L 0.600 at (6.780, 0.755)",
+     "nfet_05v0 W 0.820 L 0.600 at (0.620, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (19.840, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (2.865, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (21.900, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (23.020, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (24.140, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (24.980, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (26.100, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (27.180, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (28.300, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (3.785, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (32.760, 0.340)",
+     "nfet_05v0 W 0.820 L 0.600 at (34.785, 0.340)",
+     "pfet_05v0 W 0.360 L 0.500 at (11.280, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (12.020, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (13.100, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (14.595, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (16.020, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (16.800, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (8.940, 2.635)",
+     "pfet_05v0 W 0.360 L 0.500 at (9.740, 2.635)",
+     "pfet_05v0 W 0.565 L 0.500 at (31.520, 3.015)",
+     "pfet_05v0 W 0.800 L 0.500 at (18.040, 2.635)",
+     "pfet_05v0 W 0.865 L 0.500 at (5.760, 2.360)",
+     "pfet_05v0 W 0.865 L 0.500 at (6.780, 2.360)",
+     "pfet_05v0 W 1.130 L 0.500 at (2.865, 2.360)",
+     "pfet_05v0 W 1.130 L 0.500 at (3.885, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (0.720, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (19.780, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (21.950, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (23.020, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (24.240, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (25.520, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (26.540, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (27.280, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (28.300, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (32.760, 2.360)",
+     "pfet_05v0 W 1.220 L 0.500 at (34.785, 2.360)"
+    ]
+   },
+   "ports": {
+    "status": 1,
+    "findings": [
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "204/10",
+      0.34,
+      -0.085,
+      0.34,
+      -0.085
+     ],
+     [
+      "P3",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "21/10",
+      0.345,
+      3.92,
+      0.345,
+      3.92
+     ]
+    ],
+    "magic_ports": []
+   }
+  }
+ }
+}

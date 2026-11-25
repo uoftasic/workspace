@@ -1,0 +1,142 @@
+{
+ "schema": 1,
+ "pdk": "sky130A",
+ "method": "every device default through magic::gencell, extracted from Magic's database and again after Magic's gds write and a fresh gds read, both with the harness's netlist-only settings; tests/backend/test_lvs_backend.py ReadbackTest (design-0.6.md 3.2)",
+ "measured": 60,
+ "unmeasured": [],
+ "devices": [
+  {
+   "device": "sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1",
+   "database": "sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1 x1 (m=1)",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1",
+     "m=1",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1",
+   "database": "sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1 x1 (m=1)",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1",
+     "m=1",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield",
+   "database": "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield x1 (m=1)",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield",
+     "m=1",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5",
+   "database": "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5 x1 (m=1)",
+   "gds": "none",
+   "kind": "lost",
+   "database_devices": [
+    [
+     "sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5",
+     "m=1",
+     1
+    ]
+   ],
+   "gds_devices": [],
+   "note": "no device from the GDS (design-0.6.md 3.2)"
+  },
+  {
+   "device": "sky130_fd_pr__diode_pd2nw_05v5_hvt",
+   "database": "sky130_fd_pr__diode_pd2nw_05v5_hvt x1 (area=2.025e+11)",
+   "gds": "sky130_fd_pr__diode_pd2nw_05v5 x1 (area=2.89e+10); sky130_fd_pr__diode_pd2nw_05v5_hvt x1 (area=1.736e+11)",
+   "kind": "split",
+   "database_devices": [
+    [
+     "sky130_fd_pr__diode_pd2nw_05v5_hvt",
+     "area=2.025e+11",
+     1
+    ]
+   ],
+   "gds_devices": [
+    [
+     "sky130_fd_pr__diode_pd2nw_05v5",
+     "area=2.89e+10",
+     1
+    ],
+    [
+     "sky130_fd_pr__diode_pd2nw_05v5_hvt",
+     "area=1.736e+11",
+     1
+    ]
+   ],
+   "note": "the GDS gives a standard diode_pd2nw_05v5 beside a smaller hvt one (design-0.6.md 3.2)"
+  },
+  {
+   "device": "sky130_fd_pr__diode_pd2nw_05v5_lvt",
+   "database": "sky130_fd_pr__diode_pd2nw_05v5_lvt x1 (area=2.025e+11)",
+   "gds": "sky130_fd_pr__diode_pd2nw_05v5 x1 (area=2.89e+10); sky130_fd_pr__diode_pd2nw_05v5_lvt x1 (area=1.736e+11)",
+   "kind": "split",
+   "database_devices": [
+    [
+     "sky130_fd_pr__diode_pd2nw_05v5_lvt",
+     "area=2.025e+11",
+     1
+    ]
+   ],
+   "gds_devices": [
+    [
+     "sky130_fd_pr__diode_pd2nw_05v5",
+     "area=2.89e+10",
+     1
+    ],
+    [
+     "sky130_fd_pr__diode_pd2nw_05v5_lvt",
+     "area=1.736e+11",
+     1
+    ]
+   ],
+   "note": "the GDS gives a standard diode_pd2nw_05v5 beside a smaller lvt one (design-0.6.md 3.2)"
+  },
+  {
+   "device": "sky130_fd_pr__npn_11v0_W1p00L1p00",
+   "database": "sky130_fd_pr__npn_11v0 x1 (area=1.97242)",
+   "gds": "sky130_fd_pr__npn_11v0 x1 (area=1.97245)",
+   "kind": "values",
+   "database_devices": [
+    [
+     "sky130_fd_pr__npn_11v0",
+     "area=1.97242",
+     1
+    ]
+   ],
+   "gds_devices": [
+    [
+     "sky130_fd_pr__npn_11v0",
+     "area=1.97245",
+     1
+    ]
+   ],
+   "note": "area rounds differently; the device is kept (design-0.6.md 3.2)"
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "pdk": "sky130A",
+ "about": "Hand-made mappings for the sky130A gap table (GAPS-sky130A 1.1 and its map_rules.py). Keys are the rule IDs of Magic's why-texts (the SkyWater periphery names). Every other part of the table is generated.",
+ "magic": {
+  "ids": {
+   "var.1": "varac.1",
+   "var.2": "varac.2",
+   "var.4": "varac.4"
+  },
+  "split": {
+   "denmos/depmos.2": [
+    "denmos.7",
+    "depmos.7"
+   ]
+  },
+  "lines": {
+   "sky130A.tech:4264": [
+    "hvi.5"
+   ],
+   "sky130A.tech:4266": [
+    "hvi.2a"
+   ],
+   "sky130A.tech:4471": [
+    "licon.9"
+   ]
+  }
+ },
+ "klayout": {
+  "*": {
+   "patterns": [
+    [
+     "^.+_OFFGRID$",
+     "x.1b"
+    ],
+    [
+     "^(diff|tap|poly|licon|ct|via\\d?)_angle$",
+     "x.2"
+    ],
+    [
+     "^.+_angle$",
+     "x.3a"
+    ],
+    [
+     "^m(\\d)\\.(\\w+?)(_[ab])?$",
+     "met\\1.\\2"
+    ]
+   ]
+  },
+  "sky130A_mr.drc": {
+   "names": {
+    "dnwell.1": [
+     "dnwell.2"
+    ],
+    "dnwell.2": [
+     "dnwell.3"
+    ],
+    "rpm.1a": [
+     "rpm.1"
+    ],
+    "urpm.1a": [
+     "rpm.1"
+    ],
+    "urpm.2": [
+     "rpm.2"
+    ],
+    "licon.1_c": [
+     "licon.1"
+    ],
+    "MR_licon.SP.1": [
+     "licon.2"
+    ],
+    "li.7": [
+     "li.c2"
+    ],
+    "li.8": [
+     "li.c1"
+    ],
+    "MR_li.WID.4": [
+     "li.7"
+    ],
+    "ct.1": [
+     "mcon.1"
+    ],
+    "ct.1_a": [
+     "mcon.1"
+    ],
+    "ct.1_b": [
+     "mcon.1"
+    ],
+    "ct.2": [
+     "mcon.2"
+    ],
+    "791_m1.4": [
+     "met1.4"
+    ],
+    "m1.4": [
+     "met1.4"
+    ],
+    "m1.3ab": [
+     "met1.3a",
+     "met1.3b"
+    ],
+    "m2.3ab": [
+     "met2.3a",
+     "met2.3b"
+    ],
+    "m3.3cd": [
+     "met3.3c",
+     "met3.3d"
+    ],
+    "m4.5ab": [
+     "met4.5a",
+     "met4.5b"
+    ],
+    "via.1a_a": [
+     "via.1a"
+    ],
+    "via.1a_b": [
+     "via.1a"
+    ],
+    "via.4a_a": [
+     "via.4a"
+    ],
+    "licon.13_a": [
+     "licon.13"
+    ],
+    "capm.2b_a": [
+     "capm.2b",
+     "capm.11"
+    ]
+   },
+   "patterns": [
+    [
+     "^difftap\\.(\\w+?)(_[abc])?$",
+     "diff/tap.\\1"
+    ],
+    [
+     "^(via\\d?|capm|cap2m|rdl|hvntm|nwell|poly|li|rpm)\\.(\\w+?)(_[abc])?$",
+     "\\1.\\2"
+    ]
+   ],
+   "other_check": {
+    "difftap.2": "the foundry's core rule difftap.c1, diffusion width 0.14 µm inside areaid:ce; Magic's diff/tap.2 is the transistor width 0.42 µm (GAPS-sky130A ranked gap 7)",
+    "poly.3": "the foundry's core rule poly.c2, poly spacing 0.16 µm; Magic's poly.3 is the poly resistor width 0.33 µm (GAPS-sky130A ranked gap 7)"
+   }
+  },
+  "sky130A.lydrc": {
+   "names": {
+    "nwell.5": [
+     "nwell.5a"
+    ],
+    "licon.5": [
+     "licon.5a"
+    ],
+    "licon.6": [
+     "licon.5b"
+    ],
+    "licon.1b/c": [
+     "licon.1b",
+     "licon.1c"
+    ],
+    "licon.11a": [
+     "licon.11"
+    ],
+    "licon.11c": [
+     "licon.11"
+    ],
+    "ct.1": [
+     "mcon.1"
+    ],
+    "ct.2": [
+     "mcon.2"
+    ],
+    "m1.3ab": [
+     "met1.3a",
+     "met1.3b"
+    ],
+    "m2.3ab": [
+     "met2.3a",
+     "met2.3b"
+    ],
+    "m3.3ab": [
+     "met3.3a",
+     "met3.3b"
+    ],
+    "m4.5ab": [
+     "met4.5a",
+     "met4.5b"
+    ],
+    "n/psdm.5a": [
+     "nsd.5a",
+     "psd.5a"
+    ],
+    "n/psdm.5b": [
+     "nsd.5b",
+     "psd.5b"
+    ],
+    "hvpoly.13": [
+     "poly.13"
+    ],
+    "hvnwell.8": [
+     "nwell.8"
+    ],
+    "via1.5a": [
+     "via.5a"
+    ],
+    "hvi.2": [
+     "hvi.2a"
+    ]
+   },
+   "patterns": [
+    [
+     "^(?:hv)?difftap\\.(\\w+)$",
+     "diff/tap.\\1"
+    ]
+   ],
+   "other_check": {
+    "varac.4": "licon on tap to Var_channel 0.25 µm, the manual's varac.4 and the same check as licon.10; Magic's varac.4 (printed var.4) is the n-tap's extension past the varactor"
+   }
+  }
+ },
+ "status": {
+  "met3.4": {
+   "status": "both",
+   "note": "Magic measures from its via2 contact area, 0.04 µm past the cut (via2.4), so its 0.025 µm is 0.065 µm from the cut"
+  },
+  "capm.11": {
+   "status": "both",
+   "note": "sky130A_mr.drc's capm.2b_a keeps met3 that does not touch the capm's bottom plate (capm and met3, grown by 0.14 µm) 1.2 µm from it, which is Magic's 1.34 µm from the capm; its capm.11 is a second check at 0.5 µm"
+  },
+  "nsd.10b": {
+   "status": "Magic only",
+   "note": "Magic checks the n-tap's area, 0.07011 µm², the area of a square tap whose 0.125 µm implant reaches 0.265 µm²; the manual's rule is the drawn nsdm's area (n/psd.10a, 0.265 µm²), which sky130A.lydrc checks as n/psdm.10a"
+  },
+  "psd.10b": {
+   "status": "Magic only",
+   "note": "Magic checks the p-tap's area at 0.07011 µm², the same value as its n-tap check; the manual's rule is the drawn psdm's area (n/psd.10b, 0.255 µm²), which sky130A.lydrc checks as n/psdm.10b at 0.265 µm²"
+  }
+ },
+ "parts": [
+  {
+   "name": "via2 and up, MiM caps, rdl",
+   "match": "^(met[2-5]\\.|m[2-5]\\.|via[2-4]|capm|cap2m|rdl|pad\\.|moduleCut|nsm\\.|P\\+ poly)"
+  },
+  {
+   "name": "Front end, li, mcon, met1, via1",
+   "match": ".*"
+  }
+ ]
+}

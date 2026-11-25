@@ -1,0 +1,2630 @@
+{
+ "a_licon11": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.11": 1,
+    "licon.11c": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "a_licon8": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.8": 6
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.8": 10,
+    "licon.8a": 8
+   },
+   "drc(full)": {
+    "licon.8": 10,
+    "licon.8a": 8
+   },
+   "drc(routing)": {
+    "licon.8": 10,
+    "licon.8a": 8
+   }
+  }
+ },
+ "a_no_npc": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "a_no_nsdm": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.8": 18,
+    "nwell.1": 2,
+    "nwell.2a": 2
+   },
+   "drc(full)": {
+    "LU.3": 2,
+    "diff/tap.8": 18,
+    "nwell.1": 2,
+    "nwell.2a": 2,
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "a_nsdm_flush": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "a_poly8": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "poly.8": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.8": 1
+   },
+   "drc(full)": {
+    "poly.8": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "c_licon11_li": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.11": 1,
+    "licon.11c": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.11": 2
+   },
+   "drc(full)": {
+    "licon.11": 2
+   },
+   "drc(routing)": {
+    "licon.11": 2
+   }
+  }
+ },
+ "c_licon_016": {
+  "klayout": {
+   "kl_harness": {
+    "licon.1": 4
+   },
+   "kl_lydrc_feol": {
+    "licon.1": 4
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "licon.1": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.1": 2
+   },
+   "drc(full)": {
+    "licon.1": 2
+   },
+   "drc(routing)": {
+    "licon.1": 2
+   }
+  }
+ },
+ "c_licon_020": {
+  "klayout": {
+   "kl_harness": {
+    "licon.1": 4
+   },
+   "kl_lydrc_feol": {
+    "licon.1": 4,
+    "licon.15": 4,
+    "licon.7": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "licon.1": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "c_licon_gate": {
+  "klayout": {
+   "kl_harness": {
+    "licon.17": 1
+   },
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "licon.17": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.2": 2,
+    "licon.11": 5,
+    "poly.1a": 1
+   },
+   "drc(full)": {
+    "diff/tap.2": 2,
+    "licon.11": 5,
+    "poly.1a": 1
+   },
+   "drc(routing)": {
+    "licon.11": 5
+   }
+  }
+ },
+ "c_licon_out": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.1": 1,
+    "licon.5a": 1
+   },
+   "drc(full)": {
+    "licon.1": 1,
+    "licon.5a": 1
+   },
+   "drc(routing)": {
+    "licon.1": 1,
+    "licon.5a": 1
+   }
+  }
+ },
+ "c_licon_space": {
+  "klayout": {
+   "kl_harness": {
+    "MR_licon.SP.1": 1
+   },
+   "kl_lydrc_feol": {
+    "licon.2": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "MR_licon.SP.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.2": 2
+   },
+   "drc(full)": {
+    "licon.2": 2
+   },
+   "drc(routing)": {
+    "licon.2": 2
+   }
+  }
+ },
+ "c_ndiff_encl0": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.5": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.5a": 1
+   },
+   "drc(full)": {
+    "licon.5a": 1
+   },
+   "drc(routing)": {
+    "licon.5a": 1
+   }
+  }
+ },
+ "c_no_li_over_licon": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "c_npc_narrow": {
+  "klayout": {
+   "kl_harness": {
+    "npc.1": 2
+   },
+   "kl_lydrc_feol": {
+    "licon.15": 4,
+    "npc.1": 2
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "npc.1": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "c_npc_over_dlicon": {
+  "klayout": {
+   "kl_harness": {
+    "licon.13_a": 1
+   },
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "licon.13_a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "c_pc_to_diff": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.14": 1,
+    "npc.4": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.14": 3
+   },
+   "drc(full)": {
+    "licon.14": 3
+   },
+   "drc(routing)": {
+    "licon.14": 3
+   }
+  }
+ },
+ "c_pc_to_pdiff": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.9 + psdm.5a": 8
+   },
+   "drc(full)": {
+    "licon.9 + psdm.5a": 8
+   },
+   "drc(routing)": {
+    "licon.9 + psdm.5a": 8
+   }
+  }
+ },
+ "c_tap_encl": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.7": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.7": 8
+   },
+   "drc(full)": {
+    "licon.7": 8
+   },
+   "drc(routing)": {
+    "licon.7": 8
+   }
+  }
+ },
+ "d_both_implants": {
+  "klayout": {
+   "kl_harness": {
+    "nsdm_psdm_overlap": 1,
+    "psdm.1": 1
+   },
+   "kl_lydrc_feol": {
+    "n/psdm.1": 1,
+    "n/psdm.8": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "nsdm_psdm_overlap": 1,
+    "psdm.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.7": 16,
+    "psd.10b": 2
+   },
+   "drc(full)": {
+    "licon.7": 16,
+    "psd.10b": 2
+   },
+   "drc(routing)": {
+    "licon.7": 16
+   }
+  }
+ },
+ "d_diff_45": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.2": 1
+   },
+   "drc(full)": {
+    "x.2": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_diff_45b": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.2": 1
+   },
+   "drc(full)": {
+    "x.2": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_diff_space": {
+  "klayout": {
+   "kl_harness": {
+    "difftap.3": 1
+   },
+   "kl_lydrc_feol": {
+    "difftap.3": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "difftap.3": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.3": 3
+   },
+   "drc(full)": {
+    "diff/tap.3": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_gate_w036": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.2": 2
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.2": 2
+   },
+   "drc(full)": {
+    "diff/tap.2": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_nsdm_half": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.3": 3,
+    "diff/tap.8": 17,
+    "diff/tap.9": 3,
+    "nwell.1": 2,
+    "nwell.2a": 2,
+    "poly.7": 3
+   },
+   "drc(full)": {
+    "LU.3": 1,
+    "diff/tap.3": 3,
+    "diff/tap.8": 17,
+    "diff/tap.9": 3,
+    "nwell.1": 2,
+    "nwell.2a": 2,
+    "nwell.4": 1,
+    "poly.7": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_sd_020": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "poly.7": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.7": 1
+   },
+   "drc(full)": {
+    "poly.7": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_tap_area": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "psd.10b": 1
+   },
+   "drc(full)": {
+    "psd.10b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "d_tap_w014": {
+  "klayout": {
+   "kl_harness": {
+    "difftap.1_c": 1
+   },
+   "kl_lydrc_feol": {
+    "difftap.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "difftap.1_c": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.1": 1
+   },
+   "drc(full)": {
+    "diff/tap.1": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "e_bent_gate": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.2": 5
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.11": 4
+   },
+   "drc(full)": {
+    "poly.11": 4
+   },
+   "drc(routing)": {}
+  }
+ },
+ "e_butt_licon5b": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.5b": 3
+   },
+   "drc(full)": {
+    "licon.5b": 3
+   },
+   "drc(routing)": {
+    "licon.5b": 3
+   }
+  }
+ },
+ "e_butt_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.16": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "e_butt_shift": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.16": 1,
+    "n/psdm.8": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "e_butt_short": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.16": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.4": 3
+   },
+   "drc(full)": {
+    "diff/tap.4": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "e_inv_base": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "e_lvtn_half": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "lvtn.13": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "lvtn.3a": 1
+   },
+   "drc(full)": {
+    "lvtn.3a": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "e_ntap_area": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "nsd.10b": 1
+   },
+   "drc(full)": {
+    "nsd.10b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "e_pfet_lvt": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.1b": 3
+   },
+   "drc(full)": {
+    "poly.1b": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "i_hvtp_half": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "hvtp.4": 1
+   },
+   "drc(full)": {
+    "hvtp.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "i_hvtp_w030": {
+  "klayout": {
+   "kl_harness": {
+    "hvtp.1": 1
+   },
+   "kl_lydrc_feol": {
+    "hvtp.1": 1,
+    "hvtp.3": 2
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "hvtp.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "i_lvtn_straddle": {
+  "klayout": {
+   "kl_harness": {
+    "MR_lvtn.OVL.2": 3,
+    "lvtn.1a": 1
+   },
+   "kl_lydrc_feol": {
+    "lvtn.1": 1,
+    "lvtn.13": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "MR_lvtn.OVL.2": 3,
+    "lvtn.1a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "i_nsdm_narrow": {
+  "klayout": {
+   "kl_harness": {
+    "nsdm.2": 1
+   },
+   "kl_lydrc_feol": {
+    "n/psdm.10a": 1,
+    "nsdm.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "nsdm.2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "i_psdm_space": {
+  "klayout": {
+   "kl_harness": {
+    "psdm.1": 1
+   },
+   "kl_lydrc_feol": {
+    "n/psdm.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "psdm.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "inv_base": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "l_li_encl": {
+  "klayout": {
+   "kl_harness": {
+    "li.5": 1
+   },
+   "kl_lydrc_feol": {
+    "li.5": 1
+   },
+   "kl_lydrc_shipped": {
+    "li.5": 1
+   },
+   "kl_menu_full": {
+    "li.5": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.5": 8
+   },
+   "drc(full)": {
+    "li.5": 8
+   },
+   "drc(routing)": {
+    "li.5": 8
+   }
+  }
+ },
+ "l_no_li_under_mcon": {
+  "klayout": {
+   "kl_harness": {
+    "ct.4": 1
+   },
+   "kl_lydrc_feol": {
+    "ct.4": 1
+   },
+   "kl_lydrc_shipped": {
+    "ct.4": 1
+   },
+   "kl_menu_full": {
+    "ct.4": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.3": 4,
+    "li.6": 2,
+    "li.c2": 4
+   },
+   "drc(full)": {
+    "li.3": 4,
+    "li.6": 2,
+    "li.c2": 4
+   },
+   "drc(routing)": {
+    "li.3": 4,
+    "li.6": 2,
+    "li.c2": 4
+   }
+  }
+ },
+ "l_pin_only_li": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "p_extra_space": {
+  "klayout": {
+   "kl_harness": {
+    "poly.2": 3
+   },
+   "kl_lydrc_feol": {
+    "poly.2": 3
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "poly.2": 3
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.2": 3
+   },
+   "drc(full)": {
+    "poly.2": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "p_field_to_diff": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "poly.4": 2
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.4": 4
+   },
+   "drc(full)": {
+    "poly.4": 4
+   },
+   "drc(routing)": {}
+  }
+ },
+ "p_gate_l014": {
+  "klayout": {
+   "kl_harness": {
+    "poly.1a": 2
+   },
+   "kl_lydrc_feol": {
+    "poly.1a": 2
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "poly.1a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.1a": 10
+   },
+   "drc(full)": {
+    "poly.1a": 10
+   },
+   "drc(routing)": {}
+  }
+ },
+ "p_poly_to_tap": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "poly.5": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.5": 3
+   },
+   "drc(full)": {
+    "poly.5": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_dnwell_w29": {
+  "klayout": {
+   "kl_harness": {
+    "dnwell.1": 1
+   },
+   "kl_lydrc_feol": {
+    "dnwell.2": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "dnwell.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "dnwell.2": 1
+   },
+   "drc(full)": {
+    "dnwell.2": 1,
+    "nwell.5a, 7": 4
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_dnwell_w29_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "nwell.5a, 7": 4
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_hvtp_alone": {
+  "klayout": {
+   "kl_harness": {
+    "hvtp.1": 1
+   },
+   "kl_lydrc_feol": {
+    "hvtp.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "hvtp.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_hvtp_alone_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_45deg": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.2": 1
+   },
+   "drc(full)": {
+    "x.2": 1
+   },
+   "drc(routing)": {
+    "x.2": 1
+   }
+  }
+ },
+ "s_li_45deg_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_adj_licon": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_adj_licon_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_area": {
+  "klayout": {
+   "kl_harness": {
+    "li.6": 1
+   },
+   "kl_lydrc_feol": {
+    "li.6": 1
+   },
+   "kl_lydrc_shipped": {
+    "li.6": 1
+   },
+   "kl_menu_full": {
+    "li.6": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.6": 2
+   },
+   "drc(full)": {
+    "li.6": 2
+   },
+   "drc(routing)": {
+    "li.6": 2
+   }
+  }
+ },
+ "s_li_area_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_hole": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_hole_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_space016": {
+  "klayout": {
+   "kl_harness": {
+    "li.3": 1
+   },
+   "kl_lydrc_feol": {
+    "li.3": 1
+   },
+   "kl_lydrc_shipped": {
+    "li.3": 1
+   },
+   "kl_menu_full": {
+    "li.3": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.3": 2
+   },
+   "drc(full)": {
+    "li.3": 2
+   },
+   "drc(routing)": {
+    "li.3": 2
+   }
+  }
+ },
+ "s_li_space016_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_li_w016": {
+  "klayout": {
+   "kl_harness": {
+    "li.1": 1
+   },
+   "kl_lydrc_feol": {
+    "li.1": 1
+   },
+   "kl_lydrc_shipped": {
+    "li.1": 1
+   },
+   "kl_menu_full": {
+    "li.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.1": 1
+   },
+   "drc(full)": {
+    "li.1": 1
+   },
+   "drc(routing)": {
+    "li.1": 1
+   }
+  }
+ },
+ "s_li_w016_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_lvtn_alone": {
+  "klayout": {
+   "kl_harness": {
+    "lvtn.1a": 1
+   },
+   "kl_lydrc_feol": {
+    "lvtn.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "lvtn.1a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_lvtn_alone_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_30deg": {
+  "klayout": {
+   "kl_harness": {
+    "m1.1": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.1": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.1": 1
+   },
+   "kl_menu_full": {
+    "m1.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.3a": 1
+   },
+   "drc(full)": {
+    "x.3a": 1
+   },
+   "drc(routing)": {
+    "x.3a": 1
+   }
+  }
+ },
+ "s_m1_30deg_b": {
+  "klayout": {
+   "kl_harness": {
+    "m1.1": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.1": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.1": 1
+   },
+   "kl_menu_full": {
+    "m1.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "x.3a": 1
+   },
+   "drc(full)": {
+    "x.3a": 1
+   },
+   "drc(routing)": {
+    "x.3a": 1
+   }
+  }
+ },
+ "s_m1_30deg_b_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_30deg_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_adj_mcon": {
+  "klayout": {
+   "kl_harness": {
+    "m1.5": 1
+   },
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "m1.5": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met1.5": 4
+   },
+   "drc(full)": {
+    "met1.5": 4
+   },
+   "drc(routing)": {
+    "met1.5": 4
+   }
+  }
+ },
+ "s_m1_adj_mcon_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_area": {
+  "klayout": {
+   "kl_harness": {
+    "m1.6": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.6": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.6": 1
+   },
+   "kl_menu_full": {
+    "m1.6": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met1.6": 1
+   },
+   "drc(full)": {
+    "met1.6": 1
+   },
+   "drc(routing)": {
+    "met1.6": 1
+   }
+  }
+ },
+ "s_m1_area_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_encl_mcon": {
+  "klayout": {
+   "kl_harness": {
+    "791_m1.4": 2
+   },
+   "kl_lydrc_feol": {
+    "m1.4": 2
+   },
+   "kl_lydrc_shipped": {
+    "m1.4": 2
+   },
+   "kl_menu_full": {
+    "791_m1.4": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met1.4": 2
+   },
+   "drc(full)": {
+    "met1.4": 2
+   },
+   "drc(routing)": {
+    "met1.4": 2
+   }
+  }
+ },
+ "s_m1_encl_mcon_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_hole": {
+  "klayout": {
+   "kl_harness": {
+    "m1.7": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.7": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.7": 1
+   },
+   "kl_menu_full": {
+    "m1.7": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_hole_boxes": {
+  "klayout": {
+   "kl_harness": {
+    "m1.7": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.7": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.7": 1
+   },
+   "kl_menu_full": {
+    "m1.7": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_hole_boxes_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_hole_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_huge_space": {
+  "klayout": {
+   "kl_harness": {
+    "m1.3ab": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.3ab": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.3ab": 1
+   },
+   "kl_menu_full": {
+    "m1.3ab": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met1.3b": 1
+   },
+   "drc(full)": {
+    "met1.3b": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_huge_space_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_offgrid": {
+  "klayout": {
+   "kl_harness": {
+    "m1_OFFGRID": 2
+   },
+   "kl_lydrc_feol": {
+    "m1_OFFGRID": 2
+   },
+   "kl_lydrc_shipped": {
+    "m1_OFFGRID": 2
+   },
+   "kl_menu_full": {
+    "m1_OFFGRID": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_offgrid_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_space013": {
+  "klayout": {
+   "kl_harness": {
+    "m1.2": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.2": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.2": 1
+   },
+   "kl_menu_full": {
+    "m1.2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met1.2": 2
+   },
+   "drc(full)": {
+    "met1.2": 2
+   },
+   "drc(routing)": {
+    "met1.2": 2
+   }
+  }
+ },
+ "s_m1_space013_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_w013": {
+  "klayout": {
+   "kl_harness": {
+    "m1.1": 1
+   },
+   "kl_lydrc_feol": {
+    "m1.1": 1
+   },
+   "kl_lydrc_shipped": {
+    "m1.1": 1
+   },
+   "kl_menu_full": {
+    "m1.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met1.1": 1
+   },
+   "drc(full)": {
+    "met1.1": 1
+   },
+   "drc(routing)": {
+    "met1.1": 1
+   }
+  }
+ },
+ "s_m1_w013_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_wide_space": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "m1.3ab": 2
+   },
+   "kl_lydrc_shipped": {
+    "m1.3ab": 2
+   },
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "met1.3a": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_m1_wide_space_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "m1.3ab": 2
+   },
+   "kl_lydrc_shipped": {
+    "m1.3ab": 2
+   },
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_mcon_016": {
+  "klayout": {
+   "kl_harness": {
+    "ct.1_a": 2
+   },
+   "kl_lydrc_feol": {
+    "ct.1": 4
+   },
+   "kl_lydrc_shipped": {
+    "ct.1": 4
+   },
+   "kl_menu_full": {
+    "ct.1_a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "mcon.1": 2
+   },
+   "drc(full)": {
+    "mcon.1": 2
+   },
+   "drc(routing)": {
+    "mcon.1": 2
+   }
+  }
+ },
+ "s_mcon_016_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_mcon_no_li": {
+  "klayout": {
+   "kl_harness": {
+    "ct.4": 1
+   },
+   "kl_lydrc_feol": {
+    "ct.4": 1
+   },
+   "kl_lydrc_shipped": {
+    "ct.4": 1
+   },
+   "kl_menu_full": {
+    "ct.4": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.6": 2
+   },
+   "drc(full)": {
+    "li.6": 2
+   },
+   "drc(routing)": {
+    "li.6": 2
+   }
+  }
+ },
+ "s_mcon_no_li_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_mcon_space": {
+  "klayout": {
+   "kl_harness": {
+    "ct.2": 1
+   },
+   "kl_lydrc_feol": {
+    "ct.2": 1
+   },
+   "kl_lydrc_shipped": {
+    "ct.2": 1
+   },
+   "kl_menu_full": {
+    "ct.2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "mcon.2": 2
+   },
+   "drc(full)": {
+    "mcon.2": 2
+   },
+   "drc(routing)": {
+    "mcon.2": 2
+   }
+  }
+ },
+ "s_mcon_space_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_npc_alone": {
+  "klayout": {
+   "kl_harness": {
+    "npc.1": 1
+   },
+   "kl_lydrc_feol": {
+    "licon.18": 1,
+    "npc.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "npc.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_npc_alone_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.18": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_nsdm_alone": {
+  "klayout": {
+   "kl_harness": {
+    "nsdm.2": 1
+   },
+   "kl_lydrc_feol": {
+    "nsdm.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "nsdm.2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_nsdm_alone_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_nwell_space": {
+  "klayout": {
+   "kl_harness": {
+    "nwell.2a": 1
+   },
+   "kl_lydrc_feol": {
+    "nwell.2a": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "nwell.2a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "nwell.2a": 1
+   },
+   "drc(full)": {
+    "nwell.2a": 1,
+    "nwell.4": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_nwell_space_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "nwell.4": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_nwell_w080": {
+  "klayout": {
+   "kl_harness": {
+    "nwell.1": 1
+   },
+   "kl_lydrc_feol": {
+    "nwell.1": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "nwell.1": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "nwell.1": 1
+   },
+   "drc(full)": {
+    "nwell.1": 1,
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_nwell_w080_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_poly_space": {
+  "klayout": {
+   "kl_harness": {
+    "poly.2": 1
+   },
+   "kl_lydrc_feol": {
+    "poly.2": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "poly.2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.2": 1
+   },
+   "drc(full)": {
+    "poly.2": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_poly_space_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_poly_w014": {
+  "klayout": {
+   "kl_harness": {
+    "poly.1a": 1
+   },
+   "kl_lydrc_feol": {
+    "poly.1a": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "poly.1a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "poly.1a": 1
+   },
+   "drc(full)": {
+    "poly.1a": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_poly_w014_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_ptap_to_nwell": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.11": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "nwell.2a": 1
+   },
+   "drc(full)": {
+    "nwell.2a": 1,
+    "nwell.4": 3
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_ptap_to_nwell_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "s_via_014": {
+  "klayout": {
+   "kl_harness": {
+    "via.1a_a": 2
+   },
+   "kl_lydrc_feol": {
+    "via.1a": 4
+   },
+   "kl_lydrc_shipped": {
+    "via.1a": 4
+   },
+   "kl_menu_full": {
+    "via.1a_a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "via.1a + 2 * via.4a": 2
+   },
+   "drc(full)": {
+    "via.1a + 2 * via.4a": 2
+   },
+   "drc(routing)": {
+    "via.1a + 2 * via.4a": 2
+   }
+  }
+ },
+ "s_via_014_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_via_016": {
+  "klayout": {
+   "kl_harness": {
+    "via.1a_b": 4
+   },
+   "kl_lydrc_feol": {
+    "via.1a": 4
+   },
+   "kl_lydrc_shipped": {
+    "via.1a": 4
+   },
+   "kl_menu_full": {
+    "via.1a_b": 4
+   }
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_via_016_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_via_m1_adj": {
+  "klayout": {
+   "kl_harness": {
+    "via.5a": 1
+   },
+   "kl_lydrc_feol": {
+    "via1.5a": 1
+   },
+   "kl_lydrc_shipped": {
+    "via1.5a": 1
+   },
+   "kl_menu_full": {
+    "via.5a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "via.5a - via.4a": 4
+   },
+   "drc(full)": {
+    "via.5a - via.4a": 4
+   },
+   "drc(routing)": {
+    "via.5a - via.4a": 4
+   }
+  }
+ },
+ "s_via_m1_adj_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_via_m1_encl": {
+  "klayout": {
+   "kl_harness": {
+    "via.4a": 2
+   },
+   "kl_lydrc_feol": {
+    "via.4a": 2
+   },
+   "kl_lydrc_shipped": {
+    "via.4a": 2
+   },
+   "kl_menu_full": {
+    "via.4a": 2
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "via.5a - via.4a": 8
+   },
+   "drc(full)": {
+    "via.5a - via.4a": 8
+   },
+   "drc(routing)": {
+    "via.5a - via.4a": 8
+   }
+  }
+ },
+ "s_via_m1_encl_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_via_no_m2": {
+  "klayout": {
+   "kl_harness": {
+    "m2.4_a": 1
+   },
+   "kl_lydrc_feol": {
+    "m2.via": 1
+   },
+   "kl_lydrc_shipped": {
+    "m2.via": 1
+   },
+   "kl_menu_full": {
+    "m2.4_a": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "met2.5 - met2.4": 8
+   },
+   "drc(full)": {
+    "met2.5 - met2.4": 8
+   },
+   "drc(routing)": {
+    "met2.5 - met2.4": 8
+   }
+  }
+ },
+ "s_via_no_m2_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "s_via_space": {
+  "klayout": {
+   "kl_harness": {
+    "via.2": 1
+   },
+   "kl_lydrc_feol": {
+    "via.2": 1
+   },
+   "kl_lydrc_shipped": {
+    "via.2": 1
+   },
+   "kl_menu_full": {
+    "via.2": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "via.2 - 2 * via.4a": 2
+   },
+   "drc(full)": {
+    "via.2 - 2 * via.4a": 2
+   },
+   "drc(routing)": {
+    "via.2 - 2 * via.4a": 2
+   }
+  }
+ },
+ "s_via_space_ok": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {},
+   "drc(routing)": {}
+  }
+ },
+ "w_ndiff_to_nwell": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.9": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.9": 4
+   },
+   "drc(full)": {
+    "diff/tap.9": 4
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_no_ntap": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.3": 2,
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_no_ntap_licon": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.16": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.3": 2,
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_no_nwell": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "n/psdm.8": 2
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.10": 13,
+    "diff/tap.11": 13,
+    "nwell.1": 2,
+    "poly.5": 8
+   },
+   "drc(full)": {
+    "diff/tap.10": 13,
+    "diff/tap.11": 13,
+    "nwell.1": 2,
+    "nwell.4": 1,
+    "poly.5": 8
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_no_ptap": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.2": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_no_ptap_licon": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.16": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.2": 2
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_nwell_encl_ntap": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.10": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.10": 4
+   },
+   "drc(full)": {
+    "diff/tap.10": 4
+   },
+   "drc(routing)": {}
+  }
+ },
+ "w_nwell_encl_pdiff": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.8": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.8": 8,
+    "nwell.1": 1
+   },
+   "drc(full)": {
+    "diff/tap.8": 8,
+    "nwell.1": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "x_drc_01_broken": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "difftap.8": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "diff/tap.8": 8,
+    "nwell.1": 1
+   },
+   "drc(full)": {
+    "diff/tap.8": 8,
+    "nwell.1": 1
+   },
+   "drc(routing)": {}
+  }
+ },
+ "x_drc_02_broken": {
+  "klayout": {
+   "kl_harness": {
+    "li.5": 1
+   },
+   "kl_lydrc_feol": {},
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {
+    "li.5": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.5": 2
+   },
+   "drc(full)": {
+    "li.5": 2
+   },
+   "drc(routing)": {
+    "li.5": 2
+   }
+  }
+ },
+ "x_drc_03_broken": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.8": 6
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {
+    "licon.8": 10,
+    "licon.8a": 8
+   },
+   "drc(full)": {
+    "licon.8": 10,
+    "licon.8a": 8
+   },
+   "drc(routing)": {
+    "licon.8": 10,
+    "licon.8a": 8
+   }
+  }
+ },
+ "x_drc_04_broken": {
+  "klayout": {
+   "kl_harness": {
+    "li.3": 1
+   },
+   "kl_lydrc_feol": {
+    "li.3": 1
+   },
+   "kl_lydrc_shipped": {
+    "li.3": 1
+   },
+   "kl_menu_full": {
+    "li.3": 1
+   }
+  },
+  "magic": {
+   "drc(fast)": {
+    "li.3": 8
+   },
+   "drc(full)": {
+    "li.3": 8
+   },
+   "drc(routing)": {
+    "li.3": 8
+   }
+  }
+ },
+ "x_drc_05_broken": {
+  "klayout": {
+   "kl_harness": {},
+   "kl_lydrc_feol": {
+    "licon.16": 1
+   },
+   "kl_lydrc_shipped": {},
+   "kl_menu_full": {}
+  },
+  "magic": {
+   "drc(fast)": {},
+   "drc(full)": {
+    "LU.3": 2,
+    "nwell.4": 1
+   },
+   "drc(routing)": {}
+  }
+ }
+}
