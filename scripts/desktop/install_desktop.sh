@@ -64,8 +64,11 @@ mk xschem.desktop    "XSchem"        "Draw and simulate schematics (analog track
    "bash -lc \". /foss/designs/common/.designinit >/dev/null 2>&1; exec xschem\"" "applications-electronics" false
 mk magic.desktop     "Magic"         "Draw and inspect layout (analog track)" \
    "bash -lc \". /foss/designs/common/.designinit >/dev/null 2>&1; exec magic -d X11 -T sky130A\"" "applications-electronics" false
+# KLayout starts in edit mode (-e), and klayout_sky130A.py makes File > Open
+# apply the sky130A technology. Without it a GDS opened from the File menu
+# shows bare layer numbers; the script says why.
 mk klayout.desktop   "KLayout"       "Open a GDSII and look at your chip" \
-   "bash -lc \"exec klayout\"" "image-x-generic" false
+   "bash -lc \". /foss/designs/common/.designinit >/dev/null 2>&1; exec klayout -e -rm /foss/designs/scripts/klayout_sky130A.py\"" "image-x-generic" false
 mk surfer.desktop    "Surfer"        "Open a waveform (.vcd / .fst)" \
    "bash -lc \"exec surfer\"" "utilities-system-monitor" false
 mk docs.desktop      "Course manuals" "edu.uoftasic.com" \
