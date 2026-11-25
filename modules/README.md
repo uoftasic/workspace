@@ -13,6 +13,7 @@ mod add ad101                        # clone github.com/uoftasic/ad101 into modu
 |--------|--------|
 | `ic101_setup/` | [IC101 — Onboarding onto Tools](https://uoftasic.com/ic101/) |
 | `ad101/` | [AD101 — Signals](https://uoftasic.com/ad101/). Not committed in this repo; clone it with `mod add ad101`. |
+| `ad104-m/` | [AD104-M — Layout](https://uoftasic.com/ad104-m/). Not committed in this repo; clone it with `mod add ad104-m`. |
 
 You can also clone a course on your own machine (the host) instead of in the container. The result is the same, because the workspace is bind-mounted into the container:
 
@@ -24,4 +25,4 @@ You can also clone a course on your own machine (the host) instead of in the con
 
 Either way, `mod ad101` inside the container takes you to `/foss/designs/modules/ad101`.
 
-More folders are planned, added as each course's lab content is ready: `ad103_nonlinear/`, `ad104-m/`, `ad104-k/`, `dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).
+More folders are planned, added as each course's lab content is ready: `ad103_nonlinear/`, `dd103_rtl/`, `dd104_verification/`, … See the [course catalog](https://edu.uoftasic.com/).
